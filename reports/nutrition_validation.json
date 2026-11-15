@@ -1,0 +1,229 @@
+{
+ "n": 22,
+ "mae_g": 5.6,
+ "medyan_bagil_hata": 0.111,
+ "bias_g": 3.7,
+ "satirlar": [
+  {
+   "dish_id": "pirinc_pilavi",
+   "yemek": "Pirinç Pilavı",
+   "tarif_karb": 52.0,
+   "referans_karb": 50.7,
+   "fark": 1.3,
+   "usda": "FDC 168878: Rice, white, long-grain, regular, enriched, cooked",
+   "servis_g": 180,
+   "not_": "pişmiş beyaz pirinç; 65 g çiğ pirinç ≈ 180 g pişmiş"
+  },
+  {
+   "dish_id": "bulgur_pilavi",
+   "yemek": "Bulgur Pilavı",
+   "tarif_karb": 50.2,
+   "referans_karb": 42.7,
+   "fark": 7.5,
+   "usda": "FDC 170287: Bulgur, cooked",
+   "servis_g": 230,
+   "not_": "pişmiş bulgur; 65 g kuru ≈ 230 g pişmiş"
+  },
+  {
+   "dish_id": "kuskus_pilavi",
+   "yemek": "Kuskus Pilavı",
+   "tarif_karb": 51.8,
+   "referans_karb": 46.4,
+   "fark": 5.3,
+   "usda": "FDC 169700: Couscous, cooked",
+   "servis_g": 200,
+   "not_": "pişmiş kuskus"
+  },
+  {
+   "dish_id": "makarna_sade",
+   "yemek": "Makarna",
+   "tarif_karb": 59.7,
+   "referans_karb": 61.7,
+   "fark": -2.0,
+   "usda": "FDC 168928: Pasta, cooked, unenriched, without added salt",
+   "servis_g": 200,
+   "not_": "pişmiş makarna; 80 g kuru ≈ 200 g pişmiş"
+  },
+  {
+   "dish_id": "etsiz_kuru_fasulye",
+   "yemek": "Etsiz Kuru Fasulye",
+   "tarif_karb": 39.9,
+   "referans_karb": 40.1,
+   "fark": -0.2,
+   "usda": "FDC 175203: Beans, white, mature seeds, cooked, boiled, without salt",
+   "servis_g": 160,
+   "not_": "haşlanmış kuru fasulye (sos hariç)"
+  },
+  {
+   "dish_id": "nohut_yemegi",
+   "yemek": "Nohut Yemeği",
+   "tarif_karb": 40.8,
+   "referans_karb": 43.9,
+   "fark": -3.1,
+   "usda": "FDC 173757: Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt",
+   "servis_g": 160,
+   "not_": "haşlanmış nohut (sos hariç)"
+  },
+  {
+   "dish_id": "patates_pure",
+   "yemek": "Patates Püresi",
+   "tarif_karb": 22.4,
+   "referans_karb": 25.2,
+   "fark": -2.8,
+   "usda": "FDC 168555: Potatoes, mashed, home-prepared, whole milk and butter added",
+   "servis_g": 150,
+   "not_": "ev yapımı püre, süt + tereyağı"
+  },
+  {
+   "dish_id": "lavas",
+   "yemek": "Lavaş",
+   "tarif_karb": 24.7,
+   "referans_karb": 27.9,
+   "fark": -3.1,
+   "usda": "FDC 172816: Bread, pita, white, unenriched",
+   "servis_g": 50,
+   "not_": "pide ekmeği (pita)"
+  },
+  {
+   "dish_id": "pide",
+   "yemek": "Pide",
+   "tarif_karb": 24.7,
+   "referans_karb": 27.9,
+   "fark": -3.1,
+   "usda": "FDC 174915: Bread, pita, white, enriched",
+   "servis_g": 50,
+   "not_": "pide ekmeği (pita)"
+  },
+  {
+   "dish_id": "simit",
+   "yemek": "Simit",
+   "tarif_karb": 54.8,
+   "referans_karb": 48.1,
+   "fark": 6.8,
+   "usda": "FDC 175049: Bagels, plain, enriched, without calcium propionate (includes onion, poppy, sesame)",
+   "servis_g": 90,
+   "not_": "analog: sade bagel"
+  },
+  {
+   "dish_id": "pogaca",
+   "yemek": "Poğaça",
+   "tarif_karb": 31.6,
+   "referans_karb": 32.1,
+   "fark": -0.5,
+   "usda": "FDC 174987: Croissants, butter",
+   "servis_g": 70,
+   "not_": "analog: tereyağlı kruvasan"
+  },
+  {
+   "dish_id": "firin_sutlac",
+   "yemek": "Fırın Sütlaç",
+   "tarif_karb": 38.9,
+   "referans_karb": 27.6,
+   "fark": 11.3,
+   "usda": "FDC 168782: Puddings, rice, ready-to-eat",
+   "servis_g": 150,
+   "not_": "hazır sütlaç (rice pudding)"
+  },
+  {
+   "dish_id": "muhallebi",
+   "yemek": "Muhallebi (Sakızlı)",
+   "tarif_karb": 40.1,
+   "referans_karb": 29.6,
+   "fark": 10.6,
+   "usda": "FDC 168785: Puddings, vanilla, dry mix, instant, prepared with whole milk",
+   "servis_g": 150,
+   "not_": "vanilyalı puding, tam yağlı süt"
+  },
+  {
+   "dish_id": "dondurma",
+   "yemek": "Dondurma",
+   "tarif_karb": 18.9,
+   "referans_karb": 23.6,
+   "fark": -4.7,
+   "usda": "FDC 167575: Ice creams, vanilla",
+   "servis_g": 100,
+   "not_": "vanilyalı dondurma"
+  },
+  {
+   "dish_id": "elmali_tart",
+   "yemek": "Elmalı Tart",
+   "tarif_karb": 50.2,
+   "referans_karb": 34.0,
+   "fark": 16.2,
+   "usda": "FDC 175011: Pie, apple, commercially prepared, enriched flour",
+   "servis_g": 100,
+   "not_": "elmalı turta"
+  },
+  {
+   "dish_id": "browni_kek",
+   "yemek": "Browni (Brownie)",
+   "tarif_karb": 61.3,
+   "referans_karb": 55.4,
+   "fark": 5.9,
+   "usda": "FDC 174944: Cake, yellow, commercially prepared, with chocolate frosting, in-store bakery",
+   "servis_g": 100,
+   "not_": "analog: kremalı kek (brownie kaydı yok)"
+  },
+  {
+   "dish_id": "islak_kek",
+   "yemek": "Islak Kek",
+   "tarif_karb": 54.0,
+   "referans_karb": 55.4,
+   "fark": -1.3,
+   "usda": "FDC 174944: Cake, yellow, commercially prepared, with chocolate frosting, in-store bakery",
+   "servis_g": 100,
+   "not_": "analog: çikolata kremalı kek"
+  },
+  {
+   "dish_id": "kiymali_lazanya",
+   "yemek": "Kıymalı Lazanya",
+   "tarif_karb": 51.0,
+   "referans_karb": 38.4,
+   "fark": 12.6,
+   "usda": "FDC 172114: Lasagna with meat sauce, frozen, prepared",
+   "servis_g": 250,
+   "not_": "kıymalı lazanya, pişmiş"
+  },
+  {
+   "dish_id": "sebzeli_lazanya",
+   "yemek": "Sebzeli Lazanya",
+   "tarif_karb": 52.6,
+   "referans_karb": 35.5,
+   "fark": 17.2,
+   "usda": "FDC 172106: Lasagna, Vegetable, frozen, baked",
+   "servis_g": 250,
+   "not_": "sebzeli lazanya, pişmiş"
+  },
+  {
+   "dish_id": "pizza",
+   "yemek": "Pizza",
+   "tarif_karb": 51.9,
+   "referans_karb": 43.5,
+   "fark": 8.3,
+   "usda": "FDC 170317: Pizza, cheese topping, regular crust, frozen, cooked",
+   "servis_g": 150,
+   "not_": "peynirli pizza, normal hamur"
+  },
+  {
+   "dish_id": "patates_kizartmasi",
+   "yemek": "Patates Kızartması",
+   "tarif_karb": 27.5,
+   "referans_karb": 27.5,
+   "fark": 0.0,
+   "usda": "FDC 170437: Potatoes, french fried, crinkle or regular cut, salt added in processing, frozen, oven-heated",
+   "servis_g": 100,
+   "not_": "fırınlanmış dondurulmuş patates kızartması"
+  },
+  {
+   "dish_id": "yogurt",
+   "yemek": "Yoğurt",
+   "tarif_karb": 7.0,
+   "referans_karb": 7.0,
+   "fark": 0.0,
+   "usda": "FDC 171284: Yogurt, plain, whole milk",
+   "servis_g": 150,
+   "not_": "sade tam yağlı yoğurt"
+  }
+ ],
+ "yontem": "Tarif ayrıştırması (çiğ malzeme × USDA) ile USDA'nın pişmiş/hazır yemek analizinin servis ağırlığı ile çarpımı karşılaştırıldı. Servis ağırlıkları varsayımdır."
+}

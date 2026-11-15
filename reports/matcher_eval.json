@@ -1,0 +1,339 @@
+{
+ "sonuc": {
+  "TF-IDF harf 2–4": {
+   "n": 194,
+   "acc1": 0.82,
+   "recall5": 0.985,
+   "mrr": 0.887
+  },
+  "bge-m3": {
+   "n": 194,
+   "acc1": 0.789,
+   "recall5": 0.969,
+   "mrr": 0.873
+  },
+  "RRF TF-IDF + bge-m3 (0,5)": {
+   "n": 194,
+   "acc1": 0.83,
+   "recall5": 0.99,
+   "mrr": 0.895
+  },
+  "RRF TF-IDF + bge-m3 (1,0)": {
+   "n": 194,
+   "acc1": 0.83,
+   "recall5": 0.985,
+   "mrr": 0.896
+  }
+ },
+ "hatalar": {
+  "TF-IDF harf 2–4": [
+   {
+    "sorgu": "Zerdeçallı Bulgur Pilavı",
+    "dogru": "Bulgur Pilavı",
+    "tahmin": "Pirinç Pilavı"
+   },
+   {
+    "sorgu": "Patates",
+    "dogru": "Küp Patates",
+    "tahmin": "Patates Tava"
+   },
+   {
+    "sorgu": "Mantar Soslu Spagetti",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Makarna"
+   },
+   {
+    "sorgu": "Gemici Usulü Nohut",
+    "dogru": "Etli Nohut",
+    "tahmin": "Gemici Usulü Kuru Fasulye"
+   },
+   {
+    "sorgu": "Peynirli Kol Böreği",
+    "dogru": "Kol Böreği",
+    "tahmin": "Su Böreği"
+   },
+   {
+    "sorgu": "Eli Böğründe",
+    "dogru": "Karnıyarık",
+    "tahmin": "Etli Pide"
+   },
+   {
+    "sorgu": "Burgu Makarna",
+    "dogru": "Makarna",
+    "tahmin": "Peynirli Makarna"
+   },
+   {
+    "sorgu": "Peynirli Gül Böreği",
+    "dogru": "Gül Böreği",
+    "tahmin": "Su Böreği"
+   },
+   {
+    "sorgu": "Mantarlı Pestolu Fettucini",
+    "dogru": "Mantarlı Pesto Soslu Makarna",
+    "tahmin": "Mantar Soslu Makarna"
+   },
+   {
+    "sorgu": "Fetüçini Mantar Soslu",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Arabiatta Makarna"
+   },
+   {
+    "sorgu": "Fettucine Mantarlı",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Mantarlı Pesto Soslu Makarna"
+   },
+   {
+    "sorgu": "Nohut",
+    "dogru": "Nohut Yemeği",
+    "tahmin": "Etli Nohut"
+   },
+   {
+    "sorgu": "Erişte",
+    "dogru": "Erişte Kavurma",
+    "tahmin": "Sebzeli Erişte"
+   },
+   {
+    "sorgu": "Tavuk Çökertme",
+    "dogru": "Piliç Çökertme",
+    "tahmin": "Çökertme Kebabı"
+   },
+   {
+    "sorgu": "Napoliten Spagetti",
+    "dogru": "Napoliten Soslu Makarna",
+    "tahmin": "Makarna"
+   }
+  ],
+  "bge-m3": [
+   {
+    "sorgu": "Zerdeçallı Bulgur Pilavı",
+    "dogru": "Bulgur Pilavı",
+    "tahmin": "Pirinç Pilavı"
+   },
+   {
+    "sorgu": "Arpa Şehriye Pilavı",
+    "dogru": "Şehriye Pilavı",
+    "tahmin": "Şehriyeli Pirinç Pilavı"
+   },
+   {
+    "sorgu": "Patates",
+    "dogru": "Küp Patates",
+    "tahmin": "Baby Patates"
+   },
+   {
+    "sorgu": "Peynirli İnce Uzun Makarna",
+    "dogru": "Peynirli Makarna",
+    "tahmin": "Mantar Soslu Makarna"
+   },
+   {
+    "sorgu": "Mantar Soslu Spagetti",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Mantar Sos"
+   },
+   {
+    "sorgu": "Gemici Usulü Nohut",
+    "dogru": "Etli Nohut",
+    "tahmin": "Gemici Usulü Kuru Fasulye"
+   },
+   {
+    "sorgu": "Peynirli Kol Böreği",
+    "dogru": "Kol Böreği",
+    "tahmin": "Kol Böreği"
+   },
+   {
+    "sorgu": "Eli Böğründe",
+    "dogru": "Karnıyarık",
+    "tahmin": "Karışık Musakka"
+   },
+   {
+    "sorgu": "Burgu Makarna",
+    "dogru": "Makarna",
+    "tahmin": "Napoliten Soslu Makarna"
+   },
+   {
+    "sorgu": "Peynirli Gül Böreği",
+    "dogru": "Gül Böreği",
+    "tahmin": "Ispanaklı Gül Böreği"
+   },
+   {
+    "sorgu": "Püreli Tas Kebabı",
+    "dogru": "Taş Kebabı",
+    "tahmin": "Tepsi Kebabı"
+   },
+   {
+    "sorgu": "Mantarlı Pestolu Fettucini",
+    "dogru": "Mantarlı Pesto Soslu Makarna",
+    "tahmin": "Mantar Soslu Makarna"
+   },
+   {
+    "sorgu": "Fetüçini Mantar Soslu",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Mantarlı Pesto Soslu Makarna"
+   },
+   {
+    "sorgu": "Nohutlu Pilav",
+    "dogru": "Nohutlu Pirinç Pilavı",
+    "tahmin": "Nohutlu Bulgur Pilavı"
+   },
+   {
+    "sorgu": "Fettucine Mantarlı",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Mantarlı Pesto Soslu Makarna"
+   }
+  ],
+  "RRF TF-IDF + bge-m3 (0,5)": [
+   {
+    "sorgu": "Zerdeçallı Bulgur Pilavı",
+    "dogru": "Bulgur Pilavı",
+    "tahmin": "Pirinç Pilavı"
+   },
+   {
+    "sorgu": "Patates",
+    "dogru": "Küp Patates",
+    "tahmin": "Patates Tava"
+   },
+   {
+    "sorgu": "Mantar Soslu Spagetti",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Pesto Soslu Makarna"
+   },
+   {
+    "sorgu": "Gemici Usulü Nohut",
+    "dogru": "Etli Nohut",
+    "tahmin": "Gemici Usulü Kuru Fasulye"
+   },
+   {
+    "sorgu": "Peynirli Kol Böreği",
+    "dogru": "Kol Böreği",
+    "tahmin": "Su Böreği"
+   },
+   {
+    "sorgu": "Eli Böğründe",
+    "dogru": "Karnıyarık",
+    "tahmin": "Söğürtmeli Köfte"
+   },
+   {
+    "sorgu": "Burgu Makarna",
+    "dogru": "Makarna",
+    "tahmin": "Peynirli Makarna"
+   },
+   {
+    "sorgu": "Peynirli Gül Böreği",
+    "dogru": "Gül Böreği",
+    "tahmin": "Ispanaklı Gül Böreği"
+   },
+   {
+    "sorgu": "Mantarlı Pestolu Fettucini",
+    "dogru": "Mantarlı Pesto Soslu Makarna",
+    "tahmin": "Mantar Soslu Makarna"
+   },
+   {
+    "sorgu": "Fetüçini Mantar Soslu",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Arabiatta Makarna"
+   },
+   {
+    "sorgu": "Fettucine Mantarlı",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Mantarlı Pesto Soslu Makarna"
+   },
+   {
+    "sorgu": "Nohut",
+    "dogru": "Nohut Yemeği",
+    "tahmin": "Etli Nohut"
+   },
+   {
+    "sorgu": "Erişte",
+    "dogru": "Erişte Kavurma",
+    "tahmin": "Sebzeli Erişte"
+   },
+   {
+    "sorgu": "Tavuk Çökertme",
+    "dogru": "Piliç Çökertme",
+    "tahmin": "Çökertme Kebabı"
+   },
+   {
+    "sorgu": "Napoliten Spagetti",
+    "dogru": "Napoliten Soslu Makarna",
+    "tahmin": "Makarna"
+   }
+  ],
+  "RRF TF-IDF + bge-m3 (1,0)": [
+   {
+    "sorgu": "Zerdeçallı Bulgur Pilavı",
+    "dogru": "Bulgur Pilavı",
+    "tahmin": "Pirinç Pilavı"
+   },
+   {
+    "sorgu": "Patates",
+    "dogru": "Küp Patates",
+    "tahmin": "Patates Tava"
+   },
+   {
+    "sorgu": "Mantar Soslu Spagetti",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Mantar Sos"
+   },
+   {
+    "sorgu": "Gemici Usulü Nohut",
+    "dogru": "Etli Nohut",
+    "tahmin": "Gemici Usulü Kuru Fasulye"
+   },
+   {
+    "sorgu": "Eli Böğründe",
+    "dogru": "Karnıyarık",
+    "tahmin": "Söğürtmeli Köfte"
+   },
+   {
+    "sorgu": "Burgu Makarna",
+    "dogru": "Makarna",
+    "tahmin": "Napoliten Soslu Makarna"
+   },
+   {
+    "sorgu": "Peynirli Gül Böreği",
+    "dogru": "Gül Böreği",
+    "tahmin": "Ispanaklı Gül Böreği"
+   },
+   {
+    "sorgu": "Mantarlı Pestolu Fettucini",
+    "dogru": "Mantarlı Pesto Soslu Makarna",
+    "tahmin": "Mantar Soslu Makarna"
+   },
+   {
+    "sorgu": "Fetüçini Mantar Soslu",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Arabiatta Makarna"
+   },
+   {
+    "sorgu": "Nohutlu Pilav",
+    "dogru": "Nohutlu Pirinç Pilavı",
+    "tahmin": "Nohutlu Bulgur Pilavı"
+   },
+   {
+    "sorgu": "Fettucine Mantarlı",
+    "dogru": "Mantar Soslu Makarna",
+    "tahmin": "Mantarlı Pesto Soslu Makarna"
+   },
+   {
+    "sorgu": "Nohut",
+    "dogru": "Nohut Yemeği",
+    "tahmin": "Etli Nohut"
+   },
+   {
+    "sorgu": "Erişte",
+    "dogru": "Erişte Kavurma",
+    "tahmin": "Sebzeli Erişte"
+   },
+   {
+    "sorgu": "Tavuk Çökertme",
+    "dogru": "Piliç Çökertme",
+    "tahmin": "Çökertme Kebabı"
+   },
+   {
+    "sorgu": "Napoliten Spagetti",
+    "dogru": "Napoliten Soslu Makarna",
+    "tahmin": "Makarna"
+   }
+  ]
+ },
+ "yontem": "Ad eşleştiricinin GERÇEK menü yazımlarıyla değerlendirmesi (birini-dışarıda-bırak).\n\nHer elle etiketlenmiş alias (tek yemeğe giden) için o yazım aday kümesinden çıkarılır, eşleştirici kalan adaylar\n(standart yemek adları + diğer yazımlar) içinden doğru yemeği bulabiliyor mu? Standart adı yazımla birebir aynı olan\nsatırlar çıkarılır (aksi halde soru kolay olur). TF-IDF tek başına, bge-m3 tek başına ve RRF birleşimi karşılaştırılır.\nÇıktı: reports/matcher_eval.json"
+}

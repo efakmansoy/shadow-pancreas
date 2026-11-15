@@ -1,0 +1,24 @@
+{
+ "predictor": "knn",
+ "label": "Benzer senaryo: açlık + menü besin vektörü (kNN)",
+ "knn": {
+  "weights": {
+   "aclik": 4.0,
+   "r7_meal": 0.0,
+   "n_carb": 0.25,
+   "n_gl": 0.5,
+   "n_sweet_carb": 4.0,
+   "n_starch_carb": 4.0,
+   "n_fat": 0.0,
+   "n_protein": 4.0,
+   "n_fiber": 0.0
+  },
+  "k": 30,
+  "w_meal": 4.0,
+  "w_emb": 0.0,
+  "target": "level",
+  "bw": 3.0
+ },
+ "inner_mae": 34.99222297028716,
+ "note": "Girdi: o anki açlık + bugünün menüsü (besin vektörü) + son 7 günün aynı öğün tokluk ortalaması. Çıktı: benzer geçmiş öğünler; her birinin vurulan insülini ve tokluğu gösterilir."
+}

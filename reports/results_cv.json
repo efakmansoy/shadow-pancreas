@@ -1,0 +1,1091 @@
+{
+ "cv": {
+  "B0 ortalama": {
+   "n": 312,
+   "mae": 39.513629064338,
+   "rmse": 47.90149299761818,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 0,
+   "hiper_kacan": 72,
+   "hiper_yanlis_alarm": 0,
+   "kapsama": 0.8012820512820513,
+   "aralik_genislik": 125.94398617488427,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 0,
+   "hipo_kacan": 13,
+   "hipo_yanlis_alarm": 0,
+   "hiper_uyari_yakalanan": 72,
+   "hiper_uyari_yanlis": 240,
+   "mae_ci95": [
+    36.58420227103581,
+    42.61670989223953
+   ]
+  },
+  "B1 öğün medyanı": {
+   "n": 312,
+   "mae": 36.37820512820513,
+   "rmse": 44.39791300823924,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 0,
+   "hiper_kacan": 72,
+   "hiper_yanlis_alarm": 0,
+   "kapsama": 0.7916666666666666,
+   "aralik_genislik": 120.31039484481302,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 10,
+   "hipo_kacan": 3,
+   "hipo_yanlis_alarm": 94,
+   "hiper_uyari_yakalanan": 66,
+   "hiper_uyari_yanlis": 142,
+   "mae_ci95": [
+    33.586217948717945,
+    39.39791666666667
+   ]
+  },
+  "B2 prototip (±15)": {
+   "n": 312,
+   "mae": 35.60580011827911,
+   "rmse": 43.80033295990902,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 9,
+   "hiper_kacan": 63,
+   "hiper_yanlis_alarm": 12,
+   "kapsama": 0.8044871794871795,
+   "aralik_genislik": 116.36197160188651,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 11,
+   "hipo_kacan": 2,
+   "hipo_yanlis_alarm": 105,
+   "hiper_uyari_yakalanan": 66,
+   "hiper_uyari_yanlis": 167,
+   "mae_ci95": [
+    32.65485534328139,
+    38.44551624708144
+   ]
+  },
+  "M1 kNN (yemeksiz)": {
+   "n": 312,
+   "mae": 37.21693597670018,
+   "rmse": 45.90655100274497,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 5,
+   "hiper_kacan": 67,
+   "hiper_yanlis_alarm": 12,
+   "kapsama": 0.7948717948717948,
+   "aralik_genislik": 113.96061755658803,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 8,
+   "hipo_kacan": 5,
+   "hipo_yanlis_alarm": 88,
+   "hiper_uyari_yakalanan": 64,
+   "hiper_uyari_yanlis": 156,
+   "mae_ci95": [
+    34.36768209276789,
+    40.27455542579966
+   ]
+  },
+  "M2 kNN + besin vektörü": {
+   "n": 312,
+   "mae": 36.26075934815137,
+   "rmse": 44.31097066786651,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 4,
+   "hiper_kacan": 68,
+   "hiper_yanlis_alarm": 2,
+   "kapsama": 0.8044871794871795,
+   "aralik_genislik": 114.81143633595686,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 8,
+   "hipo_kacan": 5,
+   "hipo_yanlis_alarm": 87,
+   "hiper_uyari_yakalanan": 66,
+   "hiper_uyari_yanlis": 162,
+   "mae_ci95": [
+    33.537402315522336,
+    39.08987033324058
+   ]
+  },
+  "M3 LightGBM + besin": {
+   "n": 312,
+   "mae": 37.7714295731961,
+   "rmse": 46.651675338731785,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 13,
+   "hiper_kacan": 59,
+   "hiper_yanlis_alarm": 10,
+   "kapsama": 0.8108974358974359,
+   "aralik_genislik": 121.4307126346746,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 4,
+   "hipo_kacan": 9,
+   "hipo_yanlis_alarm": 100,
+   "hiper_uyari_yakalanan": 64,
+   "hiper_uyari_yanlis": 190,
+   "mae_ci95": [
+    34.83774198149293,
+    40.709655557357614
+   ]
+  },
+  "A: kNN + yalnız karbonhidrat": {
+   "n": 312,
+   "mae": 36.29464107934094,
+   "rmse": 44.880652345085295,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 7,
+   "hiper_kacan": 65,
+   "hiper_yanlis_alarm": 7,
+   "kapsama": 0.7884615384615384,
+   "aralik_genislik": 114.35175356543662,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 8,
+   "hipo_kacan": 5,
+   "hipo_yanlis_alarm": 91,
+   "hiper_uyari_yakalanan": 67,
+   "hiper_uyari_yanlis": 160,
+   "mae_ci95": [
+    33.3085964752605,
+    39.28965260457577
+   ]
+  },
+  "A: kNN + besin + menü embedding": {
+   "n": 312,
+   "mae": 36.10189406917488,
+   "rmse": 44.45931968066289,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 3,
+   "hiper_kacan": 69,
+   "hiper_yanlis_alarm": 6,
+   "kapsama": 0.7948717948717948,
+   "aralik_genislik": 114.06355027067902,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 10,
+   "hipo_kacan": 3,
+   "hipo_yanlis_alarm": 90,
+   "hiper_uyari_yakalanan": 67,
+   "hiper_uyari_yanlis": 164,
+   "mae_ci95": [
+    33.14257728777266,
+    39.14955303877825
+   ]
+  },
+  "A: kNN + yalnız menü embedding": {
+   "n": 312,
+   "mae": 36.77214747674323,
+   "rmse": 45.56450995141111,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 10,
+   "hiper_kacan": 62,
+   "hiper_yanlis_alarm": 16,
+   "kapsama": 0.782051282051282,
+   "aralik_genislik": 113.84583262128427,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 9,
+   "hipo_kacan": 4,
+   "hipo_yanlis_alarm": 90,
+   "hiper_uyari_yakalanan": 67,
+   "hiper_uyari_yanlis": 167,
+   "mae_ci95": [
+    33.823297005056986,
+    39.79000189917337
+   ]
+  },
+  "A: Ridge yemeksiz": {
+   "n": 312,
+   "mae": 35.29294016982416,
+   "rmse": 43.56914883047029,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 3,
+   "hiper_kacan": 69,
+   "hiper_yanlis_alarm": 4,
+   "kapsama": 0.8076923076923077,
+   "aralik_genislik": 116.36494140125484,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 10,
+   "hipo_kacan": 3,
+   "hipo_yanlis_alarm": 81,
+   "hiper_uyari_yakalanan": 67,
+   "hiper_uyari_yanlis": 168,
+   "mae_ci95": [
+    32.609675967539786,
+    38.10750471164542
+   ]
+  },
+  "A: Ridge + besin": {
+   "n": 312,
+   "mae": 35.829722125875314,
+   "rmse": 44.31690625711186,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 5,
+   "hiper_kacan": 67,
+   "hiper_yanlis_alarm": 5,
+   "kapsama": 0.8141025641025641,
+   "aralik_genislik": 116.90403929275726,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 6,
+   "hipo_kacan": 7,
+   "hipo_yanlis_alarm": 78,
+   "hiper_uyari_yakalanan": 69,
+   "hiper_uyari_yanlis": 172,
+   "mae_ci95": [
+    33.11687262216686,
+    38.805848303041735
+   ]
+  },
+  "A: LightGBM yemeksiz": {
+   "n": 312,
+   "mae": 36.64249923715794,
+   "rmse": 46.01385405309843,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 13,
+   "hiper_kacan": 59,
+   "hiper_yanlis_alarm": 12,
+   "kapsama": 0.8012820512820513,
+   "aralik_genislik": 123.21178167305538,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 9,
+   "hipo_kacan": 4,
+   "hipo_yanlis_alarm": 98,
+   "hiper_uyari_yakalanan": 66,
+   "hiper_uyari_yanlis": 182,
+   "mae_ci95": [
+    33.48376481378505,
+    39.633202884385696
+   ]
+  },
+  "M4 kNN + besin + insülin (uygulama)": {
+   "n": 312,
+   "mae": 35.7474976730133,
+   "rmse": 44.304017125474715,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 2,
+   "hiper_kacan": 70,
+   "hiper_yanlis_alarm": 3,
+   "kapsama": 0.7884615384615384,
+   "aralik_genislik": 114.90593032989477,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 9,
+   "hipo_kacan": 4,
+   "hipo_yanlis_alarm": 95,
+   "hiper_uyari_yakalanan": 67,
+   "hiper_uyari_yanlis": 162,
+   "mae_ci95": [
+    32.8818842243704,
+    38.608763670908516
+   ]
+  },
+  "M5 LightGBM + besin + insülin": {
+   "n": 312,
+   "mae": 38.1847285664532,
+   "rmse": 47.102494713201075,
+   "hiper_gercek": 72,
+   "hiper_yakalanan": 12,
+   "hiper_kacan": 60,
+   "hiper_yanlis_alarm": 11,
+   "kapsama": 0.7948717948717948,
+   "aralik_genislik": 121.4336348483869,
+   "hipo_gercek": 13,
+   "hipo_yakalanan": 4,
+   "hipo_kacan": 9,
+   "hipo_yanlis_alarm": 109,
+   "hiper_uyari_yakalanan": 65,
+   "hiper_uyari_yanlis": 188,
+   "mae_ci95": [
+    35.102879653653005,
+    41.155461916099746
+   ]
+  }
+ },
+ "farklar": {
+  "B0 ortalama − B2 prototip (±15)": [
+   1.4450281595094434,
+   6.289321553941368
+  ],
+  "B0 ortalama − M1 kNN (yemeksiz)": [
+   0.0037871718445597414,
+   4.81222730932638
+  ],
+  "B1 öğün medyanı − B2 prototip (±15)": [
+   -0.8839626958577164,
+   2.4168008398764775
+  ],
+  "B1 öğün medyanı − M1 kNN (yemeksiz)": [
+   -2.3724669362498796,
+   0.7176615524781179
+  ],
+  "B2 prototip (±15) − M1 kNN (yemeksiz)": [
+   -3.162809348703868,
+   -0.19942422642180296
+  ],
+  "M1 kNN (yemeksiz) − B2 prototip (±15)": [
+   0.2816545521375682,
+   3.070426416216496
+  ],
+  "M2 kNN + besin vektörü − B2 prototip (±15)": [
+   -0.7261928690994669,
+   2.1347434893333617
+  ],
+  "M2 kNN + besin vektörü − M1 kNN (yemeksiz)": [
+   -2.16215550261106,
+   0.3111135884625418
+  ],
+  "M3 LightGBM + besin − B2 prototip (±15)": [
+   0.16850271792958155,
+   4.033872736390198
+  ],
+  "M3 LightGBM + besin − M1 kNN (yemeksiz)": [
+   -1.1437428552811497,
+   2.3575984518070463
+  ],
+  "A: kNN + yalnız karbonhidrat − B2 prototip (±15)": [
+   -0.575948685820394,
+   1.9553410941206562
+  ],
+  "A: kNN + yalnız karbonhidrat − M1 kNN (yemeksiz)": [
+   -1.8979797567309964,
+   0.02003111572353022
+  ],
+  "A: kNN + besin + menü embedding − B2 prototip (±15)": [
+   -0.9572675529459447,
+   2.048643527244845
+  ],
+  "A: kNN + besin + menü embedding − M1 kNN (yemeksiz)": [
+   -2.579990552454349,
+   0.37463406519308085
+  ],
+  "A: kNN + yalnız menü embedding − B2 prototip (±15)": [
+   -0.2210182017768476,
+   2.585191039843457
+  ],
+  "A: kNN + yalnız menü embedding − M1 kNN (yemeksiz)": [
+   -1.9280438731307659,
+   0.9926116379379898
+  ],
+  "A: Ridge yemeksiz − B2 prototip (±15)": [
+   -1.7349018592567957,
+   1.1133573784994821
+  ],
+  "A: Ridge yemeksiz − M1 kNN (yemeksiz)": [
+   -3.2051830884353834,
+   -0.560062407393898
+  ],
+  "A: Ridge + besin − B2 prototip (±15)": [
+   -1.4484172233221337,
+   1.803772775989724
+  ],
+  "A: Ridge + besin − M1 kNN (yemeksiz)": [
+   -2.8387905743418624,
+   0.23318969096265293
+  ],
+  "A: LightGBM yemeksiz − B2 prototip (±15)": [
+   -0.8105911134946135,
+   2.899208492006912
+  ],
+  "A: LightGBM yemeksiz − M1 kNN (yemeksiz)": [
+   -2.368430059058668,
+   1.0957402596599326
+  ],
+  "M4 kNN + besin + insülin (uygulama) − B2 prototip (±15)": [
+   -1.2317129226171644,
+   1.482619335654543
+  ],
+  "M4 kNN + besin + insülin (uygulama) − M1 kNN (yemeksiz)": [
+   -2.8345921588660543,
+   -0.17836327910361632
+  ],
+  "M5 LightGBM + besin + insülin − B2 prototip (±15)": [
+   0.6998182304670776,
+   4.4612120586266695
+  ],
+  "M5 LightGBM + besin + insülin − M1 kNN (yemeksiz)": [
+   -0.9087692191689358,
+   2.8369834968903334
+  ]
+ },
+ "gruplar": {
+  "B2 prototip (±15)": {
+   "ogun": {
+    "aksam": 39.0,
+    "kahvalti": 35.6,
+    "ogle": 32.2
+   },
+   "ay": {
+    "1": 36.0,
+    "2": 38.1,
+    "3": 32.5,
+    "4": 34.2,
+    "6": 37.2
+   },
+   "aclik": {
+    "<100": 30.7,
+    "100–180": 36.4,
+    ">180": 38.2
+   }
+  },
+  "M1 kNN (yemeksiz)": {
+   "ogun": {
+    "aksam": 39.7,
+    "kahvalti": 38.6,
+    "ogle": 33.4
+   },
+   "ay": {
+    "1": 37.7,
+    "2": 38.0,
+    "3": 33.0,
+    "4": 33.6,
+    "6": 43.3
+   },
+   "aclik": {
+    "<100": 32.0,
+    "100–180": 38.4,
+    ">180": 39.4
+   }
+  },
+  "M2 kNN + besin vektörü": {
+   "ogun": {
+    "aksam": 38.8,
+    "kahvalti": 36.9,
+    "ogle": 33.1
+   },
+   "ay": {
+    "1": 37.7,
+    "2": 38.2,
+    "3": 33.3,
+    "4": 33.6,
+    "6": 38.3
+   },
+   "aclik": {
+    "<100": 33.1,
+    "100–180": 36.2,
+    ">180": 38.9
+   }
+  },
+  "M3 LightGBM + besin": {
+   "ogun": {
+    "aksam": 40.9,
+    "kahvalti": 38.5,
+    "ogle": 34.0
+   },
+   "ay": {
+    "1": 39.3,
+    "2": 39.7,
+    "3": 32.0,
+    "4": 36.0,
+    "6": 41.5
+   },
+   "aclik": {
+    "<100": 34.9,
+    "100–180": 37.5,
+    ">180": 40.5
+   }
+  }
+ },
+ "tuned": {
+  "M1 kNN (yemeksiz)": [
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 35.06531163283155
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.25,
+      "dow": 0.5,
+      "r7_meal": 0.25
+     },
+     "k": 45,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 34.813463787606764
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 4.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0
+     },
+     "k": 45,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 0.7
+    },
+    "inner_mae": 35.92178737462721
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 35.93382614977036
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 2.0,
+      "prev_bg": 0.25,
+      "dow": 0.5,
+      "r7_meal": 0.5
+     },
+     "k": 8,
+     "w_meal": 0.5,
+     "w_emb": 0.0,
+     "target": "delta",
+     "bw": 1.5
+    },
+    "inner_mae": 34.63683512737668
+   }
+  ],
+  "M2 kNN + besin vektörü": [
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0,
+      "n_carb": 0.0,
+      "n_gl": 0.0,
+      "n_sweet_carb": 0.0,
+      "n_starch_carb": 0.0,
+      "n_fat": 0.0,
+      "n_protein": 0.0,
+      "n_fiber": 0.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 35.06531163283155
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 2.0,
+      "prev_bg": 0.5,
+      "dow": 0.0,
+      "r7_meal": 0.0,
+      "n_carb": 2.0,
+      "n_gl": 0.25,
+      "n_sweet_carb": 1.0,
+      "n_starch_carb": 4.0,
+      "n_fat": 2.0,
+      "n_protein": 1.0,
+      "n_fiber": 0.5
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 3.0
+    },
+    "inner_mae": 34.926586035114596
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 2.0,
+      "dow": 0.0,
+      "r7_meal": 0.5,
+      "n_carb": 0.25,
+      "n_gl": 0.5,
+      "n_sweet_carb": 1.0,
+      "n_starch_carb": 4.0,
+      "n_fat": 2.0,
+      "n_protein": 1.0,
+      "n_fiber": 2.0
+     },
+     "k": 45,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.5
+    },
+    "inner_mae": 36.13526742073872
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0,
+      "n_carb": 0.0,
+      "n_gl": 0.0,
+      "n_sweet_carb": 0.0,
+      "n_starch_carb": 0.0,
+      "n_fat": 0.0,
+      "n_protein": 0.0,
+      "n_fiber": 0.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 35.93382614977036
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.5,
+      "n_carb": 0.5,
+      "n_gl": 0.0,
+      "n_sweet_carb": 2.0,
+      "n_starch_carb": 0.0,
+      "n_fat": 4.0,
+      "n_protein": 0.25,
+      "n_fiber": 0.25
+     },
+     "k": 20,
+     "w_meal": 1.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.5
+    },
+    "inner_mae": 35.18032162872314
+   }
+  ],
+  "A: kNN + yalnız karbonhidrat": [
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0,
+      "n_carb": 0.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 35.06531163283155
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.25,
+      "dow": 0.5,
+      "r7_meal": 2.0,
+      "n_carb": 0.5
+     },
+     "k": 30,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 3.0
+    },
+    "inner_mae": 34.85386844608901
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 0.5,
+      "dow": 0.25,
+      "r7_meal": 0.5,
+      "n_carb": 0.5
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 3.0
+    },
+    "inner_mae": 35.99293038410255
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0,
+      "n_carb": 0.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 35.93382614977036
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 2.0,
+      "prev_bg": 1.0,
+      "dow": 0.25,
+      "r7_meal": 1.0,
+      "n_carb": 0.25
+     },
+     "k": 15,
+     "w_meal": 2.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.5
+    },
+    "inner_mae": 34.959347971721435
+   }
+  ],
+  "A: kNN + besin + menü embedding": [
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 1.0,
+      "dow": 1.0,
+      "r7_meal": 0.25,
+      "n_carb": 0.5,
+      "n_gl": 0.25,
+      "n_sweet_carb": 2.0,
+      "n_starch_carb": 0.5,
+      "n_fat": 4.0,
+      "n_protein": 0.5,
+      "n_fiber": 0.25
+     },
+     "k": 30,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.5
+    },
+    "inner_mae": 34.92737831581604
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 1.0,
+      "dow": 1.0,
+      "r7_meal": 1.0,
+      "n_carb": 1.0,
+      "n_gl": 0.5,
+      "n_sweet_carb": 4.0,
+      "n_starch_carb": 0.5,
+      "n_fat": 4.0,
+      "n_protein": 0.25,
+      "n_fiber": 0.25
+     },
+     "k": 30,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 3.0
+    },
+    "inner_mae": 34.67487465853159
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0,
+      "n_carb": 0.0,
+      "n_gl": 0.0,
+      "n_sweet_carb": 0.0,
+      "n_starch_carb": 0.0,
+      "n_fat": 0.0,
+      "n_protein": 0.0,
+      "n_fiber": 0.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 36.2526600546867
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 0.25,
+      "dow": 2.0,
+      "r7_meal": 2.0,
+      "n_carb": 0.0,
+      "n_gl": 0.0,
+      "n_sweet_carb": 0.5,
+      "n_starch_carb": 2.0,
+      "n_fat": 2.0,
+      "n_protein": 0.25,
+      "n_fiber": 1.0
+     },
+     "k": 45,
+     "w_meal": 4.0,
+     "w_emb": 4.0,
+     "target": "level",
+     "bw": 1.5
+    },
+    "inner_mae": 35.86677130969128
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 1.0,
+      "dow": 0.5,
+      "r7_meal": 0.5,
+      "n_carb": 0.5,
+      "n_gl": 0.25,
+      "n_sweet_carb": 0.25,
+      "n_starch_carb": 2.0,
+      "n_fat": 4.0,
+      "n_protein": 0.25,
+      "n_fiber": 0.25
+     },
+     "k": 12,
+     "w_meal": 0.5,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 3.0
+    },
+    "inner_mae": 35.0445301581231
+   }
+  ],
+  "A: kNN + yalnız menü embedding": [
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 4.0,
+      "prev_bg": 0.25,
+      "dow": 0.25,
+      "r7_meal": 0.0
+     },
+     "k": 12,
+     "w_meal": 1.0,
+     "w_emb": 1.0,
+     "target": "delta",
+     "bw": 1.0
+    },
+    "inner_mae": 35.010126055375736
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 0.5,
+      "dow": 0.0,
+      "r7_meal": 4.0
+     },
+     "k": 30,
+     "w_meal": 2.0,
+     "w_emb": 4.0,
+     "target": "delta",
+     "bw": 0.7
+    },
+    "inner_mae": 34.630369547172414
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 36.2526600546867
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 0.5,
+      "dow": 0.0,
+      "r7_meal": 0.5
+     },
+     "k": 20,
+     "w_meal": 2.0,
+     "w_emb": 1.0,
+     "target": "delta",
+     "bw": 1.0
+    },
+    "inner_mae": 35.58249357831959
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 2.0,
+      "prev_bg": 0.0,
+      "dow": 1.0,
+      "r7_meal": 0.0
+     },
+     "k": 12,
+     "w_meal": 1.0,
+     "w_emb": 4.0,
+     "target": "level",
+     "bw": 0.7
+    },
+    "inner_mae": 34.29822898184207
+   }
+  ],
+  "M4 kNN + besin + insülin (uygulama)": [
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0,
+      "n_carb": 0.0,
+      "n_gl": 0.0,
+      "n_sweet_carb": 0.0,
+      "n_starch_carb": 0.0,
+      "n_fat": 0.0,
+      "n_protein": 0.0,
+      "n_fiber": 0.0,
+      "insulin": 1.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 35.35222133796749
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 4.0,
+      "dow": 0.0,
+      "r7_meal": 2.0,
+      "n_carb": 0.25,
+      "n_gl": 0.25,
+      "n_sweet_carb": 4.0,
+      "n_starch_carb": 4.0,
+      "n_fat": 0.5,
+      "n_protein": 1.0,
+      "n_fiber": 1.0,
+      "insulin": 4.0
+     },
+     "k": 30,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.5
+    },
+    "inner_mae": 34.70288289661608
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0,
+      "n_carb": 0.0,
+      "n_gl": 0.0,
+      "n_sweet_carb": 0.0,
+      "n_starch_carb": 0.0,
+      "n_fat": 0.0,
+      "n_protein": 0.0,
+      "n_fiber": 0.0,
+      "insulin": 1.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 36.59721840284809
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 4.0,
+      "prev_bg": 2.0,
+      "dow": 0.0,
+      "r7_meal": 2.0,
+      "n_carb": 0.0,
+      "n_gl": 0.25,
+      "n_sweet_carb": 0.0,
+      "n_starch_carb": 2.0,
+      "n_fat": 0.5,
+      "n_protein": 0.5,
+      "n_fiber": 0.0,
+      "insulin": 1.0
+     },
+     "k": 30,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 3.0
+    },
+    "inner_mae": 35.756512912357984
+   },
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 0.5,
+      "dow": 1.0,
+      "r7_meal": 0.0,
+      "n_carb": 1.0,
+      "n_gl": 0.25,
+      "n_sweet_carb": 0.5,
+      "n_starch_carb": 2.0,
+      "n_fat": 1.0,
+      "n_protein": 0.0,
+      "n_fiber": 0.25,
+      "insulin": 1.0
+     },
+     "k": 45,
+     "w_meal": 2.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 35.62784616817901
+   }
+  ]
+ }
+}

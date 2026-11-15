@@ -1,0 +1,46 @@
+{
+ "gemma4-e2b": {
+  "gecen_oran": 1.0,
+  "sayi_sadakati": 1.0,
+  "yasak_dil_orani": 0.0,
+  "hipo_ilk_cumle": "6/6",
+  "ort_kelime": 41.6,
+  "ort_sure_s": 1.5620451807975768,
+  "tok_per_s": 102.64660054229255,
+  "yukleme_s": 6.199592590332031,
+  "vram_mb": 1735
+ },
+ "gemma4-e4b": {
+  "gecen_oran": 1.0,
+  "sayi_sadakati": 1.0,
+  "yasak_dil_orani": 0.0,
+  "hipo_ilk_cumle": "6/6",
+  "ort_kelime": 40.3,
+  "ort_sure_s": 2.5092204093933104,
+  "tok_per_s": 53.59356562048525,
+  "yukleme_s": 7.454685211181641,
+  "vram_mb": 3349
+ },
+ "qwen3.5-9b": {
+  "gecen_oran": 0.85,
+  "sayi_sadakati": 0.85,
+  "yasak_dil_orani": 0.0,
+  "hipo_ilk_cumle": "5/6",
+  "ort_kelime": 50.85,
+  "ort_sure_s": 4.381026256084442,
+  "tok_per_s": 36.2673588771727,
+  "yukleme_s": 6.210548162460327,
+  "vram_mb": 5531
+ },
+ "gemma4-26b-a4b": {
+  "gecen_oran": 1.0,
+  "sayi_sadakati": 1.0,
+  "yasak_dil_orani": 0.0,
+  "hipo_ilk_cumle": "8/8",
+  "ort_kelime": 38.6,
+  "ort_sure_s": 42.66318793296814,
+  "tok_per_s": 7.5881563343767855,
+  "yukleme_s": 13.692270517349243,
+  "vram_mb": 7071
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "tr": {
+  "title": "Ne öğrendik?",
+  "bullets": [
+   "Uygulama tahmin yapmıyor. Bugünün menüsüne en çok benzeyen geçmiş öğünleri getiriyor ve her birinde vurulan insülini ve tokluğu gösteriyor. Sıralama önce birebir aynı yemeklere, sonra aynı aileden yemeklere bakıyor, açlık en son geliyor.",
+   "Geri getirme (496 öğün, her biri sırayla 'bugün', o günün kaydı hariç): ilk 5 vakada bugünün ana yemeklerinin ortalama %62'si birebir bulunuyor. Prototipin açlık ±15 penceresinde bu oran %17, rastgele seçimde de %17. İlk sıradaki vakada en az bir aynı yemek olma oranı %100; prototipte %41.",
+   "Getirilen vakaların tokluk durumu (düşük/hedef/yüksek) gerçek sonuçla %60 oranında aynı. Prototipte bu oran %61, rastgelede %56. Tokluğu asıl belirleyen açlık ve doz. Uygulama doğru menüyü getiriyor, sonucu tahmin etmiyor.",
+   "LLM özeti (Gemma 4 E4B, 60 özet, TR + EN): özetteki tarihli iddiaların %99'u doğru vakaya ait (198 iddia). Tarih sadakati %100, yasak dil %0, otomatik kontrolden geçme %93. Geçemeyen 4 özetin yerine şablon gösterildi: 3'ü uzunluk sınırını aştı, 1'i boş insülin değerini '0' yazdı.",
+   "Ad eşleştirme, gerçek menü yazımlarında (194 sorgu): TF-IDF + bge-m3 ilk tahminde %83, ilk 5'te %99 doğru.",
+   "Besin değerleri tarif ayrıştırması ve USDA FoodData Central ile hesaplandı. USDA'nın 22 hazır yemek analizine göre ortalama sapma porsiyon başına 5,6 g karbonhidrat.",
+   "Araştırma sonucu: tokluğu sayıyla tahmin eden hiçbir model (Ekim testinde en iyisi 33,8 mg/dL hata) prototipten (35,9) anlamlı biçimde iyi değil. Bu yüzden uygulama tahmin yerine geçmiş vakaları gösteriyor. Dozlar büyük ölçüde açlığa göre belirlenmiş: dozun açlıkla korelasyonu 0,81–0,91, menü karbonhidratıyla yaklaşık 0."
+  ]
+ },
+ "en": {
+  "title": "What did we learn?",
+  "bullets": [
+   "The app does not predict. It retrieves the past meals most similar to today's menu and shows the insulin injected and the post-meal glucose for each. Ranking: identical dishes first, then dishes of the same family, pre-meal glucose last.",
+   "Retrieval (496 meals, each treated as 'today', its own day excluded): on average 62% of today's main dishes appear identically in the top-5 cases, vs 17% for the prototype's ±15 pre-meal window and 17% at random; the first case shares at least one identical dish 100% of the time (prototype 41%).",
+   "The retrieved cases' outcome category (low/in range/high) matches the real outcome 60% of the time (prototype 61%, random 56%): pre-meal glucose and dose drive the outcome; the app retrieves the right menus, it does not forecast.",
+   "LLM summaries (Gemma 4 E4B, 60 summaries, TR + EN): 99% of dated claims belong to the right case (198 claims), date faithfulness 100%, forbidden language 0%, automatic check pass rate 93%. The 4 failures were replaced by the template: 3 were too long, 1 wrote a missing insulin value as '0'.",
+   "Dish-name matching on real menu spellings (194 queries): TF-IDF + bge-m3 is 83% correct at rank 1 and 99% within the top 5.",
+   "Nutrition comes from recipe decomposition with USDA FoodData Central; vs 22 USDA analyses of prepared foods the mean deviation is 5.6 g carbohydrate per portion.",
+   "Research result: no model that predicts the post-meal value as a number (best October error 33.8 mg/dL) is significantly better than the prototype (35.9), so the app shows past cases instead of a forecast. Doses were mostly set from pre-meal glucose (correlation 0.81–0.91), almost unrelated to menu carbs (~0)."
+  ]
+ }
+}

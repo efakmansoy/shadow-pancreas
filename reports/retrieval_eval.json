@@ -1,0 +1,29 @@
+{
+ "sonuc": {
+  "rastgele (aynı öğün)": {
+   "durum_isabeti_at5": 0.58,
+   "context_precision": 0.684,
+   "ort_tokluk_farki_at5": 50.0,
+   "n": 352
+  },
+  "prototip (±15)": {
+   "durum_isabeti_at5": 0.644,
+   "context_precision": 0.722,
+   "ort_tokluk_farki_at5": 46.7,
+   "n": 352
+  },
+  "M1 kNN (yemeksiz)": {
+   "durum_isabeti_at5": 0.644,
+   "context_precision": 0.726,
+   "ort_tokluk_farki_at5": 46.8,
+   "n": 352
+  },
+  "M2 kNN + besin": {
+   "durum_isabeti_at5": 0.631,
+   "context_precision": 0.735,
+   "ort_tokluk_farki_at5": 47.7,
+   "n": 352
+  }
+ },
+ "yontem": "Geri getirme (retrieval) kalitesi: RAGAS context precision'ın vaka tabanlı karşılığı.\n\nBelge RAG'inde \"getirilen parça soruya ilgili mi?\" diye sorulur. Burada getirilen şey geçmiş öğün vakaları; bir vaka,\nsonucu (tokluk durumu) sorgu öğününün gerçek sonucuyla aynıysa \"ilgili\" sayılır. Ay-dışarıda: her öğün için yalnızca\nbaşka aylardaki vakalar getirilir.\n\n  durum isabeti@5   : ilk 5 vakadan gerçek durumla (hipo/hedef/hiper) aynı olanların oranı\n  context precision : RAGAS formülü, ilgili vakaların sıra ağırlıklı ortalama hassasiyeti (ilk 5)\n  |Δtokluk|@5       : ilk 5 vakanın tokluğu ile gerçek tokluk arasındaki ortalama fark\nKarşılaştırma: rastgele aynı-öğün vakaları, prototip penceresi (aynı öğün, açlık ±15, en yakın 5), M1 (yemeksiz kNN),\nM2 (besin vektörlü kNN, uygulamadaki).\nÇıktı: reports/retrieval_eval.json"
+}

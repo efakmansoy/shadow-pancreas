@@ -1,0 +1,69 @@
+{
+ "geri_getirme": {
+  "uygulama": {
+   "n": 496,
+   "menu_ortusme": 0.621,
+   "ilk_vaka_eslesme": 1.0,
+   "durum_isabeti": 0.595,
+   "context_precision": 0.692,
+   "tokluk_farki": 50.5,
+   "aclik_yakin_orani": 0.551
+  },
+  "prototip_15": {
+   "n": 496,
+   "menu_ortusme": 0.167,
+   "ilk_vaka_eslesme": 0.407,
+   "durum_isabeti": 0.606,
+   "context_precision": 0.7,
+   "tokluk_farki": 48.8,
+   "aclik_yakin_orani": 0.997
+  },
+  "rastgele": {
+   "n": 496,
+   "menu_ortusme": 0.167,
+   "ilk_vaka_eslesme": 0.391,
+   "durum_isabeti": 0.559,
+   "context_precision": 0.649,
+   "tokluk_farki": 53.1,
+   "aclik_yakin_orani": 0.315
+  }
+ },
+ "llm": {
+  "toplam": {
+   "n": 60,
+   "kontrol_gecme": 0.933,
+   "sayi_sadakati": 0.983,
+   "tarih_sadakati": 1.0,
+   "yasak_dil": 0.0,
+   "iddia_dogrulugu": 0.99,
+   "iddia_sayisi": 198,
+   "ort_sure_s": 4.97,
+   "ort_kelime": 81.8
+  },
+  "tr": {
+   "n": 30,
+   "kontrol_gecme": 0.967,
+   "sayi_sadakati": 0.967,
+   "tarih_sadakati": 1.0,
+   "yasak_dil": 0.0,
+   "iddia_dogrulugu": 0.976,
+   "iddia_sayisi": 85,
+   "ort_sure_s": 4.86,
+   "ort_kelime": 69.6
+  },
+  "en": {
+   "n": 30,
+   "kontrol_gecme": 0.9,
+   "sayi_sadakati": 1.0,
+   "tarih_sadakati": 1.0,
+   "yasak_dil": 0.0,
+   "iddia_dogrulugu": 1.0,
+   "iddia_sayisi": 113,
+   "ort_sure_s": 5.08,
+   "ort_kelime": 94.0
+  }
+ },
+ "havuz": 496,
+ "model": "gemma-4-E4B (Q4, llama.cpp)",
+ "yontem": "Son doğruluk testleri (uygulamanın şu anki hali).\n\nA) Geri getirme — havuzdaki her öğün sırayla \"bugün\" kabul edilir; o günün kendi kayıtları dışarıda bırakılır.\n   Yöntemler: uygulama (menü öncelikli: birebir yemek > aynı aile > açlık), prototip (aynı öğün, açlık ±15),\n   rastgele (aynı öğün). İlk 5 vaka için:\n     menu_ortusme      : bugünün ana yemeklerinden, getirilen vakada birebir bulunanların ortalama oranı\n     ilk_vaka_eslesme  : 1. sıradaki vakada en az bir birebir aynı yemek olan sorgu oranı\n     durum_isabeti     : vakanın tokluk durumu (düşük/hedef/yüksek) gerçek sonuçla aynı mı\n     context_precision : RAGAS formülü (sıra ağırlıklı), ilgili = aynı durum\n     tokluk_farki      : |vaka tokluğu − gerçek tokluk| ortalaması (mg/dL)\n     aclik_yakin_orani : açlığı ±30 içinde olan vaka oranı\nB) LLM (Gemma 4 E4B, llama-server :8081) — 30 öğün × TR/EN = 60 özet:\n     kontrol_gecme     : tüm otomatik kontrollerden geçme (sayı, tarih, yasak dil, ortalama yok, uzunluk)\n     sayi_sadakati, tarih_sadakati, yasak_dil\n     iddia_dogrulugu   : özette geçen her tarih için o cümledeki sayılar gerçekten o vakaya mı ait\n                         (açlık/ünite/ek doz/tokluk; bugünkü açlık ve 70/180 eşikleri serbest)\n     sure_s            : özet başına süre\nÇıktı: reports/final_eval.json, reports/final_llm_outputs.csv"
+}

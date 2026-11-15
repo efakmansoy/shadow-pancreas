@@ -1,0 +1,171 @@
+<title>DiyaLife Menü Hafızası Raporu</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: tek sütun rapor; üstte final oranları, altında yöntem ve tablolar */
+:root {
+  --bg: #f4f6f7; --surface: #ffffff; --ink: #142128; --muted: #586870; --line: #d8e0e4;
+  --accent: #0f6e7a; --accent-soft: #e1f0f1; --good: #2f8a4c; --warn: #b7791f; --bad: #c2412d;
+  --bar-app: #0f6e7a; --bar-proto: #8aa3ad; --bar-rand: #c9d4d9;
+  --f-display: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e171c; --surface: #152229; --ink: #e2ebee; --muted: #9aabb3; --line: #27363e;
+    --accent: #52bcc8; --accent-soft: #163238; --good: #5cc07c; --warn: #e0ac4f; --bad: #ef7a66;
+    --bar-app: #52bcc8; --bar-proto: #6d8790; --bar-rand: #3a4c54; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e171c; --surface: #152229; --ink: #e2ebee; --muted: #9aabb3; --line: #27363e;
+  --accent: #52bcc8; --accent-soft: #163238; --good: #5cc07c; --warn: #e0ac4f; --bad: #ef7a66;
+  --bar-app: #52bcc8; --bar-proto: #6d8790; --bar-rand: #3a4c54; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15.5px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 56px; }
+main { max-width: 920px; margin: 0 auto; }
+header { padding: 40px 0 18px; border-bottom: 1px solid var(--line); }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; color: var(--accent); letter-spacing: .04em; }
+h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(28px, 4.5vw, 40px); line-height: 1.12; margin: 8px 0 10px; text-wrap: balance; }
+h2 { font-family: var(--f-display); font-size: 21px; margin: 44px 0 10px; text-wrap: balance; }
+h3 { font-family: var(--f-display); font-size: 16px; margin: 22px 0 6px; }
+p, li { max-width: 70ch; }
+.lede { font-size: 16.5px; margin: 0; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 22px 0 4px; }
+.kpi { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: grid; gap: 2px; }
+.kpi b { font-family: var(--f-mono); font-size: 26px; font-variant-numeric: tabular-nums; color: var(--accent); }
+.kpi span { font-size: 13px; color: var(--muted); line-height: 1.35; }
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); margin: 10px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--f-display); font-size: 12px; letter-spacing: .03em; color: var(--muted); background: var(--bg); }
+tr:last-child td { border-bottom: 0; }
+td.n, th.n { text-align: right; font-family: var(--f-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.hl td { background: var(--accent-soft); font-weight: 600; }
+.chart { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; overflow-x: auto; }
+.chart svg { display: block; width: 100%; min-width: 520px; height: auto; }
+.chart text { fill: var(--ink); font-family: var(--f-body); font-size: 12px; }
+.chart .lbl { fill: var(--muted); }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); margin-top: 8px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+.note { border-left: 3px solid var(--warn); background: var(--surface); padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 14.5px; max-width: 70ch; }
+code { font-family: var(--f-mono); font-size: 12.5px; background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; }
+footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 12.5px; color: var(--muted); }
+@media (max-width: 720px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
+
+<main>
+<header>
+  <div class="eyebrow">Veritas AI Hackathon 2026 · AI + Health · final rapor, 14 Kasım 2026</div>
+  <h1>DiyaLife Menü Hafızası</h1>
+  <p class="lede">Tip 1 diyabetli bir kişi yemekten önce bugünün menüsünü ve açlık şekerini girer. Uygulama kendi kayıtlarından menüsü en çok benzeyen geçmiş öğünleri getirir. Her birinde o gün vurulan insülini ve 2. saat tokluğu gösterir. Yerel bir LLM bu vakaları Türkçe ya da İngilizce olarak anlatır. Uygulama doz önermez ve tahmin yapmaz.</p>
+</header>
+
+<h2>Final oranlar</h2>
+<div class="kpis">
+  <div class="kpi"><b>%62</b><span>ilk 5 vakada bugünün ana yemeklerinin birebir bulunma oranı (prototip %17)</span></div>
+  <div class="kpi"><b>%99</b><span>LLM özetinde tarihli iddiaların doğru vakaya ait olma oranı (198 iddia)</span></div>
+  <div class="kpi"><b>%99</b><span>yemek adı eşleştirmede doğru yemeğin ilk 5 aday içinde olma oranı</span></div>
+  <div class="kpi"><b>5,6 g</b><span>porsiyon başına karbonhidrat sapması (USDA'nın 22 hazır yemek analizine göre)</span></div>
+</div>
+
+<h2>1. Benzer öğün getirme</h2>
+<p>Havuzdaki 496 öğünün her biri sırayla "bugün" kabul edildi, o günün kendi kayıtları dışarıda bırakıldı ve ilk 5 vaka incelendi. Havuzda hafta sonları var, resmi tatiller yok.</p>
+<div class="chart" role="img" aria-label="Menü örtüşmesi: uygulama yüzde 62, prototip yüzde 17, rastgele yüzde 17. İlk vakada aynı yemek: uygulama yüzde 100, prototip yüzde 41, rastgele yüzde 39. Sonuç durumu isabeti: uygulama yüzde 60, prototip yüzde 61, rastgele yüzde 56.">
+<svg viewBox="0 0 640 210">
+  <!-- ölçek: 0–100% -> x 190..610 (420 px) -->
+  <g class="lbl">
+    <text x="190" y="200">0</text><text x="400" y="200" text-anchor="middle">50</text><text x="610" y="200" text-anchor="end">100%</text>
+  </g>
+  <line x1="190" y1="10" x2="190" y2="186" stroke="var(--line)"/>
+  <line x1="400" y1="10" x2="400" y2="186" stroke="var(--line)" stroke-dasharray="3 3"/>
+  <line x1="610" y1="10" x2="610" y2="186" stroke="var(--line)" stroke-dasharray="3 3"/>
+  <text x="0" y="36">Menü örtüşmesi</text>
+  <rect x="190" y="18" width="260.4" height="12" fill="var(--bar-app)"/><text x="456" y="28">62</text>
+  <rect x="190" y="32" width="71.4" height="12" fill="var(--bar-proto)"/><text x="267" y="42">17</text>
+  <rect x="190" y="46" width="71.4" height="12" fill="var(--bar-rand)"/><text x="267" y="56">17</text>
+  <text x="0" y="96">İlk vakada aynı yemek</text>
+  <rect x="190" y="78" width="420" height="12" fill="var(--bar-app)"/><text x="604" y="88" text-anchor="end" style="fill:var(--bg)">100</text>
+  <rect x="190" y="92" width="170.9" height="12" fill="var(--bar-proto)"/><text x="367" y="102">41</text>
+  <rect x="190" y="106" width="163.8" height="12" fill="var(--bar-rand)"/><text x="360" y="116">39</text>
+  <text x="0" y="156">Sonuç durumu isabeti</text>
+  <rect x="190" y="138" width="249.9" height="12" fill="var(--bar-app)"/><text x="446" y="148">60</text>
+  <rect x="190" y="152" width="254.5" height="12" fill="var(--bar-proto)"/><text x="451" y="162">61</text>
+  <rect x="190" y="166" width="234.8" height="12" fill="var(--bar-rand)"/><text x="431" y="176">56</text>
+</svg>
+<div class="legend"><span><i style="background:var(--bar-app)"></i>Uygulama (menü öncelikli)</span><span><i style="background:var(--bar-proto)"></i>Prototip (aynı öğün, açlık ±15)</span><span><i style="background:var(--bar-rand)"></i>Rastgele (aynı öğün)</span></div>
+</div>
+<div class="tbl"><table>
+<thead><tr><th>Yöntem</th><th class="n">Menü örtüşmesi</th><th class="n">İlk vakada aynı yemek</th><th class="n">Durum isabeti</th><th class="n">Context precision</th><th class="n">Açlığı ±30 içinde</th></tr></thead>
+<tbody>
+<tr class="hl"><td>Uygulama: birebir yemek, sonra aynı aile, en son açlık</td><td class="n">%62,1</td><td class="n">%100</td><td class="n">%59,5</td><td class="n">0,692</td><td class="n">%55,1</td></tr>
+<tr><td>Prototip: aynı öğün, açlık ±15</td><td class="n">%16,7</td><td class="n">%40,7</td><td class="n">%60,6</td><td class="n">0,700</td><td class="n">%99,7</td></tr>
+<tr><td>Rastgele: aynı öğün</td><td class="n">%16,7</td><td class="n">%39,1</td><td class="n">%55,9</td><td class="n">0,649</td><td class="n">%31,5</td></tr>
+</tbody></table></div>
+<p><b>Nasıl okunmalı:</b> Uygulama, menüsü gerçekten aynı olan günleri getiriyor; prototip bunu yapamıyor. Tokluğun hedef, yüksek ya da düşük çıkmasında ise iki yöntem başa baş. Tokluğu asıl belirleyen o günkü açlık ve vurulan doz. Bu yüzden ekranda açlığı bugüne ±30 mg/dL yakın vakalar ayrıca işaretleniyor. Ortalama alınmıyor, çünkü açlığı 100 olan günle 290 olan günün ortalaması anlamsız.</p>
+
+<h2>2. LLM özetleri (Gemma 4 E4B, yerel)</h2>
+<p>30 öğün için Türkçe ve İngilizce, toplam 60 özet üretildi. Model llama.cpp ile 8 GB'lık bir dizüstü GPU'sunda çalışıyor. "İddia doğruluğu" şöyle ölçüldü: özette geçen her tarih için o cümledeki açlık, ünite ve tokluk sayıları gerçekten o güne mi ait? Bu, RAGAS faithfulness ölçütünün kurallı karşılığıdır.</p>
+<div class="tbl"><table>
+<thead><tr><th>Ölçüt</th><th class="n">Toplam</th><th class="n">Türkçe</th><th class="n">İngilizce</th></tr></thead>
+<tbody>
+<tr class="hl"><td>İddia doğruluğu</td><td class="n">%99,0 (198)</td><td class="n">%97,6 (85)</td><td class="n">%100 (113)</td></tr>
+<tr><td>Tarih sadakati</td><td class="n">%100</td><td class="n">%100</td><td class="n">%100</td></tr>
+<tr><td>Sayı sadakati</td><td class="n">%98,3</td><td class="n">%96,7</td><td class="n">%100</td></tr>
+<tr><td>Yasak dil (doz önerisi, "ortalama")</td><td class="n">%0</td><td class="n">%0</td><td class="n">%0</td></tr>
+<tr><td>Tüm otomatik kontrollerden geçme</td><td class="n">%93,3</td><td class="n">%96,7</td><td class="n">%90,0</td></tr>
+<tr><td>Özet başına süre</td><td class="n">5,0 sn</td><td class="n">4,9 sn</td><td class="n">5,1 sn</td></tr>
+</tbody></table></div>
+<p>Kontrolden geçemeyen 4 özetin yerine kullanıcıya şablon özet gösterildi:</p>
+<ul>
+  <li>3'ü uzunluk sınırını aştı.</li>
+  <li>1'i kayıtta boş olan insülin değerini "0" diye yazdı. Hatayı sayı kontrolü yakaladı.</li>
+</ul>
+<h3>Model seçimi</h3>
+<p>Aynı 20 bağlamla dört yerel model denendi. E4B'nin kontrolden geçme oranı %100 oldu ve yaklaşık 3,3 GB VRAM kullandı. E2B daha hızlıydı. Qwen3.5-9B %85'te kaldı. 26B MoE modeli bu donanımda özet başına yaklaşık 43 saniye sürdü. Seçilen model E4B.</p>
+
+<h2>3. Yemek adı eşleştirme ve besin değerleri</h2>
+<div class="tbl"><table>
+<thead><tr><th>Ad eşleştirme (gerçek menü yazımları, 194 sorgu)</th><th class="n">İlk tahmin</th><th class="n">İlk 5</th><th class="n">MRR</th></tr></thead>
+<tbody>
+<tr class="hl"><td>TF-IDF harf n-gram + bge-m3, RRF (uygulamadaki)</td><td class="n">%83,0</td><td class="n">%99,0</td><td class="n">0,895</td></tr>
+<tr><td>TF-IDF tek başına</td><td class="n">%82,0</td><td class="n">%98,5</td><td class="n">0,887</td></tr>
+<tr><td>bge-m3 tek başına</td><td class="n">%78,9</td><td class="n">%96,9</td><td class="n">0,873</td></tr>
+</tbody></table></div>
+<p>Menüdeki 551 farklı yazım 343 standart yemeğe bağlandı. Her yemek porsiyon başına malzeme gramajına ayrıldı. Besin değerleri USDA FoodData Central SR Legacy'den (CC0, 88 malzeme) hesaplandı. Doğrulama için 22 yemek USDA'nın hazır/pişmiş yemek analizleriyle karşılaştırıldı:</p>
+<ul>
+  <li>ortalama mutlak sapma 5,6 g karbonhidrat,</li>
+  <li>medyan bağıl hata %11,</li>
+  <li>en büyük sapmalar sütlü/şerbetli tatlılarda ve lazanyada.</li>
+</ul>
+
+<h2>4. Araştırma bulgusu: tokluk sayıyla tahmin edilebilir mi?</h2>
+<p>İlk planda tokluğu sayıyla tahmin eden modeller vardı. Ocak–Haziran üzerinde her ay sırayla dışarıda bırakılarak test edildiler, Ekim ise hiçbir ayarlamada kullanılmadan tek seferlik son test oldu.</p>
+<div class="tbl"><table>
+<thead><tr><th>Model</th><th class="n">Çapraz doğrulama MAE</th><th class="n">Ekim testi MAE</th><th class="n">Ekim %95 GA</th></tr></thead>
+<tbody>
+<tr><td>Her zaman ortalama</td><td class="n">39,5</td><td class="n">—</td><td class="n">—</td></tr>
+<tr><td>Prototip (aynı öğün, açlık ±15)</td><td class="n">35,6</td><td class="n">35,9</td><td class="n">28,9–43,3</td></tr>
+<tr><td>kNN + besin vektörü</td><td class="n">36,3</td><td class="n">34,2</td><td class="n">27,2–41,6</td></tr>
+<tr><td>kNN + besin + insülin</td><td class="n">35,7</td><td class="n">33,8</td><td class="n">27,1–41,0</td></tr>
+<tr><td>LightGBM + besin</td><td class="n">37,8</td><td class="n">37,4</td><td class="n">29,5–45,4</td></tr>
+</tbody></table></div>
+<p>Hiçbir model prototipten anlamlı biçimde iyi değil, güven aralıkları örtüşüyor. Bu veride insülin dozu açlıkla güçlü ilişkili (korelasyon 0,81–0,91), menü karbonhidratıyla neredeyse ilişkisiz (yaklaşık 0). Yani dozlar büyük ölçüde açlığa göre belirlenmiş. Bu sonuç ürün kararını belirledi: uygulama sahte kesinlikte bir tahmin sayısı vermiyor, kullanıcının kendi geçmiş vakalarını gösteriyor.</p>
+
+<h2>Sınırlar</h2>
+<div class="note">
+<ul style="margin:0;padding-left:20px">
+  <li>Tek bir kişinin verisi: 496 öğün, 2026'nın 6 ayı. Sonuçlar genellenemez.</li>
+  <li>Tarifler standart porsiyon varsayımıyla yazıldı. Gerçekte yenen miktar kayıtlı değil.</li>
+  <li>Glisemik indeks değerleri yaklaşık. Bazı yöresel yemeklerin tarifleri tahmin.</li>
+  <li>LLM doğruluğu kurallı kontrolle ölçüldü. İnsan değerlendirmesi yapılmadı.</li>
+  <li>Uygulamada giriş/şifre yok. Ağda açıldığında aynı ağdaki herkes kayıtları görebilir.</li>
+</ul>
+</div>
+
+<footer>This project is a prototype and is not medical advice. · Bu proje bir prototiptir ve tıbbi tavsiye değildir. · Kaynaklar: kişisel şeker kaydı, yemekhane menüleri, USDA FoodData Central SR Legacy (CC0), BAAI/bge-m3, trmteb/turkish-embedding-model, Gemma 4 E4B (llama.cpp). Sonuç dosyaları: <code>reports/final_eval.json</code>, <code>results_test.json</code>, <code>matcher_eval.json</code>, <code>nutrition_validation.json</code>.</footer>
+</main>

@@ -1,0 +1,396 @@
+{
+ "test": {
+  "B2 prototip (±15)": {
+   "n": 40,
+   "mae": 35.86605971544559,
+   "rmse": 42.485532389260975,
+   "hiper_gercek": 6,
+   "hiper_yakalanan": 0,
+   "hiper_kacan": 6,
+   "hiper_yanlis_alarm": 0,
+   "kapsama": 0.8,
+   "aralik_genislik": 113.35670947642102,
+   "hipo_gercek": 2,
+   "hipo_yakalanan": 2,
+   "hipo_kacan": 0,
+   "hipo_yanlis_alarm": 17,
+   "hiper_uyari_yakalanan": 5,
+   "hiper_uyari_yanlis": 17,
+   "mae_ci95": [
+    28.94384244185766,
+    43.29974118990661
+   ]
+  },
+  "M1 kNN (yemeksiz)": {
+   "n": 40,
+   "mae": 34.231581412633815,
+   "rmse": 40.78970497520736,
+   "hiper_gercek": 6,
+   "hiper_yakalanan": 0,
+   "hiper_kacan": 6,
+   "hiper_yanlis_alarm": 0,
+   "kapsama": 0.8,
+   "aralik_genislik": 114.30959543297554,
+   "hipo_gercek": 2,
+   "hipo_yakalanan": 2,
+   "hipo_kacan": 0,
+   "hipo_yanlis_alarm": 17,
+   "hiper_uyari_yakalanan": 5,
+   "hiper_uyari_yanlis": 17,
+   "mae_ci95": [
+    27.517690012475857,
+    41.37997340809032
+   ]
+  },
+  "M2 kNN + besin vektörü": {
+   "n": 40,
+   "mae": 34.191296229283715,
+   "rmse": 41.02001659436961,
+   "hiper_gercek": 6,
+   "hiper_yakalanan": 0,
+   "hiper_kacan": 6,
+   "hiper_yanlis_alarm": 0,
+   "kapsama": 0.85,
+   "aralik_genislik": 112.74728253678708,
+   "hipo_gercek": 2,
+   "hipo_yakalanan": 2,
+   "hipo_kacan": 0,
+   "hipo_yanlis_alarm": 14,
+   "hiper_uyari_yakalanan": 5,
+   "hiper_uyari_yanlis": 19,
+   "mae_ci95": [
+    27.197134900119554,
+    41.55970008475794
+   ]
+  },
+  "M3 LightGBM + besin": {
+   "n": 40,
+   "mae": 37.43135308488779,
+   "rmse": 45.3134737552133,
+   "hiper_gercek": 6,
+   "hiper_yakalanan": 0,
+   "hiper_kacan": 6,
+   "hiper_yanlis_alarm": 0,
+   "kapsama": 0.775,
+   "aralik_genislik": 119.53375728936908,
+   "hipo_gercek": 2,
+   "hipo_yakalanan": 2,
+   "hipo_kacan": 0,
+   "hipo_yanlis_alarm": 24,
+   "hiper_uyari_yakalanan": 3,
+   "hiper_uyari_yanlis": 16,
+   "mae_ci95": [
+    29.510753772761372,
+    45.446295117557455
+   ]
+  },
+  "A: Ridge yemeksiz": {
+   "n": 40,
+   "mae": 37.12872813230457,
+   "rmse": 43.744299800262006,
+   "hiper_gercek": 6,
+   "hiper_yakalanan": 0,
+   "hiper_kacan": 6,
+   "hiper_yanlis_alarm": 0,
+   "kapsama": 0.725,
+   "aralik_genislik": 113.27483100989494,
+   "hipo_gercek": 2,
+   "hipo_yakalanan": 2,
+   "hipo_kacan": 0,
+   "hipo_yanlis_alarm": 14,
+   "hiper_uyari_yakalanan": 5,
+   "hiper_uyari_yanlis": 21,
+   "mae_ci95": [
+    30.053315381795354,
+    44.144847511266114
+   ]
+  },
+  "M4 kNN + besin + insülin (uygulama)": {
+   "n": 40,
+   "mae": 33.80261023374139,
+   "rmse": 40.468479750104564,
+   "hiper_gercek": 6,
+   "hiper_yakalanan": 0,
+   "hiper_kacan": 6,
+   "hiper_yanlis_alarm": 0,
+   "kapsama": 0.85,
+   "aralik_genislik": 119.2863749014712,
+   "hipo_gercek": 2,
+   "hipo_yakalanan": 2,
+   "hipo_kacan": 0,
+   "hipo_yanlis_alarm": 18,
+   "hiper_uyari_yakalanan": 6,
+   "hiper_uyari_yanlis": 19,
+   "mae_ci95": [
+    27.124904182263148,
+    40.993188168580865
+   ]
+  },
+  "M5 LightGBM + besin + insülin": {
+   "n": 40,
+   "mae": 36.97445489484907,
+   "rmse": 44.63999802754788,
+   "hiper_gercek": 6,
+   "hiper_yakalanan": 0,
+   "hiper_kacan": 6,
+   "hiper_yanlis_alarm": 0,
+   "kapsama": 0.75,
+   "aralik_genislik": 117.95848168742961,
+   "hipo_gercek": 2,
+   "hipo_yakalanan": 2,
+   "hipo_kacan": 0,
+   "hipo_yanlis_alarm": 24,
+   "hiper_uyari_yakalanan": 4,
+   "hiper_uyari_yanlis": 18,
+   "mae_ci95": [
+    29.349870043771205,
+    44.46119329564356
+   ]
+  }
+ },
+ "farklar": {
+  "B2 prototip (±15) − M1 kNN (yemeksiz)": [
+   -1.1043196682645162,
+   4.100752112302338
+  ],
+  "B2 prototip (±15) − M2 kNN + besin vektörü": [
+   -0.04863436649687891,
+   3.4422960325555527
+  ],
+  "B2 prototip (±15) − M3 LightGBM + besin": [
+   -6.7757335913075565,
+   3.7142518044536543
+  ],
+  "B2 prototip (±15) − A: Ridge yemeksiz": [
+   -4.449218822938196,
+   1.8368133293651385
+  ],
+  "B2 prototip (±15) − M4 kNN + besin + insülin (uygulama)": [
+   -0.6502846953377899,
+   4.907994918883365
+  ],
+  "B2 prototip (±15) − M5 LightGBM + besin + insülin": [
+   -5.598967935614259,
+   3.0932966583291304
+  ],
+  "M1 kNN (yemeksiz) − B2 prototip (±15)": [
+   -4.160311327170462,
+   1.0754908150413254
+  ],
+  "M1 kNN (yemeksiz) − M2 kNN + besin vektörü": [
+   -2.8836914686839936,
+   3.0611246400991945
+  ],
+  "M1 kNN (yemeksiz) − M3 LightGBM + besin": [
+   -8.649792677397523,
+   2.659149705671562
+  ],
+  "M1 kNN (yemeksiz) − A: Ridge yemeksiz": [
+   -5.607842568834485,
+   -0.06965866502312489
+  ],
+  "M1 kNN (yemeksiz) − M4 kNN + besin + insülin (uygulama)": [
+   -1.5827301117287198,
+   2.237897744516451
+  ],
+  "M1 kNN (yemeksiz) − M5 LightGBM + besin + insülin": [
+   -7.784756995625267,
+   2.062410765932988
+  ],
+  "M2 kNN + besin vektörü − B2 prototip (±15)": [
+   -3.439928050327254,
+   0.10159383505062637
+  ],
+  "M2 kNN + besin vektörü − M1 kNN (yemeksiz)": [
+   -2.981206485342427,
+   2.7884990478936773
+  ],
+  "M2 kNN + besin vektörü − M3 LightGBM + besin": [
+   -8.560490053148081,
+   1.576454811328562
+  ],
+  "M2 kNN + besin vektörü − A: Ridge yemeksiz": [
+   -6.60879631107563,
+   0.647658484788612
+  ],
+  "M2 kNN + besin vektörü − M4 kNN + besin + insülin (uygulama)": [
+   -2.784351088699864,
+   3.472242600975459
+  ],
+  "M2 kNN + besin vektörü − M5 LightGBM + besin + insülin": [
+   -8.040197858119697,
+   1.8263184836833166
+  ],
+  "M3 LightGBM + besin − B2 prototip (±15)": [
+   -3.6155999043472025,
+   6.66665423514513
+  ],
+  "M3 LightGBM + besin − M1 kNN (yemeksiz)": [
+   -2.4531386405519053,
+   8.965067321145503
+  ],
+  "M3 LightGBM + besin − M2 kNN + besin vektörü": [
+   -1.925974972331154,
+   8.466454712309051
+  ],
+  "M3 LightGBM + besin − A: Ridge yemeksiz": [
+   -4.15357523613813,
+   4.913233147835394
+  ],
+  "M3 LightGBM + besin − M4 kNN + besin + insülin (uygulama)": [
+   -0.9486297275667178,
+   8.52594424248746
+  ],
+  "M3 LightGBM + besin − M5 LightGBM + besin + insülin": [
+   -1.0606916139952247,
+   1.896071370482903
+  ],
+  "A: Ridge yemeksiz − B2 prototip (±15)": [
+   -1.687609450765471,
+   4.522396489803756
+  ],
+  "A: Ridge yemeksiz − M1 kNN (yemeksiz)": [
+   0.1312875004204402,
+   5.621711437959389
+  ],
+  "A: Ridge yemeksiz − M2 kNN + besin vektörü": [
+   -0.5252946076614695,
+   6.635811163886252
+  ],
+  "A: Ridge yemeksiz − M3 LightGBM + besin": [
+   -5.399891134491066,
+   4.368269946185468
+  ],
+  "A: Ridge yemeksiz − M4 kNN + besin + insülin (uygulama)": [
+   1.3196739109523759,
+   5.404464050165636
+  ],
+  "A: Ridge yemeksiz − M5 LightGBM + besin + insülin": [
+   -3.6766825482532384,
+   4.216736013332295
+  ],
+  "M4 kNN + besin + insülin (uygulama) − B2 prototip (±15)": [
+   -4.86288819654308,
+   0.7425332239530816
+  ],
+  "M4 kNN + besin + insülin (uygulama) − M1 kNN (yemeksiz)": [
+   -2.2077939455099655,
+   1.424080540068433
+  ],
+  "M4 kNN + besin + insülin (uygulama) − M2 kNN + besin vektörü": [
+   -3.4387705183794735,
+   2.901536527846972
+  ],
+  "M4 kNN + besin + insülin (uygulama) − M3 LightGBM + besin": [
+   -8.5925864855867,
+   1.0402372166762888
+  ],
+  "M4 kNN + besin + insülin (uygulama) − A: Ridge yemeksiz": [
+   -5.456175683484398,
+   -1.3267142402713399
+  ],
+  "M4 kNN + besin + insülin (uygulama) − M5 LightGBM + besin + insülin": [
+   -7.604844679107936,
+   1.2909601741246717
+  ],
+  "M5 LightGBM + besin + insülin − B2 prototip (±15)": [
+   -3.0897058651712976,
+   5.565027833676892
+  ],
+  "M5 LightGBM + besin + insülin − M1 kNN (yemeksiz)": [
+   -2.44387768330523,
+   7.950328461679191
+  ],
+  "M5 LightGBM + besin + insülin − M2 kNN + besin vektörü": [
+   -1.7926178636255938,
+   7.496243261356421
+  ],
+  "M5 LightGBM + besin + insülin − M3 LightGBM + besin": [
+   -2.0252044365316952,
+   1.1103643482993815
+  ],
+  "M5 LightGBM + besin + insülin − A: Ridge yemeksiz": [
+   -4.08133808343709,
+   3.924640475599043
+  ],
+  "M5 LightGBM + besin + insülin − M4 kNN + besin + insülin (uygulama)": [
+   -0.9540736933500479,
+   7.6899543500873015
+  ]
+ },
+ "cfg": {
+  "B2 prototip (±15)": [],
+  "M1 kNN (yemeksiz)": [
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 1.0,
+      "dow": 1.0,
+      "r7_meal": 0.25
+     },
+     "k": 30,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.5
+    },
+    "inner_mae": 35.35044735325397
+   }
+  ],
+  "M2 kNN + besin vektörü": [
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 1.0,
+      "prev_bg": 0.0,
+      "dow": 0.0,
+      "r7_meal": 0.0,
+      "n_carb": 0.0,
+      "n_gl": 0.0,
+      "n_sweet_carb": 0.0,
+      "n_starch_carb": 0.0,
+      "n_fat": 0.0,
+      "n_protein": 0.0,
+      "n_fiber": 0.0
+     },
+     "k": 15,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.0
+    },
+    "inner_mae": 35.57130190606176
+   }
+  ],
+  "M3 LightGBM + besin": [],
+  "A: Ridge yemeksiz": [],
+  "M4 kNN + besin + insülin (uygulama)": [
+   {
+    "cfg": {
+     "weights": {
+      "aclik": 8.0,
+      "prev_bg": 0.5,
+      "dow": 4.0,
+      "r7_meal": 4.0,
+      "n_carb": 0.25,
+      "n_gl": 2.0,
+      "n_sweet_carb": 0.5,
+      "n_starch_carb": 0.25,
+      "n_fat": 0.0,
+      "n_protein": 2.0,
+      "n_fiber": 1.0,
+      "insulin": 1.0
+     },
+     "k": 45,
+     "w_meal": 4.0,
+     "w_emb": 0.0,
+     "target": "level",
+     "bw": 1.5
+    },
+    "inner_mae": 35.59520432148907
+   }
+  ],
+  "M5 LightGBM + besin + insülin": []
+ }
+}
