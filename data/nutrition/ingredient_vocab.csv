@@ -1,0 +1,89 @@
+ingredient_id,name_tr,usda_hint,gi
+pirinc,Pirinç (çiğ),"Rice, white, long-grain, regular, raw, enriched",73
+bulgur,Bulgur (kuru),"Bulgur, dry",48
+firik,Firik (kuru),"Bulgur, dry",45
+bugday_dovme,Dövme buğday (kuru),"Wheat, durum (or hard red winter wheat kernels)",45
+makarna,Makarna / şehriye (kuru),"Pasta, dry, enriched",50
+eriste,Erişte (kuru),"Noodles, egg, dry, enriched",50
+kuskus,Kuskus (kuru),"Couscous, dry",65
+un,Buğday unu (beyaz),"Wheat flour, white, all-purpose, enriched, bleached",71
+irmik,İrmik,"Semolina, enriched",66
+pirinc_unu,Pirinç unu,"Rice flour, white",90
+nisasta,Mısır nişastası,"Cornstarch",85
+yufka,Yufka / baklava yufkası / kadayıf,"Phyllo dough",70
+ekmek,Beyaz ekmek / pide / lavaş,"Bread, white, commercially prepared",75
+galeta_unu,Galeta unu,"Bread crumbs, dry, grated, plain",70
+patates,Patates (çiğ),"Potatoes, flesh and skin, raw",78
+patates_kizartma,Patates kızartması (hazır pişmiş),"Potatoes, french fried, all types, salt added in processing, frozen, oven-heated",75
+misir,Mısır (tane),"Corn, sweet, yellow, raw",52
+kirmizi_mercimek,Kırmızı mercimek (kuru),"Lentils, pink or red, raw",26
+yesil_mercimek,Yeşil mercimek (kuru),"Lentils, raw",30
+nohut,Nohut (kuru),"Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",28
+kuru_fasulye,Kuru fasulye (kuru),"Beans, white, mature seeds, raw",31
+barbunya,Barbunya (kuru),"Beans, cranberry (roman), mature seeds, raw",30
+sogan,Soğan,"Onions, raw",10
+domates,Domates,"Tomatoes, red, ripe, raw, year round average",15
+salca,Domates salçası,"Tomato products, canned, paste, without salt added",35
+biber,Biber (yeşil),"Peppers, sweet, green, raw",15
+kirmizi_biber,Kırmızı biber (tatlı),"Peppers, sweet, red, raw",15
+patlican,Patlıcan,"Eggplant, raw",15
+kabak,Kabak,"Squash, summer, zucchini, includes skin, raw",15
+havuc,Havuç,"Carrots, raw",39
+ispanak,Ispanak,"Spinach, raw",15
+lahana,Lahana,"Cabbage, raw",10
+taze_fasulye,Taze fasulye,"Beans, snap, green, raw",15
+bezelye,Bezelye,"Peas, green, raw",51
+brokoli,Brokoli,"Broccoli, raw",15
+mantar,Mantar,"Mushrooms, white, raw",15
+kereviz,Kereviz (kök),"Celeriac, raw",35
+balkabagi,Bal kabağı,"Pumpkin, raw",64
+yesillik,Marul / yeşillik / roka,"Lettuce, green leaf, raw",10
+salatalik,Salatalık,"Cucumber, with peel, raw",15
+sarimsak,Sarımsak,"Garlic, raw",10
+maydanoz,Maydanoz / dereotu / nane (taze),"Parsley, fresh",10
+zeytin,Zeytin,"Olives, ripe, canned (small-extra large)",15
+meyve,Mevsim meyvesi (elma/portakal/mandalina ort.),"Apples, raw, with skin",38
+muz,Muz,"Bananas, raw",51
+uzum_kuru,Kuru üzüm,"Raisins, seedless",64
+hurma,Hurma,"Dates, medjool",42
+visne,Vişne,"Cherries, sour, red, raw",22
+limon,Limon suyu,"Lemon juice, raw",20
+sut,Süt (tam yağlı),"Milk, whole, 3.25% milkfat, with added vitamin D",39
+yogurt,Yoğurt (tam yağlı),"Yogurt, plain, whole milk",35
+beyaz_peynir,Beyaz peynir,"Cheese, feta",0
+kasar,Kaşar peyniri,"Cheese, mozzarella, low moisture, part-skim",0
+krem_peynir,Krem peynir / labne,"Cheese, cream",0
+krema,Krema (sıvı),"Cream, fluid, heavy whipping",0
+tereyagi,Tereyağı,"Butter, salted",0
+dondurma,Dondurma,"Ice creams, vanilla",51
+dana_kiyma,Dana kıyma (çiğ),"Beef, ground, 85% lean meat / 15% fat, raw",0
+dana_et,Dana kuşbaşı / biftek (çiğ),"Beef, chuck for stew, separable lean and fat, all grades, raw",0
+kuzu_et,Kuzu eti (çiğ),"Lamb, domestic, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/4"" fat, choice, raw",0
+tavuk_gogus,Tavuk göğsü (çiğ),"Chicken, broilers or fryers, breast, meat only, raw",0
+tavuk_but,Tavuk but / baget (çiğ),"Chicken, broilers or fryers, dark meat, thigh, meat only, raw",0
+hindi,Hindi eti (çiğ),"Turkey, whole, meat only, raw",0
+balik,Balık (çupra/levrek),"Fish, sea bass, mixed species, raw",0
+ciger,Dana ciğer (çiğ),"Beef, variety meats and by-products, liver, raw",0
+sosis,Sosis,"Frankfurter, beef, unheated",28
+yumurta,Yumurta,"Egg, whole, raw, fresh",0
+zeytinyagi,Zeytinyağı,"Oil, olive, salad or cooking",0
+sivi_yag,Ayçiçek yağı,"Oil, sunflower, linoleic (approx. 65%)",0
+ceviz,Ceviz,"Nuts, walnuts, english",15
+findik,Fındık,"Nuts, hazelnuts or filberts",15
+badem,Badem,"Nuts, almonds",15
+antep_fistigi,Antep fıstığı,"Nuts, pistachio nuts, raw",15
+hindistan_cevizi,Hindistan cevizi (rende),"Nuts, coconut meat, dried (desiccated), not sweetened",45
+susam,Susam,"Seeds, sesame seeds, whole, dried",35
+tahin,Tahin,"Seeds, sesame butter, tahini, from roasted and toasted kernels (most common type)",40
+hashas,Haşhaş tohumu,"Spices, poppy seed",35
+seker,Toz şeker,"Sugars, granulated",65
+bal,Bal,"Honey",61
+recel,Reçel,"Jams and preserves",51
+pekmez,Üzüm pekmezi,"Molasses",55
+kakao,Kakao tozu,"Cocoa, dry powder, unsweetened",20
+cikolata,Çikolata (sütlü/bitter ort.),"Candies, milk chocolate",43
+biskuvi,Bisküvi (sade),"Cookies, butter, commercially prepared, enriched",55
+kek,Pandispanya / sade kek,"Cake, sponge, commercially prepared",46
+ketcap,Ketçap / barbekü sosu,"Catsup",55
+mayonez,Mayonez,"Salad dressing, mayonnaise, regular",0
+kabartma,Kabartma tozu / maya (iz),"Leavening agents, baking powder, double-acting, sodium aluminum sulfate",0

@@ -1,0 +1,243 @@
+comp,raw,dish_ids
+yogurt,Yoğurt,yogurt
+salata,Salata / Zeytinyağlı,salata_zeytinyagli
+tatli,Meyve,meyve
+salata,Mevsim Yeşillikleri,mevsim_yesillik
+kahvaltilik,Çeri Domates,ceri_domates
+kahvaltilik,Salatalık,salatalik_dilim
+kahvaltilik,Zeytin,zeytin_kahvalti
+diger,Patates Kızartma,patates_kizartma
+diger,Sosis,sosis
+diger,Çay,
+diger,Şeker,
+tatli,Bal,bal
+kahvaltilik,Tereyağı,tereyagi_kahvalti
+yogurt,Süt,sut
+tatli,Reçel,recel
+kahvaltilik,Beyaz Peynir,beyaz_peynir_kahvalti
+kahvaltilik,Tahin Pekmez,tahin_pekmez
+kahvaltilik,Kaşar Peynir,kasar_kahvalti
+hamur,Simit,simit
+hamur,Poğaça,pogaca
+corba,Ezogelin Çorba,ezogelin_corba
+kahvaltilik,Kaşar Peyniri,kasar_kahvalti
+hamur,Açma,acma
+corba,Tarhana Çorba,tarhana_corba
+corba,Mercimek Çorba,mercimek_corba
+hamur,Peynirli Gül Böreği,peynirli_gul_boregi
+hamur,Sigara Böreği,sigara_boregi
+corba,Yayla Çorba,yayla_corba
+corba,Acem Çorba,acem_corba
+corba,Kaşarlı Domates Çorba,domates_corba
+tatli,Baklava,baklava
+corba,Naneli Yoğurt Çorba,yayla_corba
+tatli,Haşhaşlı Revani,hashasli_revani
+corba,Brokoli Çorba,brokoli_corba
+corba,Krotonlu Mercimek Çorba,krotonlu_mercimek_corba
+corba,Kremalı Mantar Çorba,kremali_mantar_corba
+corba,Çanakkale Çorba,canakkale_corba
+corba,Andaloz Çorba,andaloz_corba
+hamur,Kol Böreği,kol_boregi
+hamur,Zeytinli Açma,zeytinli_acma
+corba,Düğün Çorba,dugun_corba
+tatli,Burma Kadayıf,kadayif
+tatli,Şekerpare,sekerpare
+hamur,Kaşarlı Poğaça,kasarli_pogaca
+corba,Çeşminigar Çorba,cesminigar_corba
+corba,Yüksük Çorba,yuksuk_corba
+tatli,Cimcik Baklava,baklava
+tatli,Kalburabastı,kalburabasti
+corba,Mantar Çorba,kremali_mantar_corba
+tatli,Havuç Dilimi,havuc_dilimi
+tatli,Mozaik Pasta,mozaik_pasta
+tatli,Kakaolu Şekerpare,kakaolu_sekerpare
+tatli,Kıbrıs Tatlısı,kibris_tatlisi
+corba,Toyga Çorba,toyga_corba
+corba,Gemici Çorba,gemici_corba
+tatli,Browni Kek,browni_kek
+corba,Kremalı Tavuk Çorba,kremali_tavuk_corba
+corba,Domatesli Şehriye Çorba,sehriye_corba
+corba,Yoğurt Çorba,yayla_corba
+tatli,Fırın Sütlaç,firin_sutlac
+corba,Acem Çorbası,acem_corba
+corba,Mercimek Çorbası,mercimek_corba
+tatli,Şöbiyet,sobiyet
+corba,Domates Çorba,domates_corba
+tatli,Şam Tatlı,sam_tatlisi
+tatli,Tavuk Göğsü,tavuk_gogsu
+corba,Terbiyeli Tavuk Çorba,terbiyeli_tavuk_corba
+tatli,Tremisu,tiramisu
+corba,Havuç Çorba,havuc_corba
+corba,Salçalı Köylü Çorba,salcali_koylu_corba
+tatli,Köstebek Pasta,kostebek_pasta
+tatli,Kazandibi,kazandibi
+corba,Kremalı Tane Sebze Çorba,kremali_tane_sebze_corba
+tatli,Pannacotta,pannacotta
+tatli,Trileçe,trilece
+corba,Şehriyeli Tavuk Çorba,sehriyeli_tavuk_corba
+tatli,Islak Kek,islak_kek
+tatli,Cevizli Baklava,baklava
+corba,Ispanak Çorba,ispanak_corba
+tatli,Arap Tatlısı,arap_tatlisi
+corba,Şefin Çorba,sefin_corba
+tatli,Kaymaklı Ekmek Kadayıfı,kaymakli_ekmek_kadayifi
+tatli,Keşkül-ü Fukara,keskul
+tatli,Kemalpaşa Tatlısı,kemalpasa_tatlisi
+corba,Kremalı Havuç Çorba,havuc_corba
+corba,Anadolu Çorba,anadolu_corba
+tatli,Balbadem,balbadem
+tatli,Krem Karamel,krem_karamel
+corba,Şehriye Çorbası,sehriye_corba
+tatli,Tiramisu,tiramisu
+corba,Kaşarlı Domates Çorbası,domates_corba
+corba,Tarhana Çorbası,tarhana_corba
+corba,Krotonlu Mercimek Çorbası,krotonlu_mercimek_corba
+corba,Andaloz Çorbası,andaloz_corba
+corba,Ezogelin Çorbası,ezogelin_corba
+corba,Ev Usulü Mercimek Çorba,mercimek_corba
+tatli,Ağlayan Pasta,aglayan_pasta
+tatli,Tulumba,tulumba
+corba,Tavuk Suyu Çorba,tavuk_suyu_corba
+tatli,Kabaklı Magnolya,kabakli_magnolya
+corba,Lebeniye Çorba,lebeniye_corba
+corba,Alaca Çorba,alaca_corba
+corba,Köz Patlıcan Çorbası,koz_patlican_corba
+corba,Mengen Çorba,mengen_corba
+tatli,Portakallı Revani,revani
+tatli,Aşure,asure
+corba,Salçalı Köylü Çorbası,salcali_koylu_corba
+corba,Osmanlı Çorba,osmanli_corba
+tatli,Bal Badem,balbadem
+corba,Kremalı Tavuk Çorbası,kremali_tavuk_corba
+corba,Cennet Çorba,cennet_corba
+tatli,Kardelen Pasta,kardelen_pasta
+corba,Supa Topçeta Çorba,supa_topceta_corba
+corba,Çeşmi Nigar Çorba,cesminigar_corba
+corba,Mahluta Çorba,mahluta_corba
+corba,Bal Kabağı Çorba,bal_kabagi_corba
+corba,Dört Kaşık Çorba,mahluta_corba
+tatli,Tahinli Cevizli Kabak Tatlısı,kabak_tatlisi
+corba,Terbiyeli Şehriye Çorba,sehriye_corba
+tatli,Bademli Muhallebi,bademli_muhallebi
+tatli,Magnolya,magnolya
+corba,Mantarlı Domates Çorba,domates_corba
+corba,Dövme Çorba,dovme_corba
+corba,Sebze Çorba,sebze_corba
+corba,Sebze Tane Çorba,sebze_corba
+corba,Yüksük Çorbası,yuksuk_corba
+tatli,Dondurma,dondurma
+corba,Patatesli Mısırlı Cennet Çorba,cennet_corba
+tatli,Ejder Tatlısı,ejder_tatlisi
+tatli,Tel Kadayıf,kadayif
+corba,Ayran Aşı,ayran_asi_corba
+tatli,Fındıkpare,findikpare
+corba,Aşçıbaşı Çorbası,sefin_corba
+tatli,Elmalı Tart,elmali_tart
+tatli,Hurma Tatlısı,hurma_tatlisi
+corba,Salçalı Köylü Usulü Çorba,salcali_koylu_corba
+tatli,Saray Burma,saray_burma
+corba,Naneli Buğday Çorbası,dovme_corba
+tatli,Kekli Supangle,kekli_supangle
+tatli,Limonlu Revani,revani
+tatli,Soslu Tavuk Göğsü,tavuk_gogsu
+tatli,Naz Tatlısı,naz_tatlisi
+corba,Ayran Aşı Çorbası,ayran_asi_corba
+corba,Düğün Çorbası,dugun_corba
+corba,Yayla Çorbası,yayla_corba
+corba,Kremalı Mantar Çorbası,kremali_mantar_corba
+corba,Patatesli Mısırlı Cennet Çorbası,cennet_corba
+corba,Naneli Yoğurt Çorbası,yayla_corba
+corba,Kremalı Sebze Tane Çorba,kremali_tane_sebze_corba
+corba,Andoloz Çorba,andaloz_corba
+tatli,Kuru Meyveli Muhallebi,kuru_meyveli_muhallebi
+tatli,Haşhaşlı Şekerpare,hashasli_sekerpare
+corba,Maydanozlu Şehriye Çorba,sehriye_corba
+corba,Süleymaniye Çorba,suleymaniye_corba
+tatli,Peynir Tatlısı,peynir_tatlisi
+corba,Muradiye Çorba,muradiye_corba
+tatli,Kemalpaşa,kemalpasa_tatlisi
+tatli,Tramisu,tiramisu
+corba,Süzme Mercimek Çorba,mercimek_corba
+tatli,Kaymaklı Vişneli Ekmek Kadayıfı,kaymakli_ekmek_kadayifi
+corba,Salçalı Şehriyeli Tavuk Çorba,sehriyeli_tavuk_corba
+corba,Borç Çorba,borc_corba
+corba,Beyran Çorba,beyran_corba
+corba,Tutmaç Çorba,tutmac_corba
+tatli,Panacotta,pannacotta
+corba,Kıtır Ekmekli Domates Çorba,kitir_ekmekli_domates_corba
+corba,Kereviz Çorba,kereviz_corba
+tatli,Keskül Fukara,keskul
+corba,Krotonlu Ev Usulü Mercimek Çorba,krotonlu_mercimek_corba
+tatli,Muzlu Muhallebi,muzlu_muhallebi
+tatli,Sakızlı Muhallebi,muhallebi
+corba,Taneli Kremalı Sebze Çorba,kremali_tane_sebze_corba
+tatli,Kestaneli Sütte,kestaneli_sutte
+tatli,Osmanlı Tulumba Tatlısı,tulumba
+corba,Yuvalama Çorba,yuvalama_corba
+tatli,Haşhaşpare,hashasli_sekerpare
+tatli,Latte Pasta,latte_pasta
+corba,Yeşil Mercimekli Erişte Çorba,eristeli_yesil_mercimek_corba
+tatli,Tahinli Cevizli Bakla Tatlısı,bakla_tatlisi
+corba,Krotonlu Terbiyeli Mercimek Çorba,krotonlu_mercimek_corba
+corba,Şehriyeli Yeşil Mercimek Çorba,eristeli_yesil_mercimek_corba
+tatli,Fındıklı Gullaç,findikli_gullac
+tatli,Hanım Göbeği,hanim_gobegi
+corba,Roman Çorbası,roman_corba
+tatli,Tahinli Cevizli Peynir Tatlısı,tahinli_cevizli_peynir_tatlisi
+tatli,Krem Brüle,krem_brule
+corba,Krotonlu Domates Çorba,kitir_ekmekli_domates_corba
+corba,Maydanozlu Andaloz Çorba,andaloz_corba
+tatli,Süt Dilimi,sut_dilimi
+tatli,Tavuk Göğsü Tatlısı,tavuk_gogsu
+corba,Terbiyeli Tavuk Suyu Çorba,terbiyeli_tavuk_corba
+corba,Şafak Çorba,safak_corba
+tatli,Revani,revani
+tatli,Saray Sarma,saray_burma
+tatli,Sütlü İrmik Tatlısı,sutlu_irmik_tatlisi
+tatli,Ispanaklı Pasta,ispanakli_pasta
+corba,Cennet Çorbası,cennet_corba
+tatli,Malaga,malaga
+corba,Sebzeli Tavuk Suyu Çorba,tavuk_suyu_corba
+corba,Acılı Meksika Çorba,meksika_corba
+tatli,Çikolata Soslu Churros,cikolata_soslu_churros
+tatli,Supangle,supangle
+tatli,Akdeniz Gülü,akdeniz_gulu
+corba,Mahluta Çorbası,mahluta_corba
+corba,Kremalı Havuçlu Mısır Çorba,misir_corba
+tatli,Kedi Dili Tremisu,tiramisu
+tatli,Vişneli Pasta,visneli_pasta
+tatli,Yoğurt Tatlısı,yogurt_tatlisi
+corba,Naneli Dövme Çorba,dovme_corba
+corba,Erişteli Yeşil Mercimek Çorba,eristeli_yesil_mercimek_corba
+corba,Şehriye Çorba,sehriye_corba
+corba,Salçalı Şehriye Çorba,sehriye_corba
+tatli,Soğuk Kadayıf,soguk_kadayif
+corba,Sütlü Havuç Çorba,havuc_corba
+corba,Kremalı Taneli Sebze Çorba,kremali_tane_sebze_corba
+corba,Buğday Çorba,dovme_corba
+tatli,Vişneli Panacotta,visneli_pannacotta
+corba,Dereotlu Mısır Çorba,misir_corba
+corba,Köz Patlıcan Çorba,koz_patlican_corba
+corba,Analı Kızlı Çorba,anali_kizli_corba
+corba,Kremalı Havuç Çorbası,havuc_corba
+corba,Naneli Dövme Çorbası,dovme_corba
+corba,Erişteli Yeşil Mercimek Çorbası,eristeli_yesil_mercimek_corba
+corba,Salçalı Şehriye Çorbası,sehriye_corba
+tatli,Kadayıf,kadayif
+corba,Mantarlı Domates Çorbası,domates_corba
+corba,Toyga Çorbası,toyga_corba
+tatli,Brownie,browni_kek
+corba,Sütlü Havuç Çorbası,havuc_corba
+corba,Kremalı Taneli Sebze Çorbası,kremali_tane_sebze_corba
+corba,Buğday Çorbası,dovme_corba
+corba,Ispanak Çorbası,ispanak_corba
+corba,Yoğurt Çorbası,yayla_corba
+corba,Çeşminigâr Çorbası,cesminigar_corba
+corba,Sebze Tane Çorbası,sebze_corba
+tatli,Vişneli Panna Cotta,visneli_pannacotta
+corba,Dereotlu Mısır Çorbası,misir_corba
+corba,Dört Kaşık Çorbası,mahluta_corba
+corba,Çanakkale Çorbası,canakkale_corba
+corba,Tavuk Suyu Çorbası,tavuk_suyu_corba
+corba,Sebze Çorbası,sebze_corba
+tatli,Magnolia,magnolya

@@ -1,0 +1,315 @@
+comp,raw,dish_ids
+ana,Yumurta,
+ana,Omlet,omlet
+pilav,Pirinç Pilavı,pirinc_pilavi
+ana,Menemen,menemen
+pilav,Meyane Pilavı,meyane_pilavi
+pilav,Şehriyeli Pirinç Pilavı,sehriyeli_pirinc_pilavi
+pilav,Bulgur Pilavı,bulgur_pilavi
+pilav,Zerdeçallı Bulgur Pilavı,bulgur_pilavi
+ana,Lavaş,lavas
+ana,Pide,pide
+ana,Küp Patates,kup_patates
+pilav,Salçalı Bulgur Pilavı,salcali_bulgur_pilavi
+ana,Püre,patates_pure
+pilav,Mısırlı Pirinç Pilavı,misirli_pirinc_pilavi
+ana,Dana Haşlama,dana_haslama
+ana,İzmir Köfte,izmir_kofte
+pilav,Kuskus Pilavı,kuskus_pilavi
+pilav,Meyhane Pilavı,meyane_pilavi
+pilav,Su Böreği,su_boregi
+pilav,Arpa Şehriye Pilavı,sehriye_pilavi
+ana,Et Döner,et_doner
+ana,Ege Musakka,musakka_karisik
+ana,Etli Biber Dolma,etli_biber_dolma
+pilav,Cevizli Erişte,cevizli_eriste
+ana,Dana Macar Gulaş,macar_gulas
+pilav,İç Pilav,ic_pilav
+pilav,Elma Dilim Patates,elma_dilim_patates
+pilav,Melek Pilavı,melek_pilavi
+ana,Etli Nohut,etli_nohut
+ana,Orman Kebap,orman_kebabi
+pilav,Firik Pilavı,firik_pilavi
+ana,Patates,kup_patates
+ana,Orman Kebabı,orman_kebabi
+pilav,Peynirli Burgu Makarna,peynirli_makarna
+ana,Etli Patates Musakka,musakka_patates
+pilav,Pesto Soslu Spagetti,pesto_makarna
+ana,Etli Karışık Dolma,etli_karisik_dolma
+ana,Etli Taze Fasulye,etli_taze_fasulye
+pilav,Peynirli Makarna,peynirli_makarna
+ana,Şehzade Kebabı,sehzade_kebabi
+ana,Kayhan Köfte,kayhan_kofte
+ana,Dana Kavurma,dana_kavurma
+ana,Kayseri Köfte,kayseri_kofte
+ana,Kuru Fasulye,etli_kuru_fasulye
+ana,Sebzeli Kebap,sebzeli_kebap
+ana,Blonjör Patates,blonjor_patates
+ana,Et Tantuni,et_tantuni
+ana,Tire Köfte,tire_kofte
+pilav,Şehriyeli Bulgur Pilavı,sehriyeli_bulgur_pilavi
+ana,Etli Kuru Fasulye,etli_kuru_fasulye
+ana,Püreli Taskebap,taskebabi
+pilav,Erişte Kavurma,eriste_kavurma
+ana,Çökertme Kebabı,cokertme_kebabi
+ana,Kibrit Patates,kibrit_patates
+ana,Sahan Köfte,sahan_kofte
+ana,Patlıcan Musakka,musakka_patlican
+ana,Biber Dolma,etli_biber_dolma
+ana,Teşrübe,tesrube
+ana,Çoban Kavurma,coban_kavurma
+ana,Dana Tandır,dana_tandir
+pilav,Peynirli İnce Uzun Makarna,peynirli_makarna
+pilav,Soğan Halka,sogan_halkasi
+pilav,Spagetti Arabiatta,arabiata_makarna
+ana,Izgara Köfte,izgara_kofte
+ana,Sebzeli Köfte,sebzeli_kofte
+ana,İskender Köfte,iskender_kofte
+ana,Susamlı Patates,susamli_patates
+ana,Ekşili Köfte,eksili_kofte
+ana,Etli Karnıyarık,karniyarik
+pilav,Tereyağlı Pirinç Pilavı,pirinc_pilavi
+ana,Beef Stroganoff,stroganoff
+ana,Patates Tava,patates_tava
+ana,Hasanpaşa Köfte,hasanpasa_kofte
+pilav,Penne Arabiatta,arabiata_makarna
+ana,Rosto Köfte,rosto_kofte
+ana,Patates Püresi,patates_pure
+pilav,Soğan Halkası,sogan_halkasi
+ana,Maraş Tava,maras_tava
+pilav,Peynirli Boncuk Makarna,peynirli_makarna
+ana,Dana Rosto,dana_rosto
+ana,Köroğlu Köfte,koroglu_kofte
+pilav,Peynirli Erişte Kavurma,peynirli_eriste_kavurma
+ana,Macar Kebabı,macar_kebabi
+ana,Filiz Kebabı,filiz_kebabi
+ana,Tırnaklı Pide,tirnakli_pide
+pilav,Spagetti Karbonara,karbonara_makarna
+ana,Elma Dilim Patates,elma_dilim_patates
+ana,Nohut Yahni,etli_nohut
+ana,Mantar Soslu Misket Köfte,misket_kofte|mantar_sos
+ana,Buğu Kebabı,bugu_kebabi
+ana,Pizza,pizza
+ana,Karışık Musakka,musakka_karisik
+pilav,Arabiatta Spagetti,arabiata_makarna
+ana,Beef Stroganof,stroganoff
+ana,Akhisar Köfte,akhisar_kofte
+pilav,Barbunya,barbunya
+ana,Püreli Et Sote,dana_et_sote|patates_pure
+ana,Püreli Dana Rosto,dana_rosto|patates_pure
+ana,Taskebap,taskebabi
+ana,Kuşbaşılı Kaşarlı Pide,kusbasili_kasarli_pide
+ana,Karışık Dolma,etli_karisik_dolma
+pilav,Erişte Cevizli,cevizli_eriste
+ana,Avcı Usulü Misket Köfte,misket_kofte|avci_sos
+ana,Ödemiş Köfte,odemis_kofte
+pilav,Mantar Soslu Spagetti,mantar_soslu_makarna
+pilav,Napoliten Soslu Kısa Kalem Makarna,napoliten_makarna
+pilav,Sebzeli Erişte,sebzeli_eriste
+ana,Dana Emense,dana_emense
+ana,Gemici Usulü Nohut,etli_nohut
+ana,Bohça Kebabı,bohca_kebabi
+pilav,Sebzeli Pirinç Pilavı,sebzeli_pirinc_pilavi
+pilav,Sebzeli Bulgur Pilavı,sebzeli_bulgur_pilavi
+pilav,Nohutlu Pirinç Pilavı,nohutlu_pirinc_pilavi
+pilav,Peynirli Kol Böreği,kol_boregi_ogle
+ana,Söğürtmeli Köfte,sogurtmeli_kofte
+ana,Eli Böğründe,karniyarik
+ana,Filiz Kebap,filiz_kebabi
+ana,Yufkalı Saray Kebabı,yufkali_kebap
+ana,Cips Patates,cips_patates
+ana,Abant Kebabı,abant_kebabi
+ana,Mersin Kavurma,mersin_kavurma
+ana,Dana Burginyon,dana_burginyon
+pilav,Burgu Makarna,makarna_sade
+ana,Yaprak Patates,yaprak_patates
+pilav,Pesto Soslu Penne Makarna,pesto_makarna
+pilav,Salçalı Domatesli Pirinç Pilavı,domatesli_pirinc_pilavi
+ana,Kadınbudu Köfte,kadinbudu_kofte
+ana,Kehribar Soslu Etli Barbunya,etli_barbunya
+pilav,Nohutlu Bulgur Pilavı,nohutlu_bulgur_pilavi
+ana,Yoğurtlu Köfte Kebabı,yogurtlu_kofte_kebabi
+ana,Sebzeli Lazanya,sebzeli_lazanya
+pilav,Yeşil Mercimek Yemeği,yesil_mercimek_yemegi
+ana,Şiş Köfte,sis_kofte
+ana,Beğendili Kuru Köfte,izgara_kofte|patlican_puresi
+pilav,Mantar Soslu Penne Makarna,mantar_soslu_makarna
+pilav,Mantarlı Köri Soslu Farfalle Makarna,kori_mantar_makarna
+ana,Etsiz Patlıcan Kebabı,etsiz_patlican_kebabi
+ana,Dana Çoban Kavurma,coban_kavurma
+ana,Tepsi Kebabı,tepsi_kebabi
+ana,Etli Sebze Graten,etli_sebze_graten
+pilav,Peynirli Gül Böreği,gul_boregi
+ana,Dana Belen Tava,belen_tava
+ana,Et Fajita,et_fajita
+ana,Püreli Mantar Soslu Misket Köfte,misket_kofte|mantar_sos|patates_pure
+pilav,Pestolu İnce Uzun Makarna,pesto_makarna
+ana,Tereyağlı Nohut,tereyagli_nohut
+ana,Beyaz Soslu Sebzeli Piliç Sote,sebzeli_pilic_sote|beyaz_sos
+pilav,Ispanaklı Peynirli Gül Böreği,ispanakli_gul_boregi
+ana,Patates Garnitürlü Dana Et Sote,dana_et_sote|kup_patates
+ana,Yufkalı Kebap,yufkali_kebap
+ana,Etli Patlıcan Musakka,musakka_patlican
+ana,Pot Roast,pot_roast
+ana,Baby Patates,baby_patates
+pilav,Peynirli Penne Makarna,peynirli_makarna
+ana,Püreli Tas Kebabı,taskebabi
+ana,Dana Fleminyon Mantarlı,dana_fleminyon_mantarli
+ana,Patlıcan Püresi,patlican_puresi
+ana,Hamburger,hamburger
+ana,Soğan Halkası,sogan_halkasi
+pilav,Mantarlı Pestolu Fettucini,mantarli_pesto_makarna
+ana,Piliç Çökertme,pilic_cokertme
+ana,Avcı Soslu Rosto Köfte,rosto_kofte|avci_sos
+pilav,Pesto Sos Spagetti,pesto_makarna
+ana,Etli Nohut Yahni,etli_nohut
+ana,Patlıcan Beğendili Dana Madalyon,dana_madalyon|patlican_puresi
+ana,Karnıyarık,karniyarik
+ana,Kuzu Kızartma,kuzu_kizartma
+pilav,Bolonez Soslu Makarna,bolonez_makarna
+ana,Sebze Graten,sebze_graten
+pilav,Kol Böreği,kol_boregi_ogle
+ana,Beyaz Soslu Mantarlı Sebzeli Piliç Sote,sebzeli_pilic_sote|beyaz_sos
+pilav,Napoliten Burgu Makarna,napoliten_makarna
+ana,Keşkekli Dana Yahni,keskekli_dana_yahni
+ana,Arpacık Soğan,arpacik_sogan
+ana,Havuç,havuc_garnitur
+pilav,Soslu Patlıcan Kızartma,soslu_patlican_kizartma
+ana,Çanak Köfte,canak_kofte
+ana,Kış Türlüsü,kis_turlusu
+pilav,Mantı,manti
+ana,Ispanak Yatağında Balık,ispanak_yataginda_balik
+pilav,Fetüçini Mantar Soslu,mantar_soslu_makarna
+pilav,Nohutlu Pilav,nohutlu_pirinc_pilavi
+ana,Sultan Bohçası,bohca_kebabi
+pilav,Napoliten Soslu Makarna,napoliten_makarna
+ana,İslim Kebap,islim_kebabi
+ana,Kayseri Yağlama,kayseri_yaglama
+ana,Piliç Şiş,pilic_sis
+ana,Sebzeli Mantar Sote,sebzeli_mantar_sote
+ana,Karamelize Soğanlı Biftek,dana_biftek|karamelize_sogan
+pilav,Fettucine Mantarlı,mantar_soslu_makarna
+pilav,Makarna,makarna_sade
+ana,Nohut,nohut_yemegi
+pilav,Erişte,eriste_kavurma
+ana,Tavuk Haşlama,tavuk_haslama
+ana,Dana Madalyon Mantar Soslu,dana_madalyon_mantar_soslu
+ana,Tavuk Çökertme,pilic_cokertme
+pilav,Körili Mantar Sos Burgu Makarna,kori_mantar_makarna
+ana,İslim Köfte,islim_kebabi
+ana,Dana Mutancana,dana_mutancana
+ana,Soğanlı Dana Yahni,dana_yahni
+pilav,Napoliten Spagetti,napoliten_makarna
+ana,Meksika Soslu Misket Köfte,misket_kofte|meksika_sos
+pilav,Zerdeçallı Pirinç Pilavı,pirinc_pilavi
+ana,Mantarlı Ispanak Graten,mantarli_ispanak_graten
+ana,Çupra Fırın,cupra_firin
+pilav,Fetüçini Arabiatta,arabiata_makarna
+ana,Etli Mevsim Türlü,etli_mevsim_turlusu
+pilav,Gül Böreği,gul_boregi
+ana,Beğendili Kebap,dana_et_sote|patlican_puresi
+pilav,Sebzeli Şehriye Pilavı,sebzeli_sehriye_pilavi
+pilav,Fırın Makarna,firin_makarna
+ana,Sac Kavurma,sac_kavurma
+ana,Sebzeli Piliç,sebzeli_pilic_sote
+pilav,Cevizli Erişte Kavurma,cevizli_eriste
+ana,Çiftlik Kebabı,ciftlik_kebabi
+pilav,Sebzeli Lazanya,sebzeli_lazanya
+ana,B.B.Q Soslu Susamlı Piliç Roti,susamli_pilic_roti|bbq_sos
+ana,Arnavut Ciğer,arnavut_ciger
+ana,Köylü Usulü Biftek,koylu_usulu_biftek
+ana,Püreli Tas Kebap,taskebabi
+ana,Etli Ege Musakka,musakka_karisik
+ana,İçli Köfte,icli_kofte
+pilav,Füsuli Arabiatta,arabiata_makarna
+ana,Saray Bohçası,bohca_kebabi
+pilav,Ispanaklı Gül Böreği,ispanakli_gul_boregi
+ana,Etsiz Kuru Fasulye,etsiz_kuru_fasulye
+ana,Piliç Fajita,pilic_fajita
+pilav,Arpa Şehriyeli Pirinç Pilavı,sehriyeli_pirinc_pilavi
+pilav,Pesto Sosu Kısa Kalem Makarna,pesto_makarna
+ana,Avcı Soslu Piliç Izgara,pilic_izgara|avci_sos
+ana,Etli Yaprak Sarma,etli_yaprak_sarma
+pilav,Yayla Pilavı,yayla_pilavi
+ana,Adana Kebap,adana_kebabi
+ana,Girit Kebabı,girit_kebabi
+ana,Etsiz Mevsim Türlü,etsiz_mevsim_turlusu
+ana,Piliç Haşlama,tavuk_haslama
+pilav,Köri Soslu İnce Uzun Makarna,kori_soslu_makarna
+ana,Döner Köfte,doner_kofte
+ana,Etli Karışık Musakka,musakka_karisik
+ana,Patlıcan Kebap,patlican_kebabi
+ana,Beğendili Tavuk Sote,tavuk_sote|patlican_puresi
+ana,Etli Soğan Dolma,etli_sogan_dolma
+pilav,Pesto Soslu Fettuccine Makarna,pesto_makarna
+pilav,Üzümlü Pirinç Pilavı,uzumlu_pirinc_pilavi
+ana,Dana Et Sote,dana_et_sote
+pilav,Patlıcanlı Bulgur Pilavı,patlicanli_bulgur_pilavi
+ana,Etsiz Taze Fasulye,etsiz_taze_fasulye
+ana,Meksika Sos Piliç Izgara,pilic_izgara|meksika_sos
+ana,Kütük Patates,kutuk_patates
+ana,Dana Biftek Demi Glace Soslu,dana_biftek|kendi_sosu
+ana,Patates Püre,patates_pure
+pilav,Pesto Soslu İnce Uzun Makarna,pesto_makarna
+ana,Dana Yahni,dana_yahni
+pilav,Patates Kızartması,patates_kizartmasi
+ana,Mantarlı Dana Fleminyon,dana_fleminyon_mantarli
+ana,Patlıcan Püre,patlican_puresi
+ana,Püreli Rosto Köfte,rosto_kofte|patates_pure
+ana,Gemici Usulü Kuru Fasulye,gemici_kuru_fasulye
+ana,Piliç Topkapı,pilic_topkapi
+pilav,Karışık Sebze Sote,karisik_sebze_sote
+ana,Macar Gulaş,macar_gulas
+pilav,Spagetti,makarna_sade
+pilav,Karbonara,karbonara_makarna
+ana,Saksı Kebabı,saksi_kebabi
+pilav,Mantar Soslu İnce Uzun Makarna,mantar_soslu_makarna
+ana,Püreli Dana Kavurma,dana_kavurma|patates_pure
+ana,Piliç Baget Fırın,tavuk_baget
+ana,BBQ Sos,bbq_sos
+pilav,Domatesli Pirinç Pilavı,domatesli_pirinc_pilavi
+ana,Beğendili Köfte,izgara_kofte|patlican_puresi
+ana,Kıymalı Lazanya,kiymali_lazanya
+ana,Ispanak Graten,ispanak_graten
+ana,Etli Taco,etli_taco
+ana,Etli Lahana Pohçası,etli_lahana_pohcasi
+ana,Tavuk But Izgara,tavuk_but_izgara
+ana,Körili Mantar Soslu Sebzeli Sote,kori_sebzeli_sote
+pilav,Peynirli Su Böreği,su_boregi
+ana,Dana Madalyon,dana_madalyon
+ana,Mantarlı Çanak Köfte,mantarli_canak_kofte
+ana,Püreli Çoban Köfte,coban_kofte|patates_pure
+pilav,Napoliten Sos Kısa Kalem Makarna,napoliten_makarna
+ana,Etli Pide,etli_pide
+pilav,Soslu Karışık Kızartma,soslu_karisik_kizartma
+ana,Beyaz Soslu Arpacık Soğanlı Nohut,nohut_yemegi|arpacik_sogan|beyaz_sos
+pilav,Tavuklu Pirinç Pilavı,tavuklu_pirinc_pilavi
+ana,Sebzeli Fırın Tavuk Baget,sebzeli_tavuk_baget
+pilav,Şehriye Pilavı,sehriye_pilavi
+ana,Piliç Baget Barbekü Soslu,tavuk_baget|bbq_sos
+ana,Barbekü Soslu Piliç Izgara,pilic_izgara|bbq_sos
+ana,Dana Biftek,dana_biftek
+ana,Meksika Soslu,meksika_sos
+pilav,Mantarlı Köri Sos Burgu Makarna,kori_mantar_makarna
+ana,Dana Stroganoff,stroganoff
+ana,Hindi Tandır,hindi_tandir
+ana,Kendi Sosu,kendi_sosu
+pilav,Spagetti Carbonara,karbonara_makarna
+ana,Yufkalı Manisa Kebap,yufkali_kebap
+pilav,Napoliten Sos Burgu Makarna,napoliten_makarna
+ana,Mevsim Türlü,etli_mevsim_turlusu
+ana,Barbekü Soslu Izgara Piliç,pilic_izgara|bbq_sos
+ana,Meksika Soslu Dana Biftek,dana_biftek|meksika_sos
+pilav,Mantarlı Köri Soslu Burgu Makarna,kori_mantar_makarna
+ana,Dana Stroganof,stroganoff
+ana,Küp Patates Eşliğinde Soslu Piliç Sarma,pilic_sarma|kup_patates
+pilav,Spagetti Arrabbiata,arabiata_makarna
+ana,Karışık Pizza,pizza
+ana,Yufkalı Manisa Kebabı,yufkali_kebap
+pilav,Napoliten Soslu Burgu Makarna,napoliten_makarna
+ana,Püreli Mersin Kavurma,mersin_kavurma|patates_pure
+ana,Mevsim Türlüsü,etli_mevsim_turlusu
+ana,Zerdeçallı Dana Kavurma,dana_kavurma
+ana,Susamlı Küp Patates,susamli_patates
+ana,Dana Emincé,dana_emince
+ana,Barbekü Soslu Piliç Baget,tavuk_baget|bbq_sos
