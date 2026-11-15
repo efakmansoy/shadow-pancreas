@@ -58,13 +58,15 @@ FORBIDDEN_EN = [
     r"\byou should\b", r"\byou must\b", r"\bmake sure\b", r"\bi recommend\b", r"\brecommend", r"\bconsider (taking|injecting)\b",
     r"\b(take|inject|use|give)\s+(about\s+|around\s+)?\d+(\.\d+)?\s*units?\b", r"\btoday you (can|could|might) (take|inject)\b",
     r"\b(increase|reduce|lower|raise|adjust)\b[^.]{0,20}\b(insulin|dose)\b",
+    r"\b(required|requires|needed|needs)\b", r"\bnecessary\b",
     r"\bdiagnos", r"\btreatment\b", r"\bmedication\b", r"\bdefinitely\b", r"\bcertainly\b",
 ]
 
 FORBIDDEN = [
     r"\bortalama", r"\btoplam",
     r"vurmalı", r"vurabilirsin", r"vurman\b", r"yapmalı", r"almalı", r"artırmalı", r"azaltmalı", r"\bartır\b",
-    r"\bazalt\b", r"öneririm", r"tavsiye ederim", r"\bmutlaka\b", r"\bkesinlikle\b", r"teşhis", r"tedavi", r"ilaç",
+    r"gerek(ti|iyor|ir|mişti|iyordu)\b", r"ihtiyaç",
+    r"\bazalt\b", r"öneririm", r"tavsiye ederim", r"\bmutlaka\b", r"\bkesinlikle\b", r"teşhis", r"tedavi", r"ilaç", r"gerek(ti|iyor|ir|mişti|iyordu)", r"ihtiyaç",
     r"bugün\s+\d+(?:[.,]\d+)?\s*ünite", r"\d+(?:[.,]\d+)?\s*ünite\s+(vur|yap|al)\b",
 ]
 
