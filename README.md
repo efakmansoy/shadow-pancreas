@@ -4,7 +4,11 @@
 
 **English** · [Türkçe](#türkçe)
 
-*Type 1 diabetes: match today's menu to your own past meals, with the insulin units taken and the 2-hour post-meal glucose for each.*
+*Built by a person with type 1 diabetes, for people with type 1 diabetes: match today's menu to your own past meals, with the insulin units taken and the 2-hour post-meal glucose for each.*
+
+### Why I built this
+
+I live with type 1 diabetes. Every day I wonder: what happened the last time I ate something like this? The answer was always in my own glucose and insulin log, but it was buried in months of notes. So I built Shadow Pancreas to find those past meals for me. All the reported measurements come from my own log (Jan–Oct 2026), which stays private.
 
 > ## ⚠️ Data notice
 > The dataset in this repository (`data/synthetic/`) is **100% synthetic**: 30 days of randomly generated meals, glucose and insulin values. It contains no real person's data and exists only so the code can be run and inspected.
@@ -17,7 +21,7 @@
 
 ## What it does
 
-Built for a person with Type 1 diabetes who eats from a known, repeating menu. Right before a meal, the user enters today's menu and the pre-meal glucose. The app retrieves the most similar past meals from the user's own log and shows, for each one, the insulin units injected and the 2-hour post-meal glucose. A local LLM narrates these cases briefly. The UI is available in English (default) and Turkish.
+Built by and for people with type 1 diabetes, starting from my own data. Right before a meal, the user enters today's menu and the pre-meal glucose. The app retrieves the most similar past meals from the user's own log and shows, for each one, the insulin units injected and the 2-hour post-meal glucose. A local LLM narrates these cases briefly. The UI is available in English (default) and Turkish.
 
 ### Screens
 
@@ -81,7 +85,7 @@ Requirements: pandas, numpy, scikit-learn, lightgbm, sentence-transformers, fast
 
 ## Sources and tools
 
-- Data behind the measurements: the user's own glucose and insulin log (2026) and cafeteria menus. **Not published**; only synthetic demo data is in the repo.
+- Data behind the measurements: my own glucose and insulin log (Jan–Oct 2026) and the matching daily menus. **Not published**; only synthetic demo data is in the repo.
 - USDA FoodData Central, SR Legacy (2018-04, CC0). Glycemic index values from international GI tables (Atkinson et al.), approximate.
 - Models: `BAAI/bge-m3`, `trmteb/turkish-embedding-model`, Gemma 4 E4B (GGUF, llama.cpp). Gemma 4 E2B / 26B-A4B and Qwen3.5-9B were also compared.
 - Libraries: scikit-learn, LightGBM, sentence-transformers, FastAPI.
@@ -95,7 +99,11 @@ Requirements: pandas, numpy, scikit-learn, lightgbm, sentence-transformers, fast
 
 [English](#shadow-pancreas) · **Türkçe**
 
-*Tip 1 diyabet için: bugünün menüsünü kendi geçmiş öğünlerinle eşleştir; her birinde vurulan insülin ünitesi ve 2. saat tokluk şekeri.*
+*Tip 1 diyabetli biri tarafından, tip 1 diyabetliler için: bugünün menüsünü kendi geçmiş öğünlerinle eşleştir; her birinde vurulan insülin ünitesi ve 2. saat tokluk şekeri.*
+
+### Neden yaptım
+
+Tip 1 diyabetle yaşıyorum. Her gün aynı soruyu soruyorum: buna benzer bir şeyi en son yediğimde ne olmuştu? Cevap hep kendi şeker ve insülin kaydımdaydı, ama aylarca tutulmuş notların içinde kayboluyordu. Bu yüzden o geçmiş öğünleri benim için bulan Shadow Pancreas'ı yaptım. Raporlanan tüm ölçümler kendi kaydımdan (Ocak–Ekim 2026) geliyor; bu kayıt gizli kalıyor.
 
 > ## ⚠️ Veri notu
 > Bu repodaki veri seti (`data/synthetic/`) **%100 sentetiktir**: 30 günlük, rastgele üretilmiş öğün, şeker ve insülin değerleri. Gerçek bir kişinin verisi değildir; yalnızca kodun çalıştırılıp incelenebilmesi için vardır.
@@ -108,7 +116,7 @@ Requirements: pandas, numpy, scikit-learn, lightgbm, sentence-transformers, fast
 
 ## Ne yapar
 
-Tip 1 diyabetli, her gün bilinen bir menüden yemek yiyen biri için. Kullanıcı yemekten hemen önce bugünün menüsünü ve açlık şekerini girer. Uygulama kendi kayıtlarından menüsü en çok benzeyen geçmiş öğünleri getirir. Her birinde o gün kaç ünite insülin vurulduğunu ve 2. saat tokluğun kaç çıktığını gösterir. Yerel bir LLM bu vakaları kısaca anlatır. İngilizce (varsayılan) ve Türkçe çalışır.
+Tip 1 diyabetli biri tarafından, tip 1 diyabetliler için; ilk olarak kendi verimle yapıldı. Kullanıcı yemekten hemen önce bugünün menüsünü ve açlık şekerini girer. Uygulama kendi kayıtlarından menüsü en çok benzeyen geçmiş öğünleri getirir. Her birinde o gün kaç ünite insülin vurulduğunu ve 2. saat tokluğun kaç çıktığını gösterir. Yerel bir LLM bu vakaları kısaca anlatır. İngilizce (varsayılan) ve Türkçe çalışır.
 
 ### Ekranlar
 
@@ -172,7 +180,7 @@ Gereken paketler: pandas, numpy, scikit-learn, lightgbm, sentence-transformers, 
 
 ## Kaynaklar ve araçlar
 
-- Ölçümlerde kullanılan veri: kullanıcının kendi şeker ve insülin kaydı (2026) ve yemekhane menüleri. **Yayımlanmadı**; repoda yalnızca sentetik demo verisi var.
+- Ölçümlerde kullanılan veri: kendi şeker ve insülin kaydım (Ocak–Ekim 2026) ve buna denk gelen günlük menüler. **Yayımlanmadı**; repoda yalnızca sentetik demo verisi var.
 - USDA FoodData Central, SR Legacy (2018-04, CC0). Glisemik indeks değerleri uluslararası GI tablolarından (Atkinson ve ark.), yaklaşık değerler.
 - Modeller: `BAAI/bge-m3`, `trmteb/turkish-embedding-model`, Gemma 4 E4B (GGUF, llama.cpp). Karşılaştırmada Gemma 4 E2B / 26B-A4B ve Qwen3.5-9B de denendi.
 - Kütüphaneler: scikit-learn, LightGBM, sentence-transformers, FastAPI.
