@@ -85,7 +85,7 @@ def main(models=None):
     Q = json.load(open(ROOT / "reports" / "llm_queries.json", encoding="utf-8"))
     out = pd.read_csv(ROOT / "reports" / "llm_outputs.csv").fillna({"text": ""})
     sys.path.insert(0, str(ROOT / "src"))
-    from diyalife.summarizer import template_summary
+    from shadow_pancreas.summarizer import template_summary
     tpl = pd.DataFrame([dict(model="şablon (referans)", qid=i, text=template_summary(c)) for i, c in enumerate(Q)])
     out = pd.concat([out, tpl], ignore_index=True)
     models = models or sorted(out.model.unique())

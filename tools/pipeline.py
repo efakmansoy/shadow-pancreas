@@ -23,7 +23,7 @@ STEPS = [
     [PY, "src/prepare.py"],
     [PY, "src/build_ingredients.py"],
     [PY, "src/check_recipes.py"],
-    [PY, "-c", "import sys; sys.path.insert(0,'src'); import pandas as pd; from diyalife import nutrition as NU; "
+    [PY, "-c", "import sys; sys.path.insert(0,'src'); import pandas as pd; from shadow_pancreas import nutrition as NU; "
                "NU.build_event_nutrition(pd.read_csv('data/events.csv')).to_csv('data/event_nutrition.csv', index=False)"],
     [PY, "src/build_embeddings.py"],
     [PY, "tools/validate_nutrition.py"],

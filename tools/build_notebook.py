@@ -20,7 +20,7 @@ def code(s):
 
 
 md("""
-# DiyaLife — Türkçe yemek adları için embedding karşılaştırması
+# Shadow Pancreas — Türkçe yemek adları için embedding karşılaştırması
 
 **Amaç:** Menü dosyasındeki yemek adlarını (ör. *"Domates Çorba (Kaşarlı)"*, *"Kol Böreği"*, *"Şöbiyet"*) standart yemeklere bağlamak ve besin değeri bilinmeyen yemeklere en yakın yemeği bulmak için hangi embedding modelinin işe yaradığını ölçmek.
 

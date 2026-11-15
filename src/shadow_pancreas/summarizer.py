@@ -14,7 +14,7 @@ import time
 
 import httpx
 
-LLM_URL = os.environ.get("DIYALIFE_LLM_URL", "http://127.0.0.1:8081")
+LLM_URL = os.environ.get("SHADOW_PANCREAS_LLM_URL", "http://127.0.0.1:8081")
 ALLOWED_CONST = {"2", "70", "180", "100"}  # 2 saat, hedef aralık sınırları
 
 SYSTEM = (

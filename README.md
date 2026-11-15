@@ -15,7 +15,7 @@ I live with type 1 diabetes. Every day I wonder: what happened the last time I a
 >
 > **All metrics, evaluations and findings in `reports/` were measured on the author's real, private dataset (Jan–Oct 2026), which is not published.** Numbers you get from the synthetic demo data will not match the reported ones.
 >
-> Without real data the app automatically loads `data/synthetic/` and shows a "demo mode" banner. Regenerate it with `python tools/make_synthetic.py`. Point to another data folder with `DIYALIFE_DATA`.
+> Without real data the app automatically loads `data/synthetic/` and shows a "demo mode" banner. Regenerate it with `python tools/make_synthetic.py`. Point to another data folder with `SHADOW_PANCREAS_DATA`.
 
 > **This project is a prototype and is not medical advice.** The app never recommends an insulin dose. It only shows the user's own past records.
 
@@ -62,7 +62,7 @@ powershell -ExecutionPolicy Bypass -File start.ps1
 
 This starts llama-server (`E:\model\gemma4-e4b.gguf`, port 8081) and the app (port 8000); adjust the paths in `start.ps1` for your machine. To run only the app (LLM falls back to template summaries): `python app/server.py`.
 
-The app is reachable on the network by default; devices on the same network can open `http://<your-ip>:8000`. Set `DIYALIFE_HOST=127.0.0.1` for local-only access. There is no login, so be careful on shared networks.
+The app is reachable on the network by default; devices on the same network can open `http://<your-ip>:8000`. Set `SHADOW_PANCREAS_HOST=127.0.0.1` for local-only access. There is no login, so be careful on shared networks.
 
 Re-running the data and measurement pipeline requires the real raw data (`data/raw/`, not in this repository): `python tools/pipeline.py`. Final accuracy tests: `python tools/eval_final.py` (needs the LLM server).
 
@@ -77,7 +77,7 @@ Requirements: `pip install -r requirements.txt` (pandas, numpy, scikit-learn, li
 | `data/nutrition/` | ingredient dictionary + USDA mapping, standard dishes, recipes, menu spelling → dish mappings |
 | `data/user/` | menus and records entered in the app (git-ignored) |
 | `src/prepare.py` | Excel → meal events |
-| `src/diyalife/` | nutrition vectors, name matcher, engine, LLM summarizer, models |
+| `src/shadow_pancreas/` | nutrition vectors, name matcher, engine, LLM summarizer, models |
 | `src/evaluate.py` | leave-one-month-out CV of post-meal glucose models (research only) |
 | `tools/` | pipeline, LLM comparison, validation, final evaluation, synthetic data generator |
 | `reports/` | aggregate measurement results (JSON/HTML) |
@@ -110,7 +110,7 @@ Tip 1 diyabetle yaşıyorum. Her gün aynı soruyu soruyorum: buna benzer bir ş
 >
 > **`reports/` altındaki tüm ölçümler, değerlendirmeler ve bulgular yazarın gerçek, özel veri seti (Ocak–Ekim 2026) üzerinde yapılmıştır ve bu veri yayımlanmamıştır.** Sentetik demo veriyle elde edeceğin sayılar raporlananlarla örtüşmez.
 >
-> Gerçek veri yoksa uygulama otomatik olarak `data/synthetic/` klasörünü yükler ve "demo modu" bandı gösterir. Yeniden üretmek için `python tools/make_synthetic.py`. Başka bir veri klasörü için `DIYALIFE_DATA` ayarlanır.
+> Gerçek veri yoksa uygulama otomatik olarak `data/synthetic/` klasörünü yükler ve "demo modu" bandı gösterir. Yeniden üretmek için `python tools/make_synthetic.py`. Başka bir veri klasörü için `SHADOW_PANCREAS_DATA` ayarlanır.
 
 > **Bu proje bir prototiptir ve tıbbi tavsiye değildir.** Uygulama hiçbir zaman doz önermez. Yalnızca kullanıcının kendi geçmiş kayıtlarını gösterir.
 
@@ -157,7 +157,7 @@ powershell -ExecutionPolicy Bypass -File start.ps1
 
 Bu komut llama-server'ı (`E:\model\gemma4-e4b.gguf`, port 8081) ve uygulamayı (port 8000) başlatır; yolları kendi bilgisayarına göre `start.ps1` içinde değiştir. Yalnızca uygulamayı çalıştırmak için (LLM yoksa şablon özet gösterilir): `python app/server.py`.
 
-Uygulama ağda açıktır: aynı ağdaki cihazlar `http://<bilgisayarın IP'si>:8000` adresinden girer. Yalnızca bu bilgisayardan erişmek için `DIYALIFE_HOST=127.0.0.1` ayarla. Uygulamada giriş/şifre yok, ortak ağlarda dikkatli kullan.
+Uygulama ağda açıktır: aynı ağdaki cihazlar `http://<bilgisayarın IP'si>:8000` adresinden girer. Yalnızca bu bilgisayardan erişmek için `SHADOW_PANCREAS_HOST=127.0.0.1` ayarla. Uygulamada giriş/şifre yok, ortak ağlarda dikkatli kullan.
 
 Veri ve ölçüm hattını baştan çalıştırmak için gerçek ham veri gerekir (`data/raw/`, repoda yok): `python tools/pipeline.py`. Son doğruluk testleri için: `python tools/eval_final.py` (LLM sunucusu açık olmalı).
 
@@ -172,7 +172,7 @@ Gereken paketler: `pip install -r requirements.txt` (pandas, numpy, scikit-learn
 | `data/nutrition/` | malzeme sözlüğü + USDA eşleşmesi, standart yemekler, tarifler, menü yazımı → yemek eşleşmeleri |
 | `data/user/` | uygulamada girilen menüler ve kayıtlar (git dışında) |
 | `src/prepare.py` | Excel → öğün olayları |
-| `src/diyalife/` | besin vektörü, ad eşleştirici, motor, LLM özetleyici, modeller |
+| `src/shadow_pancreas/` | besin vektörü, ad eşleştirici, motor, LLM özetleyici, modeller |
 | `src/evaluate.py` | tokluk tahmin modellerinin ay-dışarıda çapraz doğrulaması (araştırma) |
 | `tools/` | hat, LLM karşılaştırması, doğrulama, son değerlendirme ve sentetik veri üreticisi |
 | `reports/` | toplu ölçüm sonuçları (JSON/HTML) |

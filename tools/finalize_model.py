@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 import evaluate as EV  # noqa: E402
-from diyalife.models import FEATS_NUTR  # noqa: E402
+from shadow_pancreas.models import FEATS_NUTR  # noqa: E402
 
 ev, emb = EV.load()
 feats = ["aclik", "r7_meal"] + FEATS_NUTR  # hafta sonu da kullanılacağı için gün yok; önceki ölçüm isteğe bağlı olduğu için yok

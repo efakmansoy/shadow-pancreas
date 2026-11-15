@@ -17,7 +17,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from diyalife.models import B0, B1, B2, FEATS_NUTR, GBM, WKNN, Conformal, Ridge  # noqa: E402
+from shadow_pancreas.models import B0, B1, B2, FEATS_NUTR, GBM, WKNN, Conformal, Ridge  # noqa: E402
 
 REP = ROOT / "reports"
 REP.mkdir(exist_ok=True)

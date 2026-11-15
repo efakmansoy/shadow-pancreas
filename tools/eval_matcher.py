@@ -13,7 +13,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from diyalife.matcher import NameMatcher, norm, rrf  # noqa: E402
+from shadow_pancreas.matcher import NameMatcher, norm, rrf  # noqa: E402
 
 
 def main():

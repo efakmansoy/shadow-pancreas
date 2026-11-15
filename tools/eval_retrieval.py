@@ -20,7 +20,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 import evaluate as EV  # noqa: E402
-from diyalife.models import FEATS_NUTR, WKNN  # noqa: E402
+from shadow_pancreas.models import FEATS_NUTR, WKNN  # noqa: E402
 
 RNG = np.random.default_rng(0)
 K = 5

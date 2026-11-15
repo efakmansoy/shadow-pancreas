@@ -32,7 +32,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from diyalife import nutrition as NU  # noqa: E402
+from shadow_pancreas import nutrition as NU  # noqa: E402
 
 OUT = ROOT / "data" / "synthetic"
 START, DAYS = date(2026, 3, 2), 30

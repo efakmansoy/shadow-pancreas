@@ -1,4 +1,4 @@
-# DiyaLife Menü Hafızası: yerel LLM + uygulama sunucusunu başlatır.
+# Shadow Pancreas: yerel LLM + uygulama sunucusunu başlatır.
 # Kullanım:  powershell -ExecutionPolicy Bypass -File start.ps1
 $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path

@@ -13,7 +13,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from diyalife import nutrition as NU  # noqa: E402
+from shadow_pancreas import nutrition as NU  # noqa: E402
 
 # dish_id, USDA fdc_id, servis ağırlığı (g, pişmiş/sunulmuş), not
 PAIRS = [

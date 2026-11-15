@@ -11,7 +11,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from diyalife.engine import Engine  # noqa: E402
+from shadow_pancreas.engine import Engine  # noqa: E402
 
 E = Engine()
 ev = E.events

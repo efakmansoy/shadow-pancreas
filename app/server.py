@@ -1,7 +1,7 @@
 """Shadow Pancreas — yerel sunucu.
 
 Çalıştırma:  python app/server.py   (http://127.0.0.1:8000)
-LLM:         llama-server ayrı süreçte, varsayılan http://127.0.0.1:8081 (DIYALIFE_LLM_URL ile değiştirilebilir).
+LLM:         llama-server ayrı süreçte, varsayılan http://127.0.0.1:8081 (SHADOW_PANCREAS_LLM_URL ile değiştirilebilir).
              Erişilemezse özetler şablondan üretilir, uygulama çalışmaya devam eder.
 """
 from __future__ import annotations
@@ -21,14 +21,14 @@ from pydantic import BaseModel
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from diyalife import nutrition as NU  # noqa: E402
-from diyalife import summarizer as SU  # noqa: E402
-from diyalife.engine import GUN, GUN_EN, MEALS, Engine  # noqa: E402
-from diyalife.matcher import NameMatcher  # noqa: E402
+from shadow_pancreas import nutrition as NU  # noqa: E402
+from shadow_pancreas import summarizer as SU  # noqa: E402
+from shadow_pancreas.engine import GUN, GUN_EN, MEALS, Engine  # noqa: E402
+from shadow_pancreas.matcher import NameMatcher  # noqa: E402
 
 app = FastAPI(title="Shadow Pancreas")
 STATIC = ROOT / "app" / "static"
-MATCHER = NameMatcher(use_embedding=os.environ.get("DIYALIFE_NO_EMB") != "1")
+MATCHER = NameMatcher(use_embedding=os.environ.get("SHADOW_PANCREAS_NO_EMB") != "1")
 ENGINE = Engine(matcher=MATCHER)
 MSG = {"menu_yok": {"tr": "Bu tarih ve öğün için menü yok. Önce menüyü gir.",
                     "en": "No menu for this date and meal yet. Enter the menu first."},
@@ -211,4 +211,4 @@ def index():
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
 
 if __name__ == "__main__":
-    uvicorn.run(app, host=os.environ.get("DIYALIFE_HOST", "0.0.0.0"), port=int(os.environ.get("DIYALIFE_PORT", "8000")))
+    uvicorn.run(app, host=os.environ.get("SHADOW_PANCREAS_HOST", "0.0.0.0"), port=int(os.environ.get("SHADOW_PANCREAS_PORT", "8000")))

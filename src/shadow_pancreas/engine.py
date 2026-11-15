@@ -26,8 +26,8 @@ USER = ROOT / "data" / "user"
 
 
 def data_dir() -> Path:
-    """Veri klasörü. DIYALIFE_DATA verilmişse o; yoksa gerçek (özel) veri varsa data/, yoksa SENTETİK demo verisi (data/synthetic/)."""
-    env = os.environ.get("DIYALIFE_DATA")
+    """Veri klasörü. SHADOW_PANCREAS_DATA verilmişse o; yoksa gerçek (özel) veri varsa data/, yoksa SENTETİK demo verisi (data/synthetic/)."""
+    env = os.environ.get("SHADOW_PANCREAS_DATA")
     if env:
         return (ROOT / env).resolve()
     return ROOT / "data" if (ROOT / "data" / "events_all.csv").exists() else ROOT / "data" / "synthetic"

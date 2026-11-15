@@ -30,8 +30,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from diyalife import summarizer as SU  # noqa: E402
-from diyalife.engine import Engine, tarih_metni  # noqa: E402
+from shadow_pancreas import summarizer as SU  # noqa: E402
+from shadow_pancreas.engine import Engine, tarih_metni  # noqa: E402
 
 RNG = np.random.default_rng(7)
 K = 5
