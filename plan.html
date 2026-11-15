@@ -1,3 +1,7 @@
+<!doctype html>
+<html lang="tr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shadow Pancreas</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,14 +120,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 <main>
 <header class="top">
+  <div class="callout" style="margin-bottom:16px"><b>İlk plan (14 Kasım), güncel ürün farklı.</b> Bu belge başlangıç planıdır. Nihai uygulama sonucu <b>tahmin etmez</b>: benzer geçmiş öğünleri getirir; doz önermez, "yarın" uyarısı ve hipo uyarısı içermez. Güncel hâl için <a href="README.md">README</a> ve <a href="reports/final_report.html">final raporu</a> esas alınmalı. · <a href="plan.en.html">English version</a></div>
   <div class="eyebrow">Veritas AI Hackathon 2026 · AI + Health · plan, 14 Kasım</div>
   <h1>Shadow Pancreas</h1>
-  <p class="lede">Tip 1 diyabetli biri olarak kendi şeker kaydımdan yola çıkarak yaptığım; öğün öncesi açlık şekerini, o günün menü dosyasınü ve geçmiş öğünleri birleştirip "benzer durumlarda ne olmuştu?" sorusunu yanıtlayan, cevabı yerel bir LLM ile Türkçe özetleyen sistem.</p>
+  <p class="lede">Tip 1 diyabetli biri olarak kendi şeker kaydımdan yola çıkarak yaptığım; öğün öncesi açlık şekerini, o günün menüsünü ve geçmiş öğünleri birleştirip "benzer durumlarda ne olmuştu?" sorusunu yanıtlayan, cevabı yerel bir LLM ile Türkçe özetleyen sistem.</p>
 </header>
 
 <h2 id="fikir">Fikir</h2>
 <p class="sentence">Öğün öncesinde kullanıcı açlık değerini girer. Menü tarihten otomatik gelir. Sistem besin içeriği benzer geçmiş öğünleri bulur, 2. saat tokluk değeri için bir aralık tahmini verir ve bunu 3–4 cümlelik bir Türkçe özetle anlatır. Akşamları yarının menüsünü tarayıp riskli öğünler için önceden uyarı üretir.</p>
-<p>Prototipteki ±tolerans penceresi ile kelime eşleştirmesi yöntemi korunacak ve <b>baseline</b> olarak kullanılacak. Asıl soru şu: <b>"Menü dosyasınü besin değeri olarak bilmek, öğün sonrası şekeri tahmin etmeyi ne kadar iyileştiriyor?"</b></p>
+<p>Prototipteki ±tolerans penceresi ile kelime eşleştirmesi yöntemi korunacak ve <b>baseline</b> olarak kullanılacak. Asıl soru şu: <b>"Menüyü besin değeri olarak bilmek, öğün sonrası şekeri tahmin etmeyi ne kadar iyileştiriyor?"</b></p>
 
 <h2 id="veri">Veri</h2>
 <p>Filtreleme kuralları: hafta sonları çıkarıldı, resmi tatiller ve arife günleri çıkarıldı, menüsü olmayan öğünler çıkarıldı, açlık veya tokluk ölçümü eksik olan öğünler çıkarıldı.</p>
@@ -342,3 +347,4 @@ flowchart LR
 <footer>Veri sayıları 14 Kasım 2026'da <code>seker_takip_yemekli.xlsx</code> ve <code>menu_2026.xlsx</code> üzerinde hesaplandı. Taban çizgisi sayıları sentetik veride yerel ön denemeden geliyor.</footer>
 </main>
 </div>
+<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs"; mermaid.initialize({ startOnLoad: true });</script>

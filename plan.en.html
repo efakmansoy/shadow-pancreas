@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shadow Pancreas</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: single-column reading flow, sticky table of contents on the left (desktop); data tables scroll in their own box */
+:root {
+  --bg: #f5f7f8;
+  --surface: #ffffff;
+  --ink: #14232b;
+  --muted: #56666f;
+  --line: #d9e1e5;
+  --accent: #0f6e7a;
+  --accent-soft: #e2f1f2;
+  --hypo: #c2412d;
+  --target: #2f8a4c;
+  --hyper: #c98a10;
+  --code-bg: #eef2f4;
+  --f-display: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e171c; --surface: #15222a; --ink: #e3ecef; --muted: #9aaab2; --line: #26363f;
+    --accent: #4fb8c4; --accent-soft: #173238; --hypo: #ef7a66; --target: #5cc07c; --hyper: #e3b04b;
+    --code-bg: #1b2b33; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e171c; --surface: #15222a; --ink: #e3ecef; --muted: #9aaab2; --line: #26363f;
+  --accent: #4fb8c4; --accent-soft: #173238; --hypo: #ef7a66; --target: #5cc07c; --hyper: #e3b04b;
+  --code-bg: #1b2b33; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15.5px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 64px;
+}
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 48px; }
+nav.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); align-self: start; padding-top: 40px; font-size: 13.5px; }
+nav.toc p { font-family: var(--f-display); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: 11.5px; color: var(--muted); margin: 0 0 10px; }
+nav.toc ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; counter-reset: s; }
+nav.toc a { color: var(--muted); text-decoration: none; }
+nav.toc a:hover, nav.toc a:focus-visible { color: var(--accent); }
+main { min-width: 0; }
+header.top { padding: 40px 0 8px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; color: var(--accent); letter-spacing: .04em; }
+h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(30px, 4.6vw, 44px); line-height: 1.1; margin: 8px 0 12px; text-wrap: balance; }
+.lede { font-size: 17px; max-width: 64ch; color: var(--ink); margin: 0 0 20px; }
+h2 { font-family: var(--f-display); font-size: 23px; margin: 48px 0 12px; text-wrap: balance; scroll-margin-top: 24px; }
+h3 { font-family: var(--f-display); font-size: 16.5px; margin: 26px 0 8px; }
+p, li { max-width: 72ch; }
+ul, ol { padding-left: 22px; }
+li { margin: 3px 0; }
+code { font-family: var(--f-mono); font-size: 13px; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; }
+pre.cmd { font-family: var(--f-mono); font-size: 12.5px; background: var(--code-bg); padding: 14px 16px; border-radius: 8px; overflow-x: auto; line-height: 1.5; }
+.sentence { border-left: 3px solid var(--accent); background: var(--accent-soft); padding: 14px 18px; border-radius: 0 8px 8px 0; font-size: 16px; max-width: 72ch; }
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 18px 0 6px; }
+.fact { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.fact b { display: block; font-family: var(--f-mono); font-size: 22px; font-variant-numeric: tabular-nums; }
+.fact span { font-size: 12.5px; color: var(--muted); }
+.tbl { overflow-x: auto; margin: 10px 0 6px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--f-display); font-size: 12.5px; letter-spacing: .03em; color: var(--muted); font-weight: 700; background: var(--bg); }
+tr:last-child td { border-bottom: 0; }
+td.num, th.num { text-align: right; font-family: var(--f-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pill { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 1px 8px; border-radius: 99px; white-space: nowrap; border: 1px solid currentColor; }
+.p-yes { color: var(--target); } .p-maybe { color: var(--hyper); } .p-no { color: var(--hypo); } .p-info { color: var(--accent); }
+.dist { display: flex; height: 30px; border-radius: 6px; overflow: hidden; margin: 10px 0 6px; max-width: 640px; }
+.dist div { display: flex; align-items: center; justify-content: center; color: #fff; font-family: var(--f-mono); font-size: 12px; white-space: nowrap; overflow: hidden; }
+.legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+.callout { border: 1px solid var(--line); border-left: 3px solid var(--hyper); background: var(--surface); padding: 12px 16px; border-radius: 0 8px 8px 0; max-width: 72ch; font-size: 14.5px; }
+.callout.stop { border-left-color: var(--hypo); }
+.diagram { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+.steps { counter-reset: st; list-style: none; padding: 0; display: grid; gap: 10px; }
+.steps > li { counter-increment: st; display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 10px; max-width: none; }
+.steps > li::before { content: counter(st); font-family: var(--f-mono); font-weight: 600; color: var(--accent); background: var(--accent-soft); border-radius: 6px; height: 26px; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+.steps > li > div { min-width: 0; }
+.steps b { font-family: var(--f-display); }
+.timeline { display: grid; gap: 0; border-left: 2px solid var(--line); margin-left: 6px; }
+.timeline > div { position: relative; padding: 4px 0 14px 20px; }
+.timeline > div::before { content: ""; position: absolute; left: -7px; top: 10px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
+.timeline time { font-family: var(--f-mono); font-size: 12.5px; color: var(--accent); display: block; }
+footer { margin-top: 56px; font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 900px) {
+  .wrap { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  nav.toc { display: none; }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+</style>
+
+<div class="wrap">
+<nav class="toc" aria-label="Contents">
+  <p>Contents</p>
+  <ol>
+    <li><a href="#idea">Idea</a></li>
+    <li><a href="#data">Data</a></li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#nutrition">Dish → nutrition</a></li>
+    <li><a href="#llm">Local LLM</a></li>
+    <li><a href="#embedding">Embeddings</a></li>
+    <li><a href="#model">Prediction model</a></li>
+    <li><a href="#evaluation">Evaluation</a></li>
+    <li><a href="#safety">Safety rules</a></li>
+    <li><a href="#ui">Interface</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#open">Open items</a></li>
+  </ol>
+</nav>
+
+<main>
+<header class="top">
+  <div class="callout" style="margin-bottom:16px"><b>Initial plan (14 November). The final product is different.</b> This document is the starting plan. The final app does <b>not predict</b> outcomes: it retrieves similar past meals; it never recommends a dose and has no "tomorrow" or hypo warnings. For the current state, see the <a href="README.md">README</a> and the <a href="reports/final_report.html">final report</a>. · <a href="plan.html">Türkçe sürüm</a></div>
+  <div class="eyebrow">Veritas AI Hackathon 2026 · AI + Health · plan, 14 November</div>
+  <h1>Shadow Pancreas</h1>
+  <p class="lede">A system I built as a person with type 1 diabetes, starting from my own glucose log. It combines the pre-meal glucose, that day's menu and past meals to answer "what happened in similar situations?", and summarises the answer with a local LLM.</p>
+</header>
+
+<h2 id="idea">Idea</h2>
+<p class="sentence">Before a meal, the user enters the pre-meal glucose. The menu loads automatically from the date. The system finds past meals with similar nutrition content, gives a range estimate for the 2-hour post-meal value and explains it in a 3–4 sentence summary. In the evening it scans tomorrow's menu and produces advance warnings for risky meals.</p>
+<p>The ±tolerance window and word-matching method of the prototype will be kept and used as the <b>baseline</b>. The main question: <b>"How much does knowing the menu as nutrition values improve post-meal glucose prediction?"</b></p>
+
+<h2 id="data">Data</h2>
+<p>Filtering rules: weekends removed, official holidays and eves removed, meals without a menu removed, meals with a missing pre-meal or post-meal measurement removed.</p>
+<div class="facts">
+  <div class="fact"><b>352</b><span>usable meals</span></div>
+  <div class="fact"><b>6</b><span>months (Jan, Feb, Mar, Apr, Jun, Oct)</span></div>
+  <div class="fact"><b>571</b><span>distinct menu-item spellings</span></div>
+  <div class="fact"><b>2 h</b><span>post-meal measurement time</span></div>
+</div>
+
+<h3>Post-meal outcome distribution</h3>
+<div class="dist" role="img" aria-label="15 low, 259 in range, 78 high">
+  <div style="width:4.3%;background:var(--hypo)" title="Low 15">15</div>
+  <div style="width:73.6%;background:var(--target)">259 in range (70–180)</div>
+  <div style="width:22.1%;background:var(--hyper)">78</div>
+</div>
+<div class="legend"><span><i style="background:var(--hypo)"></i>&lt;70 mg/dL · 15</span><span><i style="background:var(--target)"></i>70–180 · 259</span><span><i style="background:var(--hyper)"></i>&gt;180 · 78</span></div>
+<div class="callout" style="margin-top:14px">There are only <b>15</b> low cases. Proportional metrics for lows would be very noisy, so numbers will be reported as raw counts with bootstrap confidence intervals. Lows will be derived from the lower end of the prediction interval instead of a separate classifier.</div>
+
+<h3>Month × meal distribution</h3>
+<div class="tbl"><table>
+<thead><tr><th>Month</th><th class="num">Breakfast</th><th class="num">Lunch</th><th class="num">Dinner</th><th class="num">Total</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td>January</td><td class="num">21</td><td class="num">21</td><td class="num">21</td><td class="num">63</td><td>1 Jan removed</td></tr>
+<tr><td>February</td><td class="num">20</td><td class="num">20</td><td class="num">20</td><td class="num">60</td><td></td></tr>
+<tr><td>March</td><td class="num">20</td><td class="num">20</td><td class="num">20</td><td class="num">60</td><td>19 Mar (eve) and 20 Mar (holiday) removed</td></tr>
+<tr><td>April</td><td class="num">21</td><td class="num">21</td><td class="num">21</td><td class="num">63</td><td>23 Apr removed</td></tr>
+<tr><td>June</td><td class="num">22</td><td class="num">22</td><td class="num">22</td><td class="num">66</td><td></td></tr>
+<tr><td>October</td><td class="num">—</td><td class="num">20</td><td class="num">20</td><td class="num">40</td><td>No breakfast menu · 28 Oct (eve) and 29 Oct removed</td></tr>
+</tbody></table></div>
+<p style="font-size:13.5px;color:var(--muted)">There is no menu for May, July, August and September, so those months are left out entirely. Official holidays removed: 1 Jan, 19–20 Mar, 23 Apr, 1 May, 19 May, 26–29 May, 15 Jul, 28–29 Oct (only those falling on weekdays).</p>
+
+<h3>Cleaning rules</h3>
+<ul>
+  <li>Cells where post-meal, bedtime or insulin value is 0 count as missing data.</li>
+  <li>Column Q (header "0.125") is an average column and is not used. The AVERAGES columns on the right are derived and do not enter the model either.</li>
+  <li>The "EXTRA DOSE" (correction dose) at lunch and dinner becomes a separate feature. Meals with an extra dose are flagged in the analysis because they directly affect the post-meal value.</li>
+  <li>Each menu row is split into components: soup, main dish, rice/pasta, yogurt, salad, dessert/fruit, breakfast plate, pastry, other. A meal's nutrition is the sum of these components.</li>
+  <li>Parenthetical parts are parsed too. For example <code>Avcı Soslu Piliç Izgara (Elma Dilim Patates)</code> is two items: chicken and potato.</li>
+</ul>
+
+<h2 id="architecture">Architecture</h2>
+<div class="diagram">
+<pre class="mermaid">
+flowchart LR
+  A["Pre-meal glucose<br/>+ meal"] --> R
+  M["Menu file<br/>(date, meal)"] --> N["Name normalisation<br/>TF-IDF + embedding"]
+  N --> B["Nutrition vector<br/>carb · prot · fat · fibre · GI"]
+  B --> R["Case retrieval<br/>weighted kNN"]
+  H[("Past 352 meals")] --> R
+  R --> P["Post-meal estimate<br/>range + class"]
+  P --> J["Structured JSON"]
+  R --> J
+  J --> L["llama-server<br/>local LLM"]
+  L --> F{"Faithfulness and<br/>safety check"}
+  F -->|passed| O["Summary<br/>and notification"]
+  F -->|failed| T["Template summary"]
+</pre>
+</div>
+<p>This is the "RAG-like" part: what is retrieved is not documents but <b>past meal cases</b> and their statistics. The LLM only narrates this structured context and never produces numbers from its own knowledge.</p>
+
+<h2 id="nutrition">Dish name → nutrition values</h2>
+<p>Bread and bazlama do not look alike as words but are close as nutrition. Bread and bread kadayıf are the opposite. So similarity will be computed over the <b>nutrition vector</b>, not over names. The method is recipe parsing, the standard route used by dietitians. Every step can be done with free sources.</p>
+<ol class="steps">
+  <li><div><b>Normalisation.</b> The 571 spellings are reduced to about 200 standard dishes. For example <code>Domates Çorba (Kaşarlı)</code> and <code>Kaşarlı Domates Çorbası</code> are the same dish. TF-IDF character n-grams and embeddings work as a hybrid; ambiguous matches are confirmed by you.</div></li>
+  <li><div><b>Standard recipe and portion.</b> For each standard dish, ingredients per portion are written in grams. The local LLM drafts them and the roughly 50 most frequent dishes are checked by hand. The portion reference is the TÜBER (Turkey Nutrition Guide) portion sizes.</div></li>
+  <li><div><b>Ingredient nutrient values.</b> The primary source is <a href="https://turkomp.tarimorman.gov.tr/" target="_blank" rel="noopener">TürKomp</a>: the national database, free, 645 foods, including local foods such as tarhana, bulgur and molasses. For gaps, <a href="https://fdc.nal.usda.gov/api-guide.html" target="_blank" rel="noopener">USDA FoodData Central</a>: CC0 licence, 1,000 requests per hour with a free key.</div></li>
+  <li><div><b>Nutrition vector.</b> Carbohydrate, sugar, fibre, protein, fat and kcal per portion are computed. A glycaemic-index class (low/medium/high) is added from international GI tables. "GI-weighted carbohydrate" is derived as well. Fat and protein stay as separate features because they delay absorption.</div></li>
+  <li><div><b>Validation.</b> For about 30 dishes, the computed carbohydrate is compared with an independent carb count and an exchange list, and the mean absolute error is measured. Extra experiment: the difference between carbohydrate guessed directly by the LLM and carbohydrate computed by recipe parsing.</div></li>
+  <li><div><b>Dish similarity.</b> Three signals are combined: nutrition-vector distance (main signal), category and name embedding. Weights are chosen with validation data. The embedding is used only to link a name to a standard dish and to give a fallback estimate for dishes not in the database.</div></li>
+</ol>
+
+<h2 id="llm">Local LLM</h2>
+<p>Server: <b>llama-server</b> (build 10446, CUDA) under <code>D:\downloads\down3\llama</code>. It supports the OpenAI-compatible <code>/v1/chat/completions</code> and JSON-schema-constrained output. With an RTX 4060 Laptop (8 GB VRAM) and 16 GB RAM, an 8k context is enough. The existing <code>models.ini</code> uses a 200k context and an uncensored model, so a separate configuration will be written for this project.</p>
+<div class="tbl"><table>
+<thead><tr><th>File</th><th class="num">Size</th><th>Decision</th><th>Rationale</th></tr></thead>
+<tbody>
+<tr><td><code>Qwen3.5-9B-Q4_K_M</code></td><td class="num">5.7 GB</td><td><span class="pill p-yes">main candidate</span></td><td>Fits entirely on the GPU. Multilingual. Thinking mode must be off, otherwise latency and token use rise.</td></tr>
+<tr><td><code>gemma4-e4b.gguf</code></td><td class="num">5.0 GB</td><td><span class="pill p-yes">main candidate</span></td><td>Official instruct version, multilingual. The <code>gemma4-official.jinja</code> template is ready.</td></tr>
+<tr><td><code>gemma-4-E2B-it-Q4_K_M</code></td><td class="num">3.1 GB</td><td><span class="pill p-yes">speed candidate</span></td><td>The fastest option. Preferred in the demo if quality is sufficient.</td></tr>
+<tr><td><code>gemma-4-26B-A4B-it-UD-Q4_K_M</code></td><td class="num">16.9 GB</td><td><span class="pill p-maybe">quality ceiling</span></td><td>MoE, about 4B active parameters. Can run with experts on CPU (<code>--n-cpu-moe</code>) but is borderline and slow with 16 GB RAM. Included only for the question "how far behind are the small models?".</td></tr>
+<tr><td><code>zai-org_GLM-4.7-Flash-Q4_K_M</code></td><td class="num">18.5 GB</td><td><span class="pill p-no">out</span></td><td>Not practical on this hardware.</td></tr>
+<tr><td><code>Qwen3-Coder-30B-A3B</code></td><td class="num">14.7 GB</td><td><span class="pill p-no">out</span></td><td>A code model, not suitable for text summaries.</td></tr>
+<tr><td><code>Gemma-4-E4B-Uncensored…</code>, <code>OrcaSAQ-2-27B-Uncensored</code>, <code>Bonsai-2-27B-PQ2_0-CRACK</code></td><td class="num">—</td><td><span class="pill p-no">out</span></td><td>Models with the safety tuning removed. Not used in a health app, to protect the no-dosing rule.</td></tr>
+<tr><td><code>Muse-Glimmer-30B</code></td><td class="num">15.9 GB</td><td><span class="pill p-no">out</span></td><td>The name suggests a creative-writing fine-tune (not verified). Its size is also borderline.</td></tr>
+<tr><td><code>Ternary-Bonsai-2-27B-PTQ1_0</code></td><td class="num">5.9 GB</td><td><span class="pill p-no">out</span></td><td>1-bit quantisation. High risk for language quality, may need special kernels.</td></tr>
+</tbody></table></div>
+
+<h3>LLM comparison method</h3>
+<ol>
+  <li><b>20 query JSONs</b> are prepared from real data: different meals, pre-meal ranges, low and high cases, few-sample situations.</li>
+  <li>Each candidate runs with the same system prompt and <code>temperature 0.2</code>. Two formats are tried: free-text summary and JSON-schema fields (placed into a template).</li>
+  <li>Automatic measures:
+    <ul>
+      <li><b>numeric faithfulness</b>: does every number in the summary exist in the context JSON?</li>
+      <li><b>forbidden-language rate</b>: dose advice or instructions such as "do/increase/decrease",</li>
+      <li><b>language error count</b>,</li>
+      <li>tokens per second and VRAM use.</li>
+    </ul>
+  </li>
+  <li>Blind evaluation: summaries are shuffled and model names hidden. You give each a 1–5 score for "is it understandable, is it useful to me?".</li>
+  <li>Decision rule: among models with faithfulness ≥ 95% and forbidden language 0%, the highest-scoring model is chosen. If scores are close, the faster one is preferred.</li>
+</ol>
+<pre class="cmd">llama-server.exe -m E:\model\Qwen3.5-9B-Q4_K_M.gguf -ngl 99 -c 8192 --jinja ^
+  --reasoning-budget 0 --temp 0.2 --host 127.0.0.1 --port 8081</pre>
+<p style="font-size:13.5px;color:var(--muted)">The flag that turns thinking off varies by build (<code>--reasoning-budget 0</code> or <code>reasoning = off</code> in <code>models.ini</code>). It will be checked with <code>llama-server --help</code> on the first try.</p>
+
+<h2 id="embedding">Embeddings</h2>
+<p>The decision was made by measuring in Colab. Notebook and synthetic data: <code>notebooks/embedding_karsilastirma.ipynb</code>. Synthetic data: 127 standard dishes, 703 spelling variants and synonyms, 38 hand-marked hard pairs.</p>
+<div class="tbl"><table>
+<thead><tr><th>Task</th><th>Question</th><th>Metric</th></tr></thead>
+<tbody>
+<tr><td>T1 Name matching</td><td>Are "Ezo Gelin Çorbası", "Koy Bazlamsi", "Spagetti (Napoliten)" linked to the right dish?</td><td>Acc@1, Recall@5, MRR</td></tr>
+<tr><td>T2 Carbohydrate kNN</td><td>Can the carbohydrate of a dish not in the database be estimated from its 3 nearest neighbours?</td><td>MAE (g/portion)</td></tr>
+<tr><td>T3 Hard pairs</td><td>Do bread ~ bazlama come out close and bread ~ bread kadayıf far apart?</td><td>ROC-AUC</td></tr>
+<tr><td>T4 Nutrition correlation</td><td>How well does cosine similarity track nutrition similarity?</td><td>Spearman ρ</td></tr>
+</tbody></table></div>
+<p>Candidates: MiniLM-L12 multilingual, multilingual-e5 (small/base/large), bge-m3, gte-multilingual-base, Qwen3-Embedding-0.6B, EmbeddingGemma-300m, TR-MTEB turkish-embedding-model, embeddingmagibu-200m, BERTurk NLI-STS. Also TF-IDF character and word baselines. T2–T4 are measured both with the name only and with "name + ingredient description".</p>
+<h3>Colab results and decision</h3>
+<div class="tbl"><table>
+<thead><tr><th>Method</th><th class="num">Params</th><th class="num">Name matching Acc@1</th><th class="num">Carb MAE (rich)</th><th class="num">Hard-pair AUC (rich)</th><th class="num">Nutrition ρ (rich)</th></tr></thead>
+<tbody>
+<tr><td><b>RRF: TF-IDF + bge-m3 (0.5)</b> <span class="pill p-yes">name matching</span></td><td class="num">—</td><td class="num">0.878</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
+<tr><td><b>TR-MTEB turkish-embedding</b> <span class="pill p-yes">dish similarity</span></td><td class="num">111M</td><td class="num">0.824</td><td class="num">7.6 g</td><td class="num">0.54</td><td class="num">0.21</td></tr>
+<tr><td>bge-m3</td><td class="num">568M</td><td class="num">0.848</td><td class="num">7.7 g</td><td class="num">0.67</td><td class="num">0.15</td></tr>
+<tr><td>e5-small</td><td class="num">118M</td><td class="num">0.792</td><td class="num">9.4 g</td><td class="num">0.84</td><td class="num">0.03</td></tr>
+<tr><td>TF-IDF char 2–4</td><td class="num">—</td><td class="num">0.872</td><td class="num">8.6 g</td><td class="num">0.46</td><td class="num">0.12</td></tr>
+<tr><td>Category mean (baseline)</td><td class="num">—</td><td class="num">—</td><td class="num">6.8 g</td><td class="num">—</td><td class="num">—</td></tr>
+</tbody></table></div>
+<ul>
+  <li><b>Name matching:</b> TF-IDF character n-grams + <b>bge-m3</b>, fused with RRF, embedding weight 0.5. Recall@5 96.6%. For ambiguous matches, the top 5 candidates are offered for confirmation.</li>
+  <li><b>Auxiliary dish-similarity signal:</b> <b>TR-MTEB turkish-embedding</b>, using the "name + ingredient description" text.</li>
+  <li><b>The main similarity comes from the nutrition vector.</b> No embedding beat the category mean (6.8 g). With names only, all models are worse than random on hard pairs (AUC &lt; 0.5).</li>
+  <li>Limits: the data is synthetic and there are only 38 hard pairs, so AUC differences are rough. EmbeddingGemma and embeddingmagibu could not be run.</li>
+</ul>
+<p>Because the set of dishes on the menu is fixed, embeddings can be computed once and written to a file. No embedding server is needed at run time. If necessary, the GGUF version of the winning model can run with <code>--embeddings</code> on a second llama-server instance; chat and embedding do not work together in the same process.</p>
+
+<h2 id="model">Prediction model</h2>
+<h3>Case features</h3>
+<ul>
+  <li>Pre-meal glucose (mg/dL), meal, injected insulin and extra dose.</li>
+  <li>The meal's nutrition vector (total carbohydrate, GI-weighted carbohydrate, fat, protein, fibre).</li>
+  <li>Previous measurement and intra-day trend, i.e. the post-meal value of the previous meal.</li>
+  <li>Month (season) and day of the week.</li>
+</ul>
+<h3>Methods to compare</h3>
+<div class="tbl"><table>
+<thead><tr><th>Code</th><th>Method</th><th>Role</th></tr></thead>
+<tbody>
+<tr><td>B0</td><td>Always say "in range"; give the training mean as the value</td><td>simplest baseline</td></tr>
+<tr><td>B1</td><td>Training median of the same meal</td><td>baseline</td></tr>
+<tr><td>B2</td><td>Prototype: mean post-meal value of the same meal within a pre-meal ±15 window</td><td><b>the main rival</b></td></tr>
+<tr><td>M1</td><td>Weighted kNN, no dish information</td><td>model without food</td></tr>
+<tr><td>M2</td><td>Weighted kNN + nutrition vector</td><td><b>main model</b></td></tr>
+<tr><td>M3</td><td>Gradient boosting (LightGBM) or quantile regression + nutrition vector</td><td>alternative</td></tr>
+</tbody></table></div>
+<ul>
+  <li><b>kNN weights</b> (how much do pre-meal glucose, carbohydrate, insulin… matter in the distance?) are chosen by random search over validation folds.</li>
+  <li><b>Prediction interval:</b> a calibrated interval such as "80% probability of 120–190 mg/dL" via conformal prediction. The low warning comes from the lower end of this interval.</li>
+  <li><b>Ablation:</b> no nutrition information, name matching, embedding and nutrition vector are added in turn. The answer to the main question is read from this table.</li>
+</ul>
+
+<h2 id="evaluation">Evaluation</h2>
+<ul>
+  <li><b>Split:</b> By month, not random. Each month is left out in turn (6 folds). The last test month is October (40 meals) and is never used in any tuning.</li>
+  <li><b>Metrics:</b>
+    <ul>
+      <li>MAE for the post-meal value,</li>
+      <li>missed cases and false alarms for high (&gt;180) and low (&lt;70), counted separately,</li>
+      <li>actual coverage of the prediction interval,</li>
+      <li>95% confidence intervals by bootstrap.</li>
+    </ul>
+  </li>
+  <li><b>Error analysis:</b> The 10 worst predictions are examined one by one. Possible causes: extra dose, exercise, illness, exam stress, extra food eaten beside the menu.</li>
+  <li><b>Groups:</b> Results are given separately for breakfast, lunch and dinner, for low/medium/high pre-meal ranges, and by month. If the model is clearly worse for one meal, it is visible.</li>
+  <li><b>Causality note:</b> The insulin dose is chosen by looking at the pre-meal value and the food. The model does not say "if you take this dose, this happens"; it only shows the historical relationship.</li>
+</ul>
+
+<h2 id="safety">Safety rules</h2>
+<div class="callout stop">
+<ul style="margin:0">
+  <li>The system <b>never recommends a dose</b>. Summaries only tell what happened in similar situations in the past.</li>
+  <li>LLM output passes two filters: numeric faithfulness (every number must exist in the context) and forbidden patterns (dose instructions, firm language such as "you must"). If output fails, a template summary is shown instead.</li>
+  <li>If the number of similar cases is low (e.g. &lt;5), the summary says so clearly and widens the interval.</li>
+  <li>If a low risk is visible, the first sentence of the summary is about that.</li>
+</ul>
+</div>
+
+<h2 id="ui">Interface improvements</h2>
+<p>The base is the prototype HTML. It will be restyled and the following will be added technically:</p>
+<ul>
+  <li><b>The menu fills in automatically.</b> When the date and meal are selected, dishes arrive as component cards.</li>
+  <li><b>Nutrition card:</b> total carbohydrate of the meal, GI badge, fat and protein. A "where did these values come from?" link shows the recipe parsing.</li>
+  <li><b>Prediction band:</b> a range instead of a single number. The 70–180 target zone and the low and high zones are shown as coloured stripes.</li>
+  <li><b>Similar-case list:</b> the 5 nearest meals, each with why it is similar (pre-meal difference, carbohydrate difference, shared dish category).</li>
+  <li><b>LLM summary:</b> arrives streaming, with a small label under it showing the check status.</li>
+  <li><b>Tomorrow's menu warning:</b> when opened in the evening, the next day's risky meals are listed.</li>
+  <li><b>Model tab:</b> baseline vs model comparison and the ablation table are shown live.</li>
+  <li><b>If the LLM is unreachable</b>, the page keeps working with the template summary.</li>
+</ul>
+
+<h2 id="schedule">Schedule</h2>
+<div class="timeline">
+  <div><time>Sat evening</time>The embedding notebook runs in Colab and the model is chosen. The data cleaning and merging script is written; menu items are split into components.</div>
+  <div><time>Sat night</time>First version of normalisation and the nutrition table (the 50 most frequent dishes checked by hand). Baselines B0–B2 are set up. llama-server settings are written for the LLM candidates.</div>
+  <div><time>Sun morning</time>Models M1–M3, weight search, conformal interval and the ablation table.</div>
+  <div><time>Sun noon</time>LLM comparison: 20 queries, automatic measures, blind scoring, model selection.</div>
+  <div><time>Sun afternoon</time>Interface: menu cards, prediction band, similar cases, summary, tomorrow's menu warning. The end-to-end demo works.</div>
+</div>
+
+<h2 id="open">Open items</h2>
+<ul>
+  <li><b>Holiday eves:</b> because they are half days, lunch and dinner were counted as uncertain and removed. If they went normally, they can be added back (+4 days).</li>
+</ul>
+
+<footer>Data counts were computed on 14 November 2026 from <code>seker_takip_yemekli.xlsx</code> and <code>menu_2026.xlsx</code>. Baseline numbers come from a local preliminary run on synthetic data.</footer>
+</main>
+</div>
+<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs"; mermaid.initialize({ startOnLoad: true });</script>

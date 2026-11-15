@@ -66,7 +66,7 @@ The app is reachable on the network by default; devices on the same network can 
 
 Re-running the data and measurement pipeline requires the real raw data (`data/raw/`, not in this repository): `python tools/pipeline.py`. Final accuracy tests: `python tools/eval_final.py` (needs the LLM server).
 
-Requirements: pandas, numpy, scikit-learn, lightgbm, sentence-transformers, fastapi, uvicorn, httpx, openpyxl.
+Requirements: `pip install -r requirements.txt` (pandas, numpy, scikit-learn, lightgbm, sentence-transformers, fastapi, uvicorn, httpx, openpyxl). Licence: MIT (`LICENSE`). The original project plan is in `plan.en.html` (Türkçe: `plan.html`); it is superseded by the final report in `reports/final_report.html`.
 
 ## Layout
 
@@ -161,7 +161,7 @@ Uygulama ağda açıktır: aynı ağdaki cihazlar `http://<bilgisayarın IP'si>:
 
 Veri ve ölçüm hattını baştan çalıştırmak için gerçek ham veri gerekir (`data/raw/`, repoda yok): `python tools/pipeline.py`. Son doğruluk testleri için: `python tools/eval_final.py` (LLM sunucusu açık olmalı).
 
-Gereken paketler: pandas, numpy, scikit-learn, lightgbm, sentence-transformers, fastapi, uvicorn, httpx, openpyxl.
+Gereken paketler: `pip install -r requirements.txt` (pandas, numpy, scikit-learn, lightgbm, sentence-transformers, fastapi, uvicorn, httpx, openpyxl). Lisans: MIT (`LICENSE`). İlk proje planı `plan.html` (English: `plan.en.html`); güncel hâli `reports/final_report.html` raporudur.
 
 ## Klasörler
 
