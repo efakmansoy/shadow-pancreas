@@ -1,0 +1,32 @@
+# gizli anahtarlar
+.env
+# kullanıcının uygulamada girdiği kişisel kayıtlar
+data/user/
+# büyük / yeniden üretilebilir dosyalar
+data/external/usda/
+data/nutrition/matcher_cache.npz
+__pycache__/
+*.pyc
+reports/*.log
+reports/llama_*.log
+
+# ---- GERÇEK (özel) veri: asla paylaşılmaz. Yerelde çalışmaya devam eder, repoda yalnızca data/synthetic/ vardır ----
+data/raw/
+data/events.csv
+data/events_all.csv
+data/daily_log.csv
+data/menu_days.csv
+data/items_raw.csv
+data/event_nutrition.csv
+data/event_nutrition_all.csv
+data/event_embeddings.npz
+data/menu_embeddings.npz
+# gerçek veriden türeyen vaka bazlı çıktılar (toplu metrikler reports/*.json içinde kalır)
+reports/predictions_*.csv
+reports/final_llm_outputs.csv
+reports/llm_outputs.csv
+reports/llm_blind.csv
+reports/llm_blind_key.json
+reports/llm_queries.json
+reports/llm_queries_meta.json
+reports/*.log
