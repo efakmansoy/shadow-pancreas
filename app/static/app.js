@@ -636,7 +636,7 @@
     }).then(function () { if (req === S.menuReq) body.setAttribute('aria-busy', 'false'); });
   }
 
-  function srcKey(s) { s = fold(s); return s === 'menu' || s === 'okul' || s === 'school' ? 'menu' : (s === 'kullanici' || s === 'user' ? 'kullanici' : ''); }
+  function srcKey(s) { s = fold(s); return s === 'menu' ? 'menu' : (s === 'kullanici' || s === 'user' ? 'kullanici' : ''); }
   function compHtml(c) {
     var dishes = Array.isArray(c.dishes) ? c.dishes : [];
     var rows = dishes.map(function (d) {
