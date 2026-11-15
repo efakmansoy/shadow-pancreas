@@ -1,4 +1,4 @@
-/* DiyaLife Menü Hafızası / Menu Memory — client (vanilla JS, offline, EN + TR) */
+/* Shadow Pancreas — client (vanilla JS, offline, EN + TR) */
 (function () {
   'use strict';
 
@@ -135,7 +135,7 @@
       base_prefix: '[baseline] ',
 
       about_h1: 'How does it work?',
-      about_intro: 'A person with type 1 diabetes eats a known menu every day. Before a meal, Shadow Pancreas answers “what happened the last times I ate something like this, with a similar pre-meal glucose?” straight from their own log.',
+      about_intro: 'I live with type 1 diabetes, and I built Shadow Pancreas from my own glucose and insulin log. Before a meal, it answers “what happened the last times I ate something like this, with a similar pre-meal glucose?” straight from your own records.',
       pipe_title: 'Pipeline',
       p1k: 'Today’s menu', p1d: 'Taken from the menu file, or typed in by the user and saved.',
       p2k: 'Dish matching', p2d: 'Each written name (“Fettucine Mantarlı”) is linked to a standard dish: TF-IDF character n-grams + bge-m3 embeddings.',
@@ -290,7 +290,7 @@
       base_prefix: '[taban] ',
 
       about_h1: 'Nasıl çalışıyor?',
-      about_intro: 'Tip 1 diyabetli birinin her gün yediği menü belli. Menü Hafızası yemekten önce “buna benzer bir şeyi, benzer bir açlık şekeriyle yediğimde ne olmuştu?” sorusunu doğrudan kendi kaydından yanıtlar.',
+      about_intro: 'Tip 1 diyabetle yaşıyorum ve Shadow Pancreas’ı kendi şeker ve insülin kaydımdan yaptım. Yemekten önce “buna benzer bir şeyi, benzer bir açlık şekeriyle yediğimde ne olmuştu?” sorusunu doğrudan kendi kayıtlarından yanıtlar.',
       pipe_title: 'Akış',
       p1k: 'Bugünkü menü', p1d: 'Menü dosyasından gelir ya da kullanıcı yazıp kaydeder.',
       p2k: 'Yemek eşleştirme', p2d: 'Yazılan her ad (“Fettucine Mantarlı”) standart bir yemeğe bağlanır: TF-IDF harf n-gram + bge-m3 gömme.',
@@ -490,7 +490,18 @@
     applyStatic();
     renderDateInfo();
     if (S.ed) renderEditor(); else if (S.menu) renderMenuCard();
-    if (S.result) { renderResult(true); if (S.result.context) streamSummary(S.result.context); }
+    if (S.result) {
+      renderResult(true);
+      var rq = S.result._q;
+      if (rq) {
+        // bağlam (tarih/ay adları) seçili dilde yeniden üretilsin; yoksa özet doğrulayıcıdan geçemez
+        api('/api/similar', { method: 'POST', body: { date: rq.date, meal: rq.meal, aclik: rq.aclik, lang: LANG } }).then(function (r) {
+          if (!r || !S.result || S.result._q !== rq) return;
+          r._q = rq; S.result = r; renderResult(true);
+          if (r.context) streamSummary(r.context);
+        }).catch(function () { if (S.result && S.result.context) streamSummary(S.result.context); });
+      } else if (S.result.context) streamSummary(S.result.context);
+    }
     var g = $('#goErr'); if (!g.hidden) setErr(g, t('need_menu'));
     if (S.hist) renderHistory();
     if (S.report) renderModel(S.report);

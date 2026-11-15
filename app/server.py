@@ -1,4 +1,4 @@
-"""Shadow Pancreas (eski ad: DiyaLife Menü Hafızası) — yerel sunucu.
+"""Shadow Pancreas — yerel sunucu.
 
 Çalıştırma:  python app/server.py   (http://127.0.0.1:8000)
 LLM:         llama-server ayrı süreçte, varsayılan http://127.0.0.1:8081 (DIYALIFE_LLM_URL ile değiştirilebilir).
