@@ -1,0 +1,704 @@
+query,target_id,kind,hedef
+Ekmek,0,es_ad,Beyaz Ekmek
+Francala,0,es_ad,Beyaz Ekmek
+Somun Ekmek,0,es_ad,Beyaz Ekmek
+Beyaz Ekmeği,0,ek_degisimi,Beyaz Ekmek
+Beaz Ekmek,0,yazim_hatasi,Beyaz Ekmek
+Beyaz Ekmek (Ev Usulü),0,garnitur,Beyaz Ekmek
+Emek,0,es_ad+ascii+hata,Beyaz Ekmek
+Kepekli Ekmek,1,es_ad,Tam Buğday Ekmeği
+Tam Buğday Ekmek,1,es_ad,Tam Buğday Ekmeği
+Tam Bugday Ekmegi,1,ascii,Tam Buğday Ekmeği
+Ta Buğday Ekmeği,1,yazim_hatasi,Tam Buğday Ekmeği
+Tam Buğday Ekmeği (Porsiyon),1,garnitur,Tam Buğday Ekmeği
+Kepekli Ekmk,1,es_ad+ascii+hata,Tam Buğday Ekmeği
+Köy Bazlaması,2,es_ad,Bazlama
+Bazlama Ekmeği,2,es_ad,Bazlama
+Bzlama,2,yazim_hatasi,Bazlama
+Bazlama (Salata ile),2,garnitur,Bazlama
+Koy Bazlamsi,2,es_ad+ascii+hata,Bazlama
+Lavaş Ekmeği,3,es_ad,Lavaş
+Tandır Lavaş,3,es_ad,Lavaş
+Lavas,3,ascii,Lavaş
+Lavşa,3,yazim_hatasi,Lavaş
+Lavaş (Mevsim Sebzeli),3,garnitur,Lavaş
+Lavas Ekmgei,3,es_ad+ascii+hata,Lavaş
+Ramazan Pidesi,4,es_ad,Pide Ekmeği
+Pide,4,es_ad,Pide Ekmeği
+Pide Ekmegi,4,ascii,Pide Ekmeği
+Pide Ekmek,4,ek_degisimi,Pide Ekmeği
+Pdie Ekmeği,4,yazim_hatasi,Pide Ekmeği
+Pide Ekmeği (Salata ile),4,garnitur,Pide Ekmeği
+Susamlı Simit,5,es_ad,Simit
+Gevrek,5,es_ad,Simit
+Siit,5,yazim_hatasi,Simit
+Simit (Salata ile),5,garnitur,Simit
+Gvrek,5,es_ad+ascii+hata,Simit
+Peynirli Poğaça,6,es_ad,Poğaça
+Sade Poğaça,6,es_ad,Poğaça
+Pogaca,6,ascii,Poğaça
+Pğaça,6,yazim_hatasi,Poğaça
+Poğaça (Ev Usulü),6,garnitur,Poğaça
+Sdae Pogaca,6,es_ad+ascii+hata,Poğaça
+Sade Açma,7,es_ad,Açma
+Zeytinli Açma,7,es_ad,Açma
+Acma,7,ascii,Açma
+Açma (Porsiyon),7,garnitur,Açma
+Sade cma,7,es_ad+ascii+hata,Açma
+Peynirli Kol Böreği,8,es_ad,Kol Böreği
+Kol Böreği (Peynirli),8,es_ad,Kol Böreği
+Kol Boregi,8,ascii,Kol Böreği
+Kol Börek,8,ek_degisimi,Kol Böreği
+Kol öBreği,8,yazim_hatasi,Kol Böreği
+Kol Böreği (Porsiyon),8,garnitur,Kol Böreği
+Kol Boreig (Peynirli),8,es_ad+ascii+hata,Kol Böreği
+Peynirli Sigara Böreği,9,es_ad,Sigara Böreği
+Sigara Börek,9,es_ad,Sigara Böreği
+Sigara Boregi,9,ascii,Sigara Böreği
+Sgiara Böreği,9,yazim_hatasi,Sigara Böreği
+Sigara Böreği (Ev Usulü),9,garnitur,Sigara Böreği
+Peynirli iSgara Boregi,9,es_ad+ascii+hata,Sigara Böreği
+Peynirli Su Böreği,10,es_ad,Su Böreği
+Su Boregi,10,ascii,Su Böreği
+Su Börek,10,ek_degisimi,Su Böreği
+Su Böeği,10,yazim_hatasi,Su Böreği
+Su Böreği (Ev Usulü),10,garnitur,Su Böreği
+Peyniri Su Boregi,10,es_ad+ascii+hata,Su Böreği
+Peynirli Gül Böreği,11,es_ad,Gül Böreği
+Ispanaklı Gül Böreği,11,es_ad,Gül Böreği
+Gul Boregi,11,ascii,Gül Böreği
+Gül Börek,11,ek_degisimi,Gül Böreği
+Gül Börği,11,yazim_hatasi,Gül Böreği
+Gül Böreği (Yoğurtlu),11,garnitur,Gül Böreği
+Peynirli Glu Boregi,11,es_ad+ascii+hata,Gül Böreği
+Tost,12,es_ad,Kaşarlı Tost
+Karışık Tost,12,es_ad,Kaşarlı Tost
+Kasarli Tost,12,ascii,Kaşarlı Tost
+Kaşrlı Tost,12,yazim_hatasi,Kaşarlı Tost
+Kaşarlı Tost (Ev Usulü),12,garnitur,Kaşarlı Tost
+Peynirli Gözleme,13,es_ad,Gözleme
+Patatesli Gözleme,13,es_ad,Gözleme
+Gozleme,13,ascii,Gözleme
+Gözelme,13,yazim_hatasi,Gözleme
+Gözleme (Yoğurtlu),13,garnitur,Gözleme
+Pyenirli Gozleme,13,es_ad+ascii+hata,Gözleme
+Peynir,14,es_ad,Beyaz Peynir
+Ezine Peyniri,14,es_ad,Beyaz Peynir
+Beyaz Penir,14,yazim_hatasi,Beyaz Peynir
+Beyaz Peynir (Salata ile),14,garnitur,Beyaz Peynir
+Ezin Peyniri,14,es_ad+ascii+hata,Beyaz Peynir
+Kaşar,15,es_ad,Kaşar Peyniri
+Taze Kaşar,15,es_ad,Kaşar Peyniri
+Kasar Peyniri,15,ascii,Kaşar Peyniri
+Kaşar Penyiri,15,yazim_hatasi,Kaşar Peyniri
+Kaşar Peyniri (Mevsim Sebzeli),15,garnitur,Kaşar Peyniri
+Kaar,15,es_ad+ascii+hata,Kaşar Peyniri
+Siyah Zeytin,16,es_ad,Zeytin
+Yeşil Zeytin,16,es_ad,Zeytin
+Zeyitn,16,yazim_hatasi,Zeytin
+Zeytin (Mevsim Sebzeli),16,garnitur,Zeytin
+Yesil Zytin,16,es_ad+ascii+hata,Zeytin
+Yumurta,17,es_ad,Haşlanmış Yumurta
+Haşlama Yumurta,17,es_ad,Haşlanmış Yumurta
+Haslanmis Yumurta,17,ascii,Haşlanmış Yumurta
+Haşalnmış Yumurta,17,yazim_hatasi,Haşlanmış Yumurta
+Haşlanmış Yumurta (Yoğurtlu),17,garnitur,Haşlanmış Yumurta
+Ymurta,17,es_ad+ascii+hata,Haşlanmış Yumurta
+"Yumurta, Omlet",18,es_ad,Omlet
+Sade Omlet,18,es_ad,Omlet
+Olmet,18,yazim_hatasi,Omlet
+Omlet (Mevsim Sebzeli),18,garnitur,Omlet
+"Yumurta, mlet",18,es_ad+ascii+hata,Omlet
+"Yumurta, Menemen",19,es_ad,Menemen
+Domatesli Yumurta,19,es_ad,Menemen
+Meneemn,19,yazim_hatasi,Menemen
+Menemen (Porsiyon),19,garnitur,Menemen
+"Yumurta, Meneemn",19,es_ad+ascii+hata,Menemen
+Süzme Bal,20,es_ad,Bal
+Çiçek Balı,20,es_ad,Bal
+Bal (Porsiyon),20,garnitur,Bal
+Cicek Bail,20,es_ad+ascii+hata,Bal
+Vişne Reçeli,21,es_ad,Reçel
+Çilek Reçeli,21,es_ad,Reçel
+Recel,21,ascii,Reçel
+Rçel,21,yazim_hatasi,Reçel
+Reçel (Salata ile),21,garnitur,Reçel
+Cliek Receli,21,es_ad+ascii+hata,Reçel
+Tahin-Pekmez,22,es_ad,Tahin Pekmez
+Tahinli Pekmez,22,es_ad,Tahin Pekmez
+Tahin ePkmez,22,yazim_hatasi,Tahin Pekmez
+Tahin Pekmez (Salata ile),22,garnitur,Tahin Pekmez
+Tahin-ePkmez,22,es_ad+ascii+hata,Tahin Pekmez
+Tereyağ,23,es_ad,Tereyağı
+Tereyagi,23,ascii,Tereyağı
+Tereyğaı,23,yazim_hatasi,Tereyağı
+Tereyağı (Salata ile),23,garnitur,Tereyağı
+Teeryag,23,es_ad+ascii+hata,Tereyağı
+Sosis Kızartma,24,es_ad,Sosis
+Piliç Sosis,24,es_ad,Sosis
+Sossi,24,yazim_hatasi,Sosis
+Sosis (Porsiyon),24,garnitur,Sosis
+Pilic Soss,24,es_ad+ascii+hata,Sosis
+Patates Kızartma,25,es_ad,Patates Kızartması
+Parmak Patates,25,es_ad,Patates Kızartması
+Elma Dilim Patates,25,es_ad,Patates Kızartması
+Patates Kizartmasi,25,ascii,Patates Kızartması
+Patates Kızartmaı,25,yazim_hatasi,Patates Kızartması
+Patates Kızartması (Ev Usulü),25,garnitur,Patates Kızartması
+Ptates Kizartma,25,es_ad+ascii+hata,Patates Kızartması
+Çeri Domates,26,es_ad,Domates Salatalık
+Salatalık Domates,26,es_ad,Domates Salatalık
+Domates Salatalik,26,ascii,Domates Salatalık
+Domates Saltaalık,26,yazim_hatasi,Domates Salatalık
+Domates Salatalık (Yoğurtlu),26,garnitur,Domates Salatalık
+Salatalik Domats,26,es_ad+ascii+hata,Domates Salatalık
+Kakaolu Fındık Kreması,27,es_ad,Fındık Ezmesi
+Çikolata Kreması,27,es_ad,Fındık Ezmesi
+Findik Ezmesi,27,ascii,Fındık Ezmesi
+Fındık Ezmsei,27,yazim_hatasi,Fındık Ezmesi
+Fındık Ezmesi (Salata ile),27,garnitur,Fındık Ezmesi
+Cikolata Kemasi,27,es_ad+ascii+hata,Fındık Ezmesi
+Ev Usulü Mercimek Çorba,28,es_ad,Mercimek Çorbası
+Mercimek Çorba,28,es_ad,Mercimek Çorbası
+Süzme Mercimek Çorbası,28,es_ad,Mercimek Çorbası
+Mercimek Corbasi,28,ascii,Mercimek Çorbası
+Mercimek Çrobası,28,yazim_hatasi,Mercimek Çorbası
+Mercimek Çorbası (Mevsim Sebzeli),28,garnitur,Mercimek Çorbası
+Ev Usulu Mercimek Corab,28,es_ad+ascii+hata,Mercimek Çorbası
+Ezogelin Çorba,29,es_ad,Ezogelin Çorbası
+Ezo Gelin Çorbası,29,es_ad,Ezogelin Çorbası
+Ezogelin Corbasi,29,ascii,Ezogelin Çorbası
+Ezogelin Çorbsı,29,yazim_hatasi,Ezogelin Çorbası
+Ezogelin Çorbası (Ev Usulü),29,garnitur,Ezogelin Çorbası
+Ezo Gelin Corabsi,29,es_ad+ascii+hata,Ezogelin Çorbası
+Tarhana Çorba,30,es_ad,Tarhana Çorbası
+Ev Tarhanası,30,es_ad,Tarhana Çorbası
+Tarhana Corbasi,30,ascii,Tarhana Çorbası
+Tarhana Çrobası,30,yazim_hatasi,Tarhana Çorbası
+Tarhana Çorbası (Mevsim Sebzeli),30,garnitur,Tarhana Çorbası
+Tarhna Corba,30,es_ad+ascii+hata,Tarhana Çorbası
+Yayla Çorba,31,es_ad,Yayla Çorbası
+Yoğurtlu Pirinç Çorbası,31,es_ad,Yayla Çorbası
+Yayla Corbasi,31,ascii,Yayla Çorbası
+Yayla Çrbası,31,yazim_hatasi,Yayla Çorbası
+Yayla Çorbası (Porsiyon),31,garnitur,Yayla Çorbası
+Yayl Corba,31,es_ad+ascii+hata,Yayla Çorbası
+Kaşarlı Domates Çorbası,32,es_ad,Domates Çorbası
+Domates Çorba (Kaşarlı),32,es_ad,Domates Çorbası
+Domates Corbasi,32,ascii,Domates Çorbası
+Domates Çorba,32,ek_degisimi,Domates Çorbası
+Domates Çorbaıs,32,yazim_hatasi,Domates Çorbası
+Domates Çorbası (Salata ile),32,garnitur,Domates Çorbası
+Kaasrli Domates Corbasi,32,es_ad+ascii+hata,Domates Çorbası
+Domatesli Şehriye Çorba,33,es_ad,Şehriye Çorbası
+Tel Şehriye Çorbası,33,es_ad,Şehriye Çorbası
+Sehriye Corbasi,33,ascii,Şehriye Çorbası
+Şehriye Çorba,33,ek_degisimi,Şehriye Çorbası
+Şerhiye Çorbası,33,yazim_hatasi,Şehriye Çorbası
+Şehriye Çorbası (Ev Usulü),33,garnitur,Şehriye Çorbası
+Tel Sheriye Corbasi,33,es_ad+ascii+hata,Şehriye Çorbası
+Kremalı Mantar Çorbası,34,es_ad,Mantar Çorbası
+Mantar Corbasi,34,ascii,Mantar Çorbası
+Mantar Çorba,34,ek_degisimi,Mantar Çorbası
+Mantar Çorbsaı,34,yazim_hatasi,Mantar Çorbası
+Mantar Çorbası (Salata ile),34,garnitur,Mantar Çorbası
+Kremali Mantar Crbasi,34,es_ad+ascii+hata,Mantar Çorbası
+Kremalı Taneli Sebze Çorbası,35,es_ad,Sebze Çorbası
+Taze Sebze Çorbası,35,es_ad,Sebze Çorbası
+Sebze Corbasi,35,ascii,Sebze Çorbası
+Sebze Çorba,35,ek_degisimi,Sebze Çorbası
+Sezbe Çorbası,35,yazim_hatasi,Sebze Çorbası
+Sebze Çorbası (Ev Usulü),35,garnitur,Sebze Çorbası
+Taze Sebe Corbasi,35,es_ad+ascii+hata,Sebze Çorbası
+Tavuk Çorbası,36,es_ad,Tavuk Suyu Çorbası
+Terbiyeli Tavuk Suyu Çorba,36,es_ad,Tavuk Suyu Çorbası
+Tavuk Suyu Corbasi,36,ascii,Tavuk Suyu Çorbası
+Tavuk Suyu Çorba,36,ek_degisimi,Tavuk Suyu Çorbası
+Tavuk Suyu Çorası,36,yazim_hatasi,Tavuk Suyu Çorbası
+Tavuk Suyu Çorbası (Yoğurtlu),36,garnitur,Tavuk Suyu Çorbası
+Tavuk Cobrasi,36,es_ad+ascii+hata,Tavuk Suyu Çorbası
+Düğün Çorba,37,es_ad,Düğün Çorbası
+Dugun Corbasi,37,ascii,Düğün Çorbası
+Düün Çorbası,37,yazim_hatasi,Düğün Çorbası
+Düğün Çorbası (Salata ile),37,garnitur,Düğün Çorbası
+Dugn Corba,37,es_ad+ascii+hata,Düğün Çorbası
+Acem Çorba,38,es_ad,Acem Çorbası
+Acem Corbasi,38,ascii,Acem Çorbası
+Acem Çrbası,38,yazim_hatasi,Acem Çorbası
+Acem Çorbası (Yoğurtlu),38,garnitur,Acem Çorbası
+Acem Corab,38,es_ad+ascii+hata,Acem Çorbası
+İşkembe Çorba,39,es_ad,İşkembe Çorbası
+Iskembe Corbasi,39,ascii,İşkembe Çorbası
+İşkembe Çobası,39,yazim_hatasi,İşkembe Çorbası
+İşkembe Çorbası (Porsiyon),39,garnitur,İşkembe Çorbası
+Isekmbe Corba,39,es_ad+ascii+hata,İşkembe Çorbası
+Kremalı Brokoli Çorbası,40,es_ad,Brokoli Çorbası
+Brokoli Corbasi,40,ascii,Brokoli Çorbası
+Brokoli Çorba,40,ek_degisimi,Brokoli Çorbası
+Brokli Çorbası,40,yazim_hatasi,Brokoli Çorbası
+Brokoli Çorbası (Mevsim Sebzeli),40,garnitur,Brokoli Çorbası
+Kremali rBokoli Corbasi,40,es_ad+ascii+hata,Brokoli Çorbası
+Yoğurt Çorbası,41,es_ad,Naneli Yoğurt Çorbası
+Naneli Yoğurt Çorba,41,es_ad,Naneli Yoğurt Çorbası
+Naneli Yogurt Corbasi,41,ascii,Naneli Yoğurt Çorbası
+Naeli Yoğurt Çorbası,41,yazim_hatasi,Naneli Yoğurt Çorbası
+Naneli Yoğurt Çorbası (Yoğurtlu),41,garnitur,Naneli Yoğurt Çorbası
+Nanel Yogurt Corba,41,es_ad+ascii+hata,Naneli Yoğurt Çorbası
+Köfte,42,es_ad,Izgara Köfte
+Kasap Köfte,42,es_ad,Izgara Köfte
+Izgara Köfte (Piyazlı),42,es_ad,Izgara Köfte
+Izgara Kofte,42,ascii,Izgara Köfte
+Izgara Köftesi,42,ek_degisimi,Izgara Köfte
+Izgara Köte,42,yazim_hatasi,Izgara Köfte
+Izgara Köfte (Porsiyon),42,garnitur,Izgara Köfte
+Izgara Kofte (Piyazi),42,es_ad+ascii+hata,Izgara Köfte
+Sahanda Köfte,43,es_ad,Sahan Köfte
+Sahan Kofte,43,ascii,Sahan Köfte
+Sahan Köftesi,43,ek_degisimi,Sahan Köfte
+Sahan öfte,43,yazim_hatasi,Sahan Köfte
+Sahan Köfte (Yoğurtlu),43,garnitur,Sahan Köfte
+Sahand Kofte,43,es_ad+ascii+hata,Sahan Köfte
+İzmir Köfte (Patatesli),44,es_ad,İzmir Köfte
+Fırında Patatesli Köfte,44,es_ad,İzmir Köfte
+Izmir Kofte,44,ascii,İzmir Köfte
+İzmir Köftesi,44,ek_degisimi,İzmir Köfte
+İzmir Köfet,44,yazim_hatasi,İzmir Köfte
+İzmir Köfte (Porsiyon),44,garnitur,İzmir Köfte
+Izimr Kofte (Patatesli),44,es_ad+ascii+hata,İzmir Köfte
+Rosto Dana,45,es_ad,Dana Rosto
+Dana Fleminyon,45,es_ad,Dana Rosto
+Dnaa Rosto,45,yazim_hatasi,Dana Rosto
+Dana Rosto (Yoğurtlu),45,garnitur,Dana Rosto
+Rosto Dnaa,45,es_ad+ascii+hata,Dana Rosto
+Tas Kebap,46,es_ad,Tas Kebabı
+Tas Kebap (Püreli),46,es_ad,Tas Kebabı
+Tas Kebabi,46,ascii,Tas Kebabı
+Tas Kbabı,46,yazim_hatasi,Tas Kebabı
+Tas Kebabı (Porsiyon),46,garnitur,Tas Kebabı
+Tas Keabp,46,es_ad+ascii+hata,Tas Kebabı
+Dana Sote,47,es_ad,Et Sote
+Etli Sote,47,es_ad,Et Sote
+E Sote,47,yazim_hatasi,Et Sote
+Et Sote (Porsiyon),47,garnitur,Et Sote
+Etl Sote,47,es_ad+ascii+hata,Et Sote
+Hünkar Beğendili Kebap,48,es_ad,Hünkar Beğendi
+Hunkar Begendi,48,ascii,Hünkar Beğendi
+Hünkar eğendi,48,yazim_hatasi,Hünkar Beğendi
+Hünkar Beğendi (Mevsim Sebzeli),48,garnitur,Hünkar Beğendi
+Hunkar Begedili Kebap,48,es_ad+ascii+hata,Hünkar Beğendi
+Karnı Yarık,49,es_ad,Karnıyarık
+Karniyarik,49,ascii,Karnıyarık
+Kanıyarık,49,yazim_hatasi,Karnıyarık
+Karnıyarık (Porsiyon),49,garnitur,Karnıyarık
+Kanri Yarik,49,es_ad+ascii+hata,Karnıyarık
+Patlıcan Musakka,50,es_ad,Musakka
+Karışık Musakka,50,es_ad,Musakka
+Musaka,50,yazim_hatasi,Musakka
+Musakka (Ev Usulü),50,garnitur,Musakka
+Patlcan Musakka,50,es_ad+ascii+hata,Musakka
+Burger,51,es_ad,Hamburger
+Hamburger Menü,51,es_ad,Hamburger
+Haburger,51,yazim_hatasi,Hamburger
+Hamburger (Porsiyon),51,garnitur,Hamburger
+Hamburger Mneu,51,es_ad+ascii+hata,Hamburger
+Fındık Lahmacun,52,es_ad,Lahmacun
+Lahmacnu,52,yazim_hatasi,Lahmacun
+Lahmacun (Porsiyon),52,garnitur,Lahmacun
+Findik Lahmaun,52,es_ad+ascii+hata,Lahmacun
+Kayseri Mantısı,53,es_ad,Mantı
+Yoğurtlu Mantı,53,es_ad,Mantı
+Manti,53,ascii,Mantı
+Mntı,53,yazim_hatasi,Mantı
+Mantı (Yoğurtlu),53,garnitur,Mantı
+Kaysei Mantisi,53,es_ad+ascii+hata,Mantı
+Karışık Pizza,54,es_ad,Pizza
+Margarita Pizza,54,es_ad,Pizza
+Pziza,54,yazim_hatasi,Pizza
+Pizza (Salata ile),54,garnitur,Pizza
+Margarita izza,54,es_ad+ascii+hata,Pizza
+Piliç Sote,55,es_ad,Tavuk Sote
+Sebzeli Piliç Sote,55,es_ad,Tavuk Sote
+Tavuk Soe,55,yazim_hatasi,Tavuk Sote
+Tavuk Sote (Mevsim Sebzeli),55,garnitur,Tavuk Sote
+Sbzeli Pilic Sote,55,es_ad+ascii+hata,Tavuk Sote
+Piliç Izgara,56,es_ad,Izgara Tavuk
+Tavuk Göğüs Izgara,56,es_ad,Izgara Tavuk
+Izgraa Tavuk,56,yazim_hatasi,Izgara Tavuk
+Izgara Tavuk (Ev Usulü),56,garnitur,Izgara Tavuk
+Pilic Izgraa,56,es_ad+ascii+hata,Izgara Tavuk
+Piliç Şiş,57,es_ad,Tavuk Şiş
+Tavuk Şiş Kebap,57,es_ad,Tavuk Şiş
+Tavuk Sis,57,ascii,Tavuk Şiş
+Tavu Şiş,57,yazim_hatasi,Tavuk Şiş
+Tavuk Şiş (Yoğurtlu),57,garnitur,Tavuk Şiş
+Pilic Ssi,57,es_ad+ascii+hata,Tavuk Şiş
+Fırında Tavuk But,58,es_ad,Fırın Tavuk Baget
+Piliç Baget,58,es_ad,Fırın Tavuk Baget
+Firin Tavuk Baget,58,ascii,Fırın Tavuk Baget
+Fırın Tavu Baget,58,yazim_hatasi,Fırın Tavuk Baget
+Fırın Tavuk Baget (Ev Usulü),58,garnitur,Fırın Tavuk Baget
+Firinda avuk But,58,es_ad+ascii+hata,Fırın Tavuk Baget
+Piliç Döner,59,es_ad,Tavuk Döner
+Tavuk Doner,59,ascii,Tavuk Döner
+Tavuk öner,59,yazim_hatasi,Tavuk Döner
+Tavuk Döner (Yoğurtlu),59,garnitur,Tavuk Döner
+Pili Doner,59,es_ad+ascii+hata,Tavuk Döner
+Tavuk Schnitzel,60,es_ad,Tavuk Şinitzel
+Pane Tavuk,60,es_ad,Tavuk Şinitzel
+Tavuk Sinitzel,60,ascii,Tavuk Şinitzel
+Tavuk Şinitzl,60,yazim_hatasi,Tavuk Şinitzel
+Tavuk Şinitzel (Porsiyon),60,garnitur,Tavuk Şinitzel
+Pane Tvauk,60,es_ad+ascii+hata,Tavuk Şinitzel
+Tavuk Nugget,61,es_ad,Çıtır Tavuk
+Çıtır Piliç,61,es_ad,Çıtır Tavuk
+Citir Tavuk,61,ascii,Çıtır Tavuk
+Çıtı Tavuk,61,yazim_hatasi,Çıtır Tavuk
+Çıtır Tavuk (Salata ile),61,garnitur,Çıtır Tavuk
+Ctir Pilic,61,es_ad+ascii+hata,Çıtır Tavuk
+Zeytinyağlı Taze Fasulye,62,es_ad,Taze Fasulye
+Etli Taze Fasulye,62,es_ad,Taze Fasulye
+Taze Fauslye,62,yazim_hatasi,Taze Fasulye
+Taze Fasulye (Mevsim Sebzeli),62,garnitur,Taze Fasulye
+Zeytinyagi Taze Fasulye,62,es_ad+ascii+hata,Taze Fasulye
+Ispanak,63,es_ad,Ispanak Yemeği
+Yoğurtlu Ispanak,63,es_ad,Ispanak Yemeği
+Ispanak Yemegi,63,ascii,Ispanak Yemeği
+Ispanak Yemek,63,ek_degisimi,Ispanak Yemeği
+Isanak Yemeği,63,yazim_hatasi,Ispanak Yemeği
+Ispanak Yemeği (Yoğurtlu),63,garnitur,Ispanak Yemeği
+Yogutlu Ispanak,63,es_ad+ascii+hata,Ispanak Yemeği
+Sebze Türlü,64,es_ad,Türlü
+Etli Türlü,64,es_ad,Türlü
+Turlu,64,ascii,Türlü
+Tülü,64,yazim_hatasi,Türlü
+Türlü (Salata ile),64,garnitur,Türlü
+Sbeze Turlu,64,es_ad+ascii+hata,Türlü
+Zeytinyağlı Kabak,65,es_ad,Kabak Yemeği
+Kabak Yemegi,65,ascii,Kabak Yemeği
+Kabak Yemek,65,ek_degisimi,Kabak Yemeği
+Kabak Yeeği,65,yazim_hatasi,Kabak Yemeği
+Kabak Yemeği (Yoğurtlu),65,garnitur,Kabak Yemeği
+Zeytinaygli Kabak,65,es_ad+ascii+hata,Kabak Yemeği
+Etli Patates,66,es_ad,Patates Yemeği
+Patates Oturtma,66,es_ad,Patates Yemeği
+Patates Yemegi,66,ascii,Patates Yemeği
+Patates Yemek,66,ek_degisimi,Patates Yemeği
+Patates eYmeği,66,yazim_hatasi,Patates Yemeği
+Patates Yemeği (Porsiyon),66,garnitur,Patates Yemeği
+Ptates Oturtma,66,es_ad+ascii+hata,Patates Yemeği
+Püre,67,es_ad,Patates Püresi
+Tereyağlı Püre,67,es_ad,Patates Püresi
+Patates Puresi,67,ascii,Patates Püresi
+Patats Püresi,67,yazim_hatasi,Patates Püresi
+Patates Püresi (Ev Usulü),67,garnitur,Patates Püresi
+Etli Bezelye,68,es_ad,Bezelye Yemeği
+Bezelye Yemegi,68,ascii,Bezelye Yemeği
+Bezelye Yemek,68,ek_degisimi,Bezelye Yemeği
+Beezlye Yemeği,68,yazim_hatasi,Bezelye Yemeği
+Bezelye Yemeği (Ev Usulü),68,garnitur,Bezelye Yemeği
+Etli Bezleye,68,es_ad+ascii+hata,Bezelye Yemeği
+Zeytinyağlı Yaprak Sarma,69,es_ad,Yaprak Sarma
+Sarma,69,es_ad,Yaprak Sarma
+Yaprak Sara,69,yazim_hatasi,Yaprak Sarma
+Yaprak Sarma (Porsiyon),69,garnitur,Yaprak Sarma
+Zeytinyagi Yaprak Sarma,69,es_ad+ascii+hata,Yaprak Sarma
+Etli Biber Dolma,70,es_ad,Biber Dolması
+Dolma,70,es_ad,Biber Dolması
+Biber Dolmasi,70,ascii,Biber Dolması
+Biber Doması,70,yazim_hatasi,Biber Dolması
+Biber Dolması (Porsiyon),70,garnitur,Biber Dolması
+Etli Bier Dolma,70,es_ad+ascii+hata,Biber Dolması
+Kabak Mücver,71,es_ad,Mücver
+Mucver,71,ascii,Mücver
+Mücevr,71,yazim_hatasi,Mücver
+Mücver (Yoğurtlu),71,garnitur,Mücver
+Kabak Mucvr,71,es_ad+ascii+hata,Mücver
+Etli Kuru Fasulye,72,es_ad,Kuru Fasulye
+Kuru Fasulye Yemeği,72,es_ad,Kuru Fasulye
+Kuru Faslye,72,yazim_hatasi,Kuru Fasulye
+Kuru Fasulye (Ev Usulü),72,garnitur,Kuru Fasulye
+Etli uru Fasulye,72,es_ad+ascii+hata,Kuru Fasulye
+Nohut Yahni,73,es_ad,Nohut Yemeği
+Etli Nohut,73,es_ad,Nohut Yemeği
+Nohut Yemegi,73,ascii,Nohut Yemeği
+Nohut Yemek,73,ek_degisimi,Nohut Yemeği
+Nohut Yeemği,73,yazim_hatasi,Nohut Yemeği
+Nohut Yemeği (Salata ile),73,garnitur,Nohut Yemeği
+Etli oNhut,73,es_ad+ascii+hata,Nohut Yemeği
+Zeytinyağlı Barbunya,74,es_ad,Barbunya
+Barbunya Pilaki,74,es_ad,Barbunya
+Brbunya,74,yazim_hatasi,Barbunya
+Barbunya (Salata ile),74,garnitur,Barbunya
+Barbunya Pialki,74,es_ad+ascii+hata,Barbunya
+Mercimek Yemeği,75,es_ad,Yeşil Mercimek Yemeği
+Bulgurlu Yeşil Mercimek,75,es_ad,Yeşil Mercimek Yemeği
+Yesil Mercimek Yemegi,75,ascii,Yeşil Mercimek Yemeği
+Yeşil Mercimek Yemek,75,ek_degisimi,Yeşil Mercimek Yemeği
+Yeşil Mercimk Yemeği,75,yazim_hatasi,Yeşil Mercimek Yemeği
+Yeşil Mercimek Yemeği (Mevsim Sebzeli),75,garnitur,Yeşil Mercimek Yemeği
+Mercimek Ymegi,75,es_ad+ascii+hata,Yeşil Mercimek Yemeği
+Mercimek Köfte,76,es_ad,Mercimek Köftesi
+Mercimek Koftesi,76,ascii,Mercimek Köftesi
+Mercimek Köfteis,76,yazim_hatasi,Mercimek Köftesi
+Mercimek Köftesi (Yoğurtlu),76,garnitur,Mercimek Köftesi
+Mercimek Kfote,76,es_ad+ascii+hata,Mercimek Köftesi
+Pilav,77,es_ad,Pirinç Pilavı
+Tereyağlı Pirinç Pilavı,77,es_ad,Pirinç Pilavı
+Şehriyeli Pirinç Pilavı,77,es_ad,Pirinç Pilavı
+Pirinc Pilavi,77,ascii,Pirinç Pilavı
+Pirinç Pilav,77,ek_degisimi,Pirinç Pilavı
+Pirinç Pilaı,77,yazim_hatasi,Pirinç Pilavı
+Pirinç Pilavı (Salata ile),77,garnitur,Pirinç Pilavı
+Sehriyeli Princ Pilavi,77,es_ad+ascii+hata,Pirinç Pilavı
+Salçalı Bulgur Pilavı,78,es_ad,Bulgur Pilavı
+Zerdeçallı Bulgur Pilavı,78,es_ad,Bulgur Pilavı
+Domatesli Bulgur Pilavı,78,es_ad,Bulgur Pilavı
+Bulgur Pilavi,78,ascii,Bulgur Pilavı
+Bulgur Pilav,78,ek_degisimi,Bulgur Pilavı
+Bulgr Pilavı,78,yazim_hatasi,Bulgur Pilavı
+Bulgur Pilavı (Yoğurtlu),78,garnitur,Bulgur Pilavı
+Salcali Bulgur Pilvai,78,es_ad+ascii+hata,Bulgur Pilavı
+Arpa Şehriye Pilavı,79,es_ad,Şehriye Pilavı
+Tel Şehriye Pilavı,79,es_ad,Şehriye Pilavı
+Sehriye Pilavi,79,ascii,Şehriye Pilavı
+Şehriye Pilav,79,ek_degisimi,Şehriye Pilavı
+Şeriye Pilavı,79,yazim_hatasi,Şehriye Pilavı
+Şehriye Pilavı (Porsiyon),79,garnitur,Şehriye Pilavı
+Arpa Sehriye Pliavi,79,es_ad+ascii+hata,Şehriye Pilavı
+Kuskus,80,es_ad,Kuskus Pilavı
+Sebzeli Kuskus,80,es_ad,Kuskus Pilavı
+Kuskus Pilavi,80,ascii,Kuskus Pilavı
+Kuskus Pilav,80,ek_degisimi,Kuskus Pilavı
+Kuskus Piavı,80,yazim_hatasi,Kuskus Pilavı
+Kuskus Pilavı (Salata ile),80,garnitur,Kuskus Pilavı
+Ksukus,80,es_ad+ascii+hata,Kuskus Pilavı
+Meyane Pilavı,81,es_ad,Meyhane Pilavı
+Meyhane Pilavi,81,ascii,Meyhane Pilavı
+Meyhane Pilav,81,ek_degisimi,Meyhane Pilavı
+Meyhne Pilavı,81,yazim_hatasi,Meyhane Pilavı
+Meyhane Pilavı (Porsiyon),81,garnitur,Meyhane Pilavı
+Myeane Pilavi,81,es_ad+ascii+hata,Meyhane Pilavı
+Spagetti (Napoliten),82,es_ad,Domates Soslu Makarna
+Penne Arabiata,82,es_ad,Domates Soslu Makarna
+Makarna,82,es_ad,Domates Soslu Makarna
+Domaes Soslu Makarna,82,yazim_hatasi,Domates Soslu Makarna
+Domates Soslu Makarna (Mevsim Sebzeli),82,garnitur,Domates Soslu Makarna
+Makaran,82,es_ad+ascii+hata,Domates Soslu Makarna
+Spagetti Carbonara,83,es_ad,Kremalı Makarna
+Fettucini Alfredo,83,es_ad,Kremalı Makarna
+Mantarlı Fettucini,83,es_ad,Kremalı Makarna
+Kremali Makarna,83,ascii,Kremalı Makarna
+Kremalı Makrna,83,yazim_hatasi,Kremalı Makarna
+Kremalı Makarna (Mevsim Sebzeli),83,garnitur,Kremalı Makarna
+Mantarli Fettucnii,83,es_ad+ascii+hata,Kremalı Makarna
+Peynirli Erişte,84,es_ad,Erişte
+Ev Eriştesi,84,es_ad,Erişte
+Eriste,84,ascii,Erişte
+Erişet,84,yazim_hatasi,Erişte
+Erişte (Porsiyon),84,garnitur,Erişte
+Ev Eirstesi,84,es_ad+ascii+hata,Erişte
+Beşamel Soslu Fırın Makarna,85,es_ad,Fırın Makarna
+Firin Makarna,85,ascii,Fırın Makarna
+Fırın Makrna,85,yazim_hatasi,Fırın Makarna
+Fırın Makarna (Salata ile),85,garnitur,Fırın Makarna
+Besamel Soslu Firin akarna,85,es_ad+ascii+hata,Fırın Makarna
+Fıstıklı Baklava,86,es_ad,Baklava
+Cevizli Baklava,86,es_ad,Baklava
+Şöbiyet,86,es_ad,Baklava
+Balava,86,yazim_hatasi,Baklava
+Baklava (Yoğurtlu),86,garnitur,Baklava
+Sobyet,86,es_ad+ascii+hata,Baklava
+Kakaolu Şekerpare,87,es_ad,Şekerpare
+Sekerpare,87,ascii,Şekerpare
+Şekrpare,87,yazim_hatasi,Şekerpare
+Şekerpare (Porsiyon),87,garnitur,Şekerpare
+Kakolu Sekerpare,87,es_ad+ascii+hata,Şekerpare
+Portakallı Revani,88,es_ad,Revani
+Revain,88,yazim_hatasi,Revani
+Revani (Salata ile),88,garnitur,Revani
+Portakali Revani,88,es_ad+ascii+hata,Revani
+Burma Kadayıf,89,es_ad,Tel Kadayıf
+Kadayıf,89,es_ad,Tel Kadayıf
+Tel Kadayif,89,ascii,Tel Kadayıf
+Tel Kadayf,89,yazim_hatasi,Tel Kadayıf
+Tel Kadayıf (Salata ile),89,garnitur,Tel Kadayıf
+Kadaiyf,89,es_ad+ascii+hata,Tel Kadayıf
+Kaymaklı Ekmek Kadayıfı,90,es_ad,Ekmek Kadayıfı
+Ekmek Kadayifi,90,ascii,Ekmek Kadayıfı
+Ekmek Kadayfıı,90,yazim_hatasi,Ekmek Kadayıfı
+Ekmek Kadayıfı (Yoğurtlu),90,garnitur,Ekmek Kadayıfı
+Kaymakli Ekmek Kadyifi,90,es_ad+ascii+hata,Ekmek Kadayıfı
+Tulumba,91,es_ad,Tulumba Tatlısı
+Tulumba Tatlisi,91,ascii,Tulumba Tatlısı
+Tulumba Tatlı,91,ek_degisimi,Tulumba Tatlısı
+Tulumb Tatlısı,91,yazim_hatasi,Tulumba Tatlısı
+Tulumba Tatlısı (Mevsim Sebzeli),91,garnitur,Tulumba Tatlısı
+Tulumab,91,es_ad+ascii+hata,Tulumba Tatlısı
+Şam Tatlı,92,es_ad,Şam Tatlısı
+Sam Tatlisi,92,ascii,Şam Tatlısı
+Şam Ttlısı,92,yazim_hatasi,Şam Tatlısı
+Şam Tatlısı (Ev Usulü),92,garnitur,Şam Tatlısı
+Sam Ttli,92,es_ad+ascii+hata,Şam Tatlısı
+Helva,93,es_ad,İrmik Helvası
+İrmik Helva,93,es_ad,İrmik Helvası
+Irmik Helvasi,93,ascii,İrmik Helvası
+İrmik Hlevası,93,yazim_hatasi,İrmik Helvası
+İrmik Helvası (Mevsim Sebzeli),93,garnitur,İrmik Helvası
+Hevla,93,es_ad+ascii+hata,İrmik Helvası
+Fırın Sütlaç,94,es_ad,Sütlaç
+Sütlaç (Fırında),94,es_ad,Sütlaç
+Sutlac,94,ascii,Sütlaç
+Stülaç,94,yazim_hatasi,Sütlaç
+Sütlaç (Porsiyon),94,garnitur,Sütlaç
+Fiirn Sutlac,94,es_ad+ascii+hata,Sütlaç
+Kazan Dibi,95,es_ad,Kazandibi
+Kaazndibi,95,yazim_hatasi,Kazandibi
+Kazandibi (Salata ile),95,garnitur,Kazandibi
+Kazn Dibi,95,es_ad+ascii+hata,Kazandibi
+Tavuk Göğsü,96,es_ad,Tavuk Göğsü Tatlısı
+Tavukgöğsü,96,es_ad,Tavuk Göğsü Tatlısı
+Tavuk Gogsu Tatlisi,96,ascii,Tavuk Göğsü Tatlısı
+Tavuk Göğsü Tatlı,96,ek_degisimi,Tavuk Göğsü Tatlısı
+Tavu Göğsü Tatlısı,96,yazim_hatasi,Tavuk Göğsü Tatlısı
+Tavuk Göğsü Tatlısı (Ev Usulü),96,garnitur,Tavuk Göğsü Tatlısı
+Tavukoggsu,96,es_ad+ascii+hata,Tavuk Göğsü Tatlısı
+Sakızlı Muhallebi,97,es_ad,Muhallebi
+Muhallei,97,yazim_hatasi,Muhallebi
+Muhallebi (Yoğurtlu),97,garnitur,Muhallebi
+Skaizli Muhallebi,97,es_ad+ascii+hata,Muhallebi
+Profiterol Tatlısı,98,es_ad,Profiterol
+Porfiterol,98,yazim_hatasi,Profiterol
+Profiterol (Ev Usulü),98,garnitur,Profiterol
+Profiterol Ttlisi,98,es_ad+ascii+hata,Profiterol
+Kakaolu Puding,99,es_ad,Puding
+Supangle,99,es_ad,Puding
+Pduing,99,yazim_hatasi,Puding
+Puding (Salata ile),99,garnitur,Puding
+Kkaaolu Puding,99,es_ad+ascii+hata,Puding
+Çilekli Magnolya,100,es_ad,Magnolya
+Manolya,100,yazim_hatasi,Magnolya
+Magnolya (Yoğurtlu),100,garnitur,Magnolya
+Cilekli Mganolya,100,es_ad+ascii+hata,Magnolya
+Trileçe Tatlısı,101,es_ad,Trileçe
+Trilece,101,ascii,Trileçe
+Trieçe,101,yazim_hatasi,Trileçe
+Trileçe (Porsiyon),101,garnitur,Trileçe
+Trielce Tatlisi,101,es_ad+ascii+hata,Trileçe
+Tremisu,102,es_ad,Tiramisu
+Triamisu,102,yazim_hatasi,Tiramisu
+Tiramisu (Ev Usulü),102,garnitur,Tiramisu
+Tremsiu,102,es_ad+ascii+hata,Tiramisu
+Aşure Tatlısı,103,es_ad,Aşure
+Asure,103,ascii,Aşure
+Aure,103,yazim_hatasi,Aşure
+Aşure (Salata ile),103,garnitur,Aşure
+Asure aTtlisi,103,es_ad+ascii+hata,Aşure
+Kakaolu Kek,104,es_ad,Kek
+Havuçlu Kek,104,es_ad,Kek
+Kek (Porsiyon),104,garnitur,Kek
+Kkaolu Kek,104,es_ad+ascii+hata,Kek
+Pasta,105,es_ad,Yaş Pasta
+Kardelen Pasta,105,es_ad,Yaş Pasta
+Yas Pasta,105,ascii,Yaş Pasta
+Yaş Psata,105,yazim_hatasi,Yaş Pasta
+Yaş Pasta (Yoğurtlu),105,garnitur,Yaş Pasta
+Kradelen Pasta,105,es_ad+ascii+hata,Yaş Pasta
+Kırmızı Elma,106,es_ad,Elma
+Yeşil Elma,106,es_ad,Elma
+Elma (Mevsim Sebzeli),106,garnitur,Elma
+Kirmizi lEma,106,es_ad+ascii+hata,Elma
+Washington Portakal,107,es_ad,Portakal
+Portakla,107,yazim_hatasi,Portakal
+Portakal (Mevsim Sebzeli),107,garnitur,Portakal
+Washington Portkal,107,es_ad+ascii+hata,Portakal
+Sarı Muz,108,es_ad,Muz
+Muz (Porsiyon),108,garnitur,Muz
+Sari Mzu,108,es_ad+ascii+hata,Muz
+Satsuma Mandalina,109,es_ad,Mandalina
+Mandailna,109,yazim_hatasi,Mandalina
+Mandalina (Mevsim Sebzeli),109,garnitur,Mandalina
+Satsuma Mandalian,109,es_ad+ascii+hata,Mandalina
+Çekirdeksiz Üzüm,110,es_ad,Üzüm
+Uzum,110,ascii,Üzüm
+Üzüm (Ev Usulü),110,garnitur,Üzüm
+Cekidreksiz Uzum,110,es_ad+ascii+hata,Üzüm
+Karpuz Dilimi,111,es_ad,Karpuz
+Krpuz,111,yazim_hatasi,Karpuz
+Karpuz (Mevsim Sebzeli),111,garnitur,Karpuz
+Karpuz Diilmi,111,es_ad+ascii+hata,Karpuz
+Meyve,112,es_ad,Mevsim Meyvesi
+Meyve Tabağı,112,es_ad,Mevsim Meyvesi
+Mevsim Meyvei,112,yazim_hatasi,Mevsim Meyvesi
+Mevsim Meyvesi (Yoğurtlu),112,garnitur,Mevsim Meyvesi
+Meyve Tbagi,112,es_ad+ascii+hata,Mevsim Meyvesi
+Ev Yoğurdu,113,es_ad,Yoğurt
+Kase Yoğurt,113,es_ad,Yoğurt
+Yogurt,113,ascii,Yoğurt
+Yourt,113,yazim_hatasi,Yoğurt
+Yoğurt (Ev Usulü),113,garnitur,Yoğurt
+Kase Ygourt,113,es_ad+ascii+hata,Yoğurt
+Yayık Ayranı,114,es_ad,Ayran
+Ayrna,114,yazim_hatasi,Ayran
+Ayran (Porsiyon),114,garnitur,Ayran
+Yayik Ayrain,114,es_ad+ascii+hata,Ayran
+Sade Süt,115,es_ad,Süt
+Günlük Süt,115,es_ad,Süt
+Sut,115,ascii,Süt
+Süt (Yoğurtlu),115,garnitur,Süt
+Sade ut,115,es_ad+ascii+hata,Süt
+Cacık (Salatalıklı),116,es_ad,Cacık
+Cacik,116,ascii,Cacık
+Ccaık,116,yazim_hatasi,Cacık
+Cacık (Mevsim Sebzeli),116,garnitur,Cacık
+Cacik (Salatalili),116,es_ad+ascii+hata,Cacık
+Çikolatalı Süt,117,es_ad,Kakaolu Süt
+Kakaolu Sut,117,ascii,Kakaolu Süt
+Kakaou Süt,117,yazim_hatasi,Kakaolu Süt
+Kakaolu Süt (Salata ile),117,garnitur,Kakaolu Süt
+Cikolatali Stu,117,es_ad+ascii+hata,Kakaolu Süt
+Salata,118,es_ad,Mevsim Salata
+Mevsim Yeşillikleri,118,es_ad,Mevsim Salata
+Çoban Salata,118,es_ad,Mevsim Salata
+Mevsim Salatası,118,ek_degisimi,Mevsim Salata
+Mevsim Saalta,118,yazim_hatasi,Mevsim Salata
+Mevsim Salata (Ev Usulü),118,garnitur,Mevsim Salata
+Mevsim Yesilikleri,118,es_ad+ascii+hata,Mevsim Salata
+Fasulye Piyazı,119,es_ad,Piyaz
+Piaz,119,yazim_hatasi,Piyaz
+Piyaz (Ev Usulü),119,garnitur,Piyaz
+Fauslye Piyazi,119,es_ad+ascii+hata,Piyaz
+Patates Salata,120,es_ad,Patates Salatası
+Patates Salatasi,120,ascii,Patates Salatası
+Patate Salatası,120,yazim_hatasi,Patates Salatası
+Patates Salatası (Porsiyon),120,garnitur,Patates Salatası
+Pataes Salata,120,es_ad+ascii+hata,Patates Salatası
+Bulgur Kısırı,121,es_ad,Kısır
+Kisir,121,ascii,Kısır
+Kıır,121,yazim_hatasi,Kısır
+Kısır (Porsiyon),121,garnitur,Kısır
+Buglur Kisiri,121,es_ad+ascii+hata,Kısır
+Amerikan Salatası,122,es_ad,Rus Salatası
+Rus Salatasi,122,ascii,Rus Salatası
+Rus Salata,122,ek_degisimi,Rus Salatası
+Rus Saatası,122,yazim_hatasi,Rus Salatası
+Rus Salatası (Salata ile),122,garnitur,Rus Salatası
+Aemrikan Salatasi,122,es_ad+ascii+hata,Rus Salatası
+Demleme Çay,123,es_ad,Çay
+Siyah Çay,123,es_ad,Çay
+Cay,123,ascii,Çay
+Çay (Salata ile),123,garnitur,Çay
+Syiah Cay,123,es_ad+ascii+hata,Çay
+Kesme Şeker,124,es_ad,Şeker
+Toz Şeker,124,es_ad,Şeker
+Seker,124,ascii,Şeker
+Şekr,124,yazim_hatasi,Şeker
+Şeker (Salata ile),124,garnitur,Şeker
+Tzo Seker,124,es_ad+ascii+hata,Şeker
+Portakal Suyu,125,es_ad,Meyve Suyu
+Vişne Suyu,125,es_ad,Meyve Suyu
+Meyve uyu,125,yazim_hatasi,Meyve Suyu
+Meyve Suyu (Mevsim Sebzeli),125,garnitur,Meyve Suyu
+Vise Suyu,125,es_ad+ascii+hata,Meyve Suyu
+Gazlı İçecek,126,es_ad,Kola
+Kola (Yoğurtlu),126,garnitur,Kola
+Gazli Iceek,126,es_ad+ascii+hata,Kola

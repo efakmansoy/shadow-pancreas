@@ -1,0 +1,39 @@
+a,b,label,a_ad,b_ad
+0,2,1,Beyaz Ekmek,Bazlama
+0,3,1,Beyaz Ekmek,Lavaş
+2,4,1,Bazlama,Pide Ekmeği
+77,79,1,Pirinç Pilavı,Şehriye Pilavı
+78,80,1,Bulgur Pilavı,Kuskus Pilavı
+28,29,1,Mercimek Çorbası,Ezogelin Çorbası
+86,89,1,Baklava,Tel Kadayıf
+94,95,1,Sütlaç,Kazandibi
+97,95,1,Muhallebi,Kazandibi
+94,96,1,Sütlaç,Tavuk Göğsü Tatlısı
+72,73,1,Kuru Fasulye,Nohut Yemeği
+74,72,1,Barbunya,Kuru Fasulye
+106,107,1,Elma,Portakal
+113,114,1,Yoğurt,Ayran
+18,17,1,Omlet,Haşlanmış Yumurta
+14,15,1,Beyaz Peynir,Kaşar Peyniri
+20,21,1,Bal,Reçel
+56,57,1,Izgara Tavuk,Tavuk Şiş
+84,82,1,Erişte,Domates Soslu Makarna
+88,87,1,Revani,Şekerpare
+125,126,1,Meyve Suyu,Kola
+5,13,1,Simit,Gözleme
+0,90,0,Beyaz Ekmek,Ekmek Kadayıfı
+96,56,0,Tavuk Göğsü Tatlısı,Izgara Tavuk
+72,62,0,Kuru Fasulye,Taze Fasulye
+94,115,0,Sütlaç,Süt
+120,118,0,Patates Salatası,Mevsim Salata
+33,79,0,Şehriye Çorbası,Şehriye Pilavı
+76,42,0,Mercimek Köftesi,Izgara Köfte
+32,26,0,Domates Çorbası,Domates Salatalık
+117,115,0,Kakaolu Süt,Süt
+36,56,0,Tavuk Suyu Çorbası,Izgara Tavuk
+12,15,0,Kaşarlı Tost,Kaşar Peyniri
+124,87,0,Şeker,Şekerpare
+25,106,0,Patates Kızartması,Elma
+41,114,0,Naneli Yoğurt Çorbası,Ayran
+4,52,0,Pide Ekmeği,Lahmacun
+28,76,0,Mercimek Çorbası,Mercimek Köftesi

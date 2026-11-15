@@ -1,0 +1,128 @@
+id,name,category,carb,protein,fat,fiber,gi,desc,aliases
+0,Beyaz Ekmek,ekmek_hamur,25.0,4.0,1.0,1.4,Y,"buğday unu, maya, tuz; 2 dilim","['Ekmek', 'Francala', 'Somun Ekmek']"
+1,Tam Buğday Ekmeği,ekmek_hamur,21.0,4.5,1.5,3.5,O,"tam buğday unu, kepek, maya","['Kepekli Ekmek', 'Tam Buğday Ekmek']"
+2,Bazlama,ekmek_hamur,30.0,5.0,1.5,1.5,Y,"buğday unu, yoğurt, maya; sacda pişmiş yassı ekmek","['Köy Bazlaması', 'Bazlama Ekmeği']"
+3,Lavaş,ekmek_hamur,27.0,4.5,1.0,1.2,Y,"buğday unu, su, tuz; ince yassı ekmek","['Lavaş Ekmeği', 'Tandır Lavaş']"
+4,Pide Ekmeği,ekmek_hamur,31.0,5.0,1.5,1.4,Y,"buğday unu, maya, çörek otu, susam","['Ramazan Pidesi', 'Pide']"
+5,Simit,ekmek_hamur,55.0,10.0,6.0,2.5,Y,"buğday unu, pekmez, susam","['Susamlı Simit', 'Gevrek']"
+6,Poğaça,ekmek_hamur,30.0,5.0,12.0,1.0,Y,"un, tereyağı, yoğurt, peynir","['Peynirli Poğaça', 'Sade Poğaça']"
+7,Açma,ekmek_hamur,32.0,5.0,14.0,1.0,Y,"un, margarin, süt, maya","['Sade Açma', 'Zeytinli Açma']"
+8,Kol Böreği,ekmek_hamur,28.0,8.0,15.0,1.0,O,"yufka, beyaz peynir, yağ","['Peynirli Kol Böreği', 'Kol Böreği (Peynirli)']"
+9,Sigara Böreği,ekmek_hamur,18.0,6.0,14.0,0.7,O,"yufka, beyaz peynir, maydanoz; kızartma","['Peynirli Sigara Böreği', 'Sigara Börek']"
+10,Su Böreği,ekmek_hamur,30.0,12.0,16.0,1.0,O,"haşlanmış yufka, peynir, tereyağı",['Peynirli Su Böreği']
+11,Gül Böreği,ekmek_hamur,27.0,8.0,15.0,1.0,O,"yufka, peynir veya ıspanak","['Peynirli Gül Böreği', 'Ispanaklı Gül Böreği']"
+12,Kaşarlı Tost,ekmek_hamur,30.0,14.0,13.0,1.5,Y,"tost ekmeği, kaşar peyniri","['Tost', 'Karışık Tost']"
+13,Gözleme,ekmek_hamur,45.0,12.0,14.0,2.0,Y,"yufka, peynir veya patates; sacda","['Peynirli Gözleme', 'Patatesli Gözleme']"
+14,Beyaz Peynir,kahvaltilik,0.5,5.0,6.0,0.0,D,inek sütü peyniri; 30 g,"['Peynir', 'Ezine Peyniri']"
+15,Kaşar Peyniri,kahvaltilik,0.5,8.0,9.0,0.0,D,olgunlaştırılmış kaşar; 30 g,"['Kaşar', 'Taze Kaşar']"
+16,Zeytin,kahvaltilik,1.5,0.4,6.0,1.3,D,siyah veya yeşil zeytin; 10 adet,"['Siyah Zeytin', 'Yeşil Zeytin']"
+17,Haşlanmış Yumurta,kahvaltilik,0.6,6.5,5.0,0.0,D,1 adet haşlanmış yumurta,"['Yumurta', 'Haşlama Yumurta']"
+18,Omlet,kahvaltilik,1.5,13.0,15.0,0.0,D,"2 yumurta, tereyağı","['Yumurta, Omlet', 'Sade Omlet']"
+19,Menemen,kahvaltilik,7.0,13.0,17.0,2.0,D,"yumurta, domates, biber, zeytinyağı","['Yumurta, Menemen', 'Domatesli Yumurta']"
+20,Bal,kahvaltilik,16.0,0.0,0.0,0.0,Y,süzme çiçek balı; 1 yemek kaşığı,"['Süzme Bal', 'Çiçek Balı']"
+21,Reçel,kahvaltilik,13.0,0.0,0.0,0.2,Y,meyve ve şeker; 1 yemek kaşığı,"['Vişne Reçeli', 'Çilek Reçeli']"
+22,Tahin Pekmez,kahvaltilik,15.0,3.0,8.0,1.0,O,susam ezmesi ve üzüm pekmezi,"['Tahin-Pekmez', 'Tahinli Pekmez']"
+23,Tereyağı,kahvaltilik,0.0,0.0,8.0,0.0,D,10 g tereyağı,['Tereyağ']
+24,Sosis,kahvaltilik,2.0,6.0,12.0,0.0,D,piliç veya dana sosis; 2 adet,"['Sosis Kızartma', 'Piliç Sosis']"
+25,Patates Kızartması,kahvaltilik,35.0,3.5,15.0,3.0,Y,kızartılmış patates; 100 g,"['Patates Kızartma', 'Parmak Patates', 'Elma Dilim Patates']"
+26,Domates Salatalık,kahvaltilik,4.0,1.0,0.2,1.3,D,çeri domates ve salatalık dilimleri,"['Çeri Domates', 'Salatalık Domates']"
+27,Fındık Ezmesi,kahvaltilik,11.0,1.5,6.0,1.0,O,kakaolu fındık kreması; 20 g,"['Kakaolu Fındık Kreması', 'Çikolata Kreması']"
+28,Mercimek Çorbası,corba,20.0,8.0,5.0,4.0,O,"kırmızı mercimek, soğan, havuç, un","['Ev Usulü Mercimek Çorba', 'Mercimek Çorba', 'Süzme Mercimek Çorbası']"
+29,Ezogelin Çorbası,corba,22.0,7.0,5.0,4.0,O,"kırmızı mercimek, bulgur, pirinç, nane","['Ezogelin Çorba', 'Ezo Gelin Çorbası']"
+30,Tarhana Çorbası,corba,18.0,5.0,5.0,1.5,O,"tarhana (un, yoğurt, sebze), salça","['Tarhana Çorba', 'Ev Tarhanası']"
+31,Yayla Çorbası,corba,14.0,6.0,6.0,0.5,O,"yoğurt, pirinç, yumurta, nane","['Yayla Çorba', 'Yoğurtlu Pirinç Çorbası']"
+32,Domates Çorbası,corba,14.0,3.0,6.0,1.5,O,"domates, un, süt, rendelenmiş kaşar","['Kaşarlı Domates Çorbası', 'Domates Çorba (Kaşarlı)']"
+33,Şehriye Çorbası,corba,16.0,4.0,4.0,1.0,Y,"tel şehriye, domates, tavuk suyu","['Domatesli Şehriye Çorba', 'Tel Şehriye Çorbası']"
+34,Mantar Çorbası,corba,10.0,3.0,8.0,1.0,D,"mantar, krema, un",['Kremalı Mantar Çorbası']
+35,Sebze Çorbası,corba,12.0,3.0,5.0,3.0,D,"havuç, kabak, patates, bezelye","['Kremalı Taneli Sebze Çorbası', 'Taze Sebze Çorbası']"
+36,Tavuk Suyu Çorbası,corba,10.0,8.0,4.0,0.5,O,"tavuk suyu, tavuk eti, şehriye, limon","['Tavuk Çorbası', 'Terbiyeli Tavuk Suyu Çorba']"
+37,Düğün Çorbası,corba,8.0,8.0,7.0,0.3,D,"kuzu eti suyu, yoğurt, yumurta terbiyesi",['Düğün Çorba']
+38,Acem Çorbası,corba,12.0,6.0,6.0,1.5,O,"et suyu, pirinç, nohut, havuç",['Acem Çorba']
+39,İşkembe Çorbası,corba,6.0,10.0,8.0,0.0,D,"işkembe, sarımsak, sirke",['İşkembe Çorba']
+40,Brokoli Çorbası,corba,10.0,4.0,7.0,3.0,D,"brokoli, krema, patates",['Kremalı Brokoli Çorbası']
+41,Naneli Yoğurt Çorbası,corba,13.0,6.0,6.0,0.5,O,"yoğurt, buğday, nane","['Yoğurt Çorbası', 'Naneli Yoğurt Çorba']"
+42,Izgara Köfte,et_ana,6.0,22.0,18.0,0.5,D,"kıyma, ekmek içi, soğan; ızgara","['Köfte', 'Kasap Köfte', 'Izgara Köfte (Piyazlı)']"
+43,Sahan Köfte,et_ana,10.0,20.0,18.0,1.5,D,"kıyma, domates sos, biber",['Sahanda Köfte']
+44,İzmir Köfte,et_ana,20.0,18.0,18.0,3.0,O,"kıyma, patates, domates, biber; fırında","['İzmir Köfte (Patatesli)', 'Fırında Patatesli Köfte']"
+45,Dana Rosto,et_ana,4.0,25.0,12.0,0.5,D,"dana eti, sebze sosu","['Rosto Dana', 'Dana Fleminyon']"
+46,Tas Kebabı,et_ana,10.0,22.0,14.0,2.0,D,"kuşbaşı dana, soğan, salça","['Tas Kebap', 'Tas Kebap (Püreli)']"
+47,Et Sote,et_ana,6.0,22.0,13.0,1.5,D,"kuşbaşı et, biber, domates","['Dana Sote', 'Etli Sote']"
+48,Hünkar Beğendi,et_ana,20.0,22.0,22.0,2.0,O,"kuzu yahni, patlıcanlı beşamel",['Hünkar Beğendili Kebap']
+49,Karnıyarık,et_ana,14.0,12.0,20.0,5.0,D,"patlıcan, kıyma, domates",['Karnı Yarık']
+50,Musakka,et_ana,15.0,12.0,18.0,5.0,D,"patlıcan, kıyma, domates","['Patlıcan Musakka', 'Karışık Musakka']"
+51,Hamburger,et_ana,35.0,20.0,18.0,2.0,Y,"hamburger ekmeği, köfte, sos","['Burger', 'Hamburger Menü']"
+52,Lahmacun,et_ana,40.0,14.0,10.0,3.0,Y,"ince hamur, kıyma, soğan, biber",['Fındık Lahmacun']
+53,Mantı,et_ana,50.0,15.0,15.0,2.0,O,"hamur, kıyma, yoğurt, tereyağı","['Kayseri Mantısı', 'Yoğurtlu Mantı']"
+54,Pizza,et_ana,55.0,18.0,18.0,3.0,Y,"hamur, domates sos, mozzarella, sucuk","['Karışık Pizza', 'Margarita Pizza']"
+55,Tavuk Sote,tavuk_ana,8.0,25.0,10.0,1.5,D,"tavuk göğsü, biber, domates, mantar","['Piliç Sote', 'Sebzeli Piliç Sote']"
+56,Izgara Tavuk,tavuk_ana,1.0,30.0,7.0,0.0,D,ızgara tavuk göğsü,"['Piliç Izgara', 'Tavuk Göğüs Izgara']"
+57,Tavuk Şiş,tavuk_ana,3.0,28.0,9.0,0.5,D,"şişte tavuk, biber, soğan","['Piliç Şiş', 'Tavuk Şiş Kebap']"
+58,Fırın Tavuk Baget,tavuk_ana,2.0,26.0,14.0,0.0,D,fırında tavuk but,"['Fırında Tavuk But', 'Piliç Baget']"
+59,Tavuk Döner,tavuk_ana,3.0,25.0,12.0,0.5,D,döner tavuk eti (ekmeksiz),['Piliç Döner']
+60,Tavuk Şinitzel,tavuk_ana,18.0,24.0,15.0,1.0,O,galeta unlu pane tavuk; kızartma,"['Tavuk Schnitzel', 'Pane Tavuk']"
+61,Çıtır Tavuk,tavuk_ana,20.0,18.0,16.0,1.0,Y,panelenmiş tavuk parçaları; kızartma,"['Tavuk Nugget', 'Çıtır Piliç']"
+62,Taze Fasulye,sebze_ana,10.0,2.0,8.0,4.0,D,"yeşil fasulye, domates, zeytinyağı","['Zeytinyağlı Taze Fasulye', 'Etli Taze Fasulye']"
+63,Ispanak Yemeği,sebze_ana,7.0,4.0,6.0,3.5,D,"ıspanak, soğan, pirinç","['Ispanak', 'Yoğurtlu Ispanak']"
+64,Türlü,sebze_ana,12.0,3.0,8.0,4.5,D,"patlıcan, kabak, biber, fasulye, domates","['Sebze Türlü', 'Etli Türlü']"
+65,Kabak Yemeği,sebze_ana,8.0,2.0,6.0,2.0,D,"kabak, soğan, pirinç",['Zeytinyağlı Kabak']
+66,Patates Yemeği,sebze_ana,25.0,4.0,7.0,3.0,Y,"patates, soğan, salça","['Etli Patates', 'Patates Oturtma']"
+67,Patates Püresi,sebze_ana,22.0,3.0,6.0,2.0,Y,"haşlanmış patates, süt, tereyağı","['Püre', 'Tereyağlı Püre']"
+68,Bezelye Yemeği,sebze_ana,15.0,6.0,6.0,5.0,D,"bezelye, havuç, patates",['Etli Bezelye']
+69,Yaprak Sarma,sebze_ana,30.0,3.0,10.0,3.0,O,"asma yaprağı, pirinç, zeytinyağı","['Zeytinyağlı Yaprak Sarma', 'Sarma']"
+70,Biber Dolması,sebze_ana,20.0,8.0,10.0,3.0,O,"dolmalık biber, pirinç, kıyma","['Etli Biber Dolma', 'Dolma']"
+71,Mücver,sebze_ana,12.0,6.0,12.0,2.0,O,"kabak, yumurta, un, dereotu",['Kabak Mücver']
+72,Kuru Fasulye,baklagil,25.0,10.0,7.0,9.0,D,"kuru beyaz fasulye, salça, et","['Etli Kuru Fasulye', 'Kuru Fasulye Yemeği']"
+73,Nohut Yemeği,baklagil,27.0,10.0,8.0,8.0,D,"nohut, salça, et","['Nohut Yahni', 'Etli Nohut']"
+74,Barbunya,baklagil,22.0,8.0,7.0,8.0,D,"barbunya fasulyesi, havuç, zeytinyağı","['Zeytinyağlı Barbunya', 'Barbunya Pilaki']"
+75,Yeşil Mercimek Yemeği,baklagil,25.0,11.0,6.0,8.0,D,"yeşil mercimek, bulgur, soğan","['Mercimek Yemeği', 'Bulgurlu Yeşil Mercimek']"
+76,Mercimek Köftesi,baklagil,30.0,8.0,5.0,6.0,O,"kırmızı mercimek, ince bulgur, yeşillik",['Mercimek Köfte']
+77,Pirinç Pilavı,pilav_makarna,45.0,4.0,7.0,0.5,Y,"pirinç, tereyağı, tavuk suyu","['Pilav', 'Tereyağlı Pirinç Pilavı', 'Şehriyeli Pirinç Pilavı']"
+78,Bulgur Pilavı,pilav_makarna,35.0,5.0,5.0,6.0,O,"pilavlık bulgur, salça, soğan","['Salçalı Bulgur Pilavı', 'Zerdeçallı Bulgur Pilavı', 'Domatesli Bulgur Pilavı']"
+79,Şehriye Pilavı,pilav_makarna,40.0,6.0,6.0,1.5,Y,"arpa şehriye, tereyağı","['Arpa Şehriye Pilavı', 'Tel Şehriye Pilavı']"
+80,Kuskus Pilavı,pilav_makarna,38.0,6.0,5.0,2.0,O,"kuskus, tereyağı, sebze","['Kuskus', 'Sebzeli Kuskus']"
+81,Meyhane Pilavı,pilav_makarna,33.0,5.0,6.0,6.0,O,"bulgur, domates, biber, soğan",['Meyane Pilavı']
+82,Domates Soslu Makarna,pilav_makarna,45.0,8.0,6.0,2.5,O,"makarna, domates sos","['Spagetti (Napoliten)', 'Penne Arabiata', 'Makarna']"
+83,Kremalı Makarna,pilav_makarna,45.0,10.0,15.0,2.0,O,"makarna, krema, mantar, parmesan","['Spagetti Carbonara', 'Fettucini Alfredo', 'Mantarlı Fettucini']"
+84,Erişte,pilav_makarna,42.0,8.0,6.0,2.0,O,"ev yapımı yumurtalı erişte, peynir","['Peynirli Erişte', 'Ev Eriştesi']"
+85,Fırın Makarna,pilav_makarna,40.0,14.0,14.0,2.0,O,"makarna, beşamel, kaşar",['Beşamel Soslu Fırın Makarna']
+86,Baklava,tatli_serbetli,50.0,5.0,20.0,1.5,Y,"yufka, ceviz/fıstık, tereyağı, şerbet","['Fıstıklı Baklava', 'Cevizli Baklava', 'Şöbiyet']"
+87,Şekerpare,tatli_serbetli,55.0,4.0,15.0,0.5,Y,"irmik, un, tereyağı, şerbet",['Kakaolu Şekerpare']
+88,Revani,tatli_serbetli,50.0,4.0,10.0,0.5,Y,"irmik, yumurta, şerbet",['Portakallı Revani']
+89,Tel Kadayıf,tatli_serbetli,55.0,5.0,18.0,1.5,Y,"tel kadayıf, ceviz, tereyağı, şerbet","['Burma Kadayıf', 'Kadayıf']"
+90,Ekmek Kadayıfı,tatli_serbetli,60.0,4.0,15.0,0.5,Y,"kadayıf ekmeği, şerbet, kaymak",['Kaymaklı Ekmek Kadayıfı']
+91,Tulumba Tatlısı,tatli_serbetli,45.0,2.0,15.0,0.3,Y,"hamur kızartması, şerbet",['Tulumba']
+92,Şam Tatlısı,tatli_serbetli,50.0,4.0,14.0,0.5,Y,"irmikli hamur, şerbet, fındık",['Şam Tatlı']
+93,İrmik Helvası,tatli_serbetli,40.0,4.0,14.0,1.0,Y,"irmik, tereyağı, süt, şeker","['Helva', 'İrmik Helva']"
+94,Sütlaç,tatli_sutlu,35.0,6.0,5.0,0.2,O,"süt, pirinç, şeker; fırında","['Fırın Sütlaç', 'Sütlaç (Fırında)']"
+95,Kazandibi,tatli_sutlu,35.0,5.0,5.0,0.0,O,"süt, nişasta, şeker; karamelize",['Kazan Dibi']
+96,Tavuk Göğsü Tatlısı,tatli_sutlu,33.0,6.0,5.0,0.0,O,"süt, tavuk göğsü lifi, şeker, nişasta","['Tavuk Göğsü', 'Tavukgöğsü']"
+97,Muhallebi,tatli_sutlu,30.0,5.0,5.0,0.0,O,"süt, pirinç unu, şeker",['Sakızlı Muhallebi']
+98,Profiterol,tatli_sutlu,35.0,5.0,15.0,0.5,Y,"choux hamuru, krema, çikolata sos",['Profiterol Tatlısı']
+99,Puding,tatli_sutlu,32.0,5.0,5.0,1.0,O,"süt, kakao, nişasta, şeker","['Kakaolu Puding', 'Supangle']"
+100,Magnolya,tatli_sutlu,35.0,5.0,15.0,0.5,O,"bisküvi, krema, muhallebi, meyve",['Çilekli Magnolya']
+101,Trileçe,tatli_sutlu,40.0,7.0,12.0,0.0,Y,"pandispanya, üç çeşit süt, karamel",['Trileçe Tatlısı']
+102,Tiramisu,tatli_sutlu,30.0,6.0,18.0,0.5,O,"kedi dili, mascarpone, kahve",['Tremisu']
+103,Aşure,tatli_sutlu,45.0,5.0,4.0,4.0,O,"buğday, nohut, fasulye, kuru meyve, şeker",['Aşure Tatlısı']
+104,Kek,tatli_sutlu,35.0,4.0,12.0,0.5,Y,"un, şeker, yumurta, yağ","['Kakaolu Kek', 'Havuçlu Kek']"
+105,Yaş Pasta,tatli_sutlu,40.0,5.0,18.0,0.5,Y,"pandispanya, krema, meyve","['Pasta', 'Kardelen Pasta']"
+106,Elma,meyve,20.0,0.3,0.3,3.5,D,1 orta boy elma,"['Kırmızı Elma', 'Yeşil Elma']"
+107,Portakal,meyve,15.0,1.0,0.2,3.0,D,1 orta boy portakal,['Washington Portakal']
+108,Muz,meyve,27.0,1.3,0.4,3.0,O,1 orta boy muz,['Sarı Muz']
+109,Mandalina,meyve,18.0,1.2,0.3,3.0,D,2 adet mandalina,['Satsuma Mandalina']
+110,Üzüm,meyve,27.0,1.0,0.3,1.4,O,1 su bardağı üzüm,['Çekirdeksiz Üzüm']
+111,Karpuz,meyve,19.0,1.5,0.4,1.0,Y,1 dilim karpuz,['Karpuz Dilimi']
+112,Mevsim Meyvesi,meyve,18.0,0.8,0.3,2.5,D,mevsimine göre tek porsiyon meyve,"['Meyve', 'Meyve Tabağı']"
+113,Yoğurt,sut_urun,9.0,7.0,6.0,0.0,D,200 g tam yağlı yoğurt,"['Ev Yoğurdu', 'Kase Yoğurt']"
+114,Ayran,sut_urun,6.0,4.0,3.0,0.0,D,"yoğurt, su, tuz; 200 ml",['Yayık Ayranı']
+115,Süt,sut_urun,10.0,6.5,6.0,0.0,D,200 ml tam yağlı süt,"['Sade Süt', 'Günlük Süt']"
+116,Cacık,sut_urun,6.0,4.0,4.0,0.5,D,"yoğurt, salatalık, sarımsak, nane",['Cacık (Salatalıklı)']
+117,Kakaolu Süt,sut_urun,24.0,6.0,5.0,1.0,O,"süt, kakao, şeker; 200 ml",['Çikolatalı Süt']
+118,Mevsim Salata,salata,6.0,1.5,5.0,2.5,D,"marul, domates, salatalık, zeytinyağı","['Salata', 'Mevsim Yeşillikleri', 'Çoban Salata']"
+119,Piyaz,salata,20.0,7.0,8.0,6.0,D,"kuru fasulye, soğan, maydanoz, yumurta",['Fasulye Piyazı']
+120,Patates Salatası,salata,25.0,3.0,7.0,3.0,Y,"haşlanmış patates, soğan, maydanoz",['Patates Salata']
+121,Kısır,salata,30.0,5.0,7.0,5.0,O,"ince bulgur, salça, yeşillik",['Bulgur Kısırı']
+122,Rus Salatası,salata,15.0,3.0,20.0,2.0,O,"patates, havuç, bezelye, mayonez",['Amerikan Salatası']
+123,Çay,icecek,0.0,0.0,0.0,0.0,D,şekersiz demlik çay,"['Demleme Çay', 'Siyah Çay']"
+124,Şeker,icecek,10.0,0.0,0.0,0.0,Y,2 küp kesme şeker,"['Kesme Şeker', 'Toz Şeker']"
+125,Meyve Suyu,icecek,22.0,0.5,0.0,0.3,Y,200 ml paket meyve suyu,"['Portakal Suyu', 'Vişne Suyu']"
+126,Kola,icecek,26.0,0.0,0.0,0.0,Y,250 ml şekerli gazlı içecek,['Gazlı İçecek']
